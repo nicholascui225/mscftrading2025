@@ -1,0 +1,4 @@
+2025-09-20 10:42:41,359 - INFO - Initial logging setup - logs/volatility_trading_20250920_104241.log
+2025-09-20 10:42:41,359 - INFO - Checking case status...
+2025-09-20 10:42:41,361 - DEBUG - Starting new HTTP connection (1): localhost:9999
+2025-09-20 10:42:41,366 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154

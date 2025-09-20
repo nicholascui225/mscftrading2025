@@ -76,6 +76,13 @@ TRADING_SECONDS = 300
 DELTA_LIMIT = 7000
 PENALTY_RATE = 0.01
 
+# Additional risk and execution controls
+MAX_OPTIONS_PER_TICK = 1
+DELTA_HEDGE_TRIGGER = 1000
+NEAR_EXPIRY_TICKS_GATE = 20
+SAME_TICKER_COOLDOWN_TICKS = 2
+MIN_SMILE_R2 = 0.10
+
 # Position limits - Much more conservative
 RTM_GROSS_LIMIT = 10000
 RTM_NET_LIMIT = 5000
@@ -136,6 +143,11 @@ class VolatilityTradingStrategy:
         self.case_number = 0  # Track case number
         # News state tracking
         self.realized_vol_set_tick = None  # Tick when realized vol was last set
+        # Time scaling (ticks per day parsed from news; default to 15)
+        self.ticks_per_day = 15
+        self.trading_days_per_year = TRADING_DAYS_PER_YEAR
+        # Execution state
+        self.last_trade_tick_by_ticker = {}
     
     def create_case_log_file(self, case_tick):
         """Create a new log file for the current case"""
@@ -266,18 +278,22 @@ class VolatilityTradingStrategy:
         raise ApiException('Failed to get news data')
     
     def time_to_expiry(self, tick):
-        """Calculate time to expiry in years"""
-        return (TRADING_SECONDS - tick) / (TRADING_DAYS_PER_YEAR * SECONDS_PER_DAY)
+        """Calculate time to expiry in years using ticks-per-year scaling"""
+        ticks_remaining = max(0, TRADING_SECONDS - tick)
+        ticks_per_year = max(1, self.ticks_per_day * self.trading_days_per_year)
+        return ticks_remaining / ticks_per_year
     
     def calculate_implied_volatility(self, option_price, spot, strike, time_to_expiry, option_type):
         """Calculate implied volatility for an option"""
         try:
             if option_type.upper() == 'CALL':
-                return iv.implied_volatility(option_price, spot, strike, RISK_FREE_RATE, 
+                vol = iv.implied_volatility(option_price, spot, strike, RISK_FREE_RATE, 
                                            time_to_expiry, 'c')
             else:
-                return iv.implied_volatility(option_price, spot, strike, RISK_FREE_RATE, 
+                vol = iv.implied_volatility(option_price, spot, strike, RISK_FREE_RATE, 
                                            time_to_expiry, 'p')
+            # Clamp to a reasonable band to avoid solver blow-ups
+            return max(0.01, min(1.5, vol))
         except:
             return np.nan
     
@@ -365,29 +381,41 @@ class VolatilityTradingStrategy:
             })
         return iv_points
 
-    def fit_quadratic_smile(self, iv_points):
-        """Fit IV = a + b*K + c*K^2 using numpy.polyfit; return coefficients and fit stats"""
+    def fit_quadratic_smile(self, iv_points, spot):
+        """Fit IV = a + b*x + c*x^2 on log-moneyness x=ln(K/spot). Return coefficients, r2, and quantiles.
+        Clamps later predictions to empirical IV quantiles to avoid extrapolation blow-ups.
+        """
         if len(iv_points) < 3:
             return None
         strikes = np.array([p['strike'] for p in iv_points], dtype=float)
         ivs = np.array([p['iv'] for p in iv_points], dtype=float)
         try:
-            coeffs = np.polyfit(strikes, ivs, 2)  # returns [c, b, a]
+            # log-moneyness
+            xs = np.log(np.maximum(1e-9, strikes / max(1e-9, spot)))
+            coeffs = np.polyfit(xs, ivs, 2)  # returns [c, b, a]
             c2, b1, a0 = coeffs[0], coeffs[1], coeffs[2]
-            pred = a0 + b1*strikes + c2*(strikes**2)
+            pred = a0 + b1*xs + c2*(xs**2)
             # R^2
             ss_res = np.sum((ivs - pred) ** 2)
             ss_tot = np.sum((ivs - np.mean(ivs)) ** 2)
             r2 = 1 - ss_res/ss_tot if ss_tot > 0 else 0.0
-            logger.info(f"Fitted IV smile: a={a0:.4f}, b={b1:.6f}, c={c2:.8f}, R^2={r2:.3f}")
-            return {'a': a0, 'b': b1, 'c': c2, 'r2': r2}
+            # Empirical quantiles for clamping
+            q10 = float(np.quantile(ivs, 0.10))
+            q90 = float(np.quantile(ivs, 0.90))
+            logger.info(f"Fitted IV smile (log-moneyness): a={a0:.4f}, b={b1:.6f}, c={c2:.8f}, R^2={r2:.3f}, q10={q10:.1%}, q90={q90:.1%}")
+            return {'a': a0, 'b': b1, 'c': c2, 'r2': r2, 'q10': q10, 'q90': q90}
         except Exception as e:
             logger.debug(f"Smile fit failed: {e}")
             return None
 
-    def predict_smile_iv(self, strike, coeffs):
-        """Predict IV from smile coefficients"""
-        return coeffs['a'] + coeffs['b']*strike + coeffs['c']*(strike**2)
+    def predict_smile_iv(self, strike, spot, coeffs):
+        """Predict IV from smile coefficients using log-moneyness x=ln(K/spot) with quantile clamping"""
+        x = np.log(max(1e-9, strike / max(1e-9, spot)))
+        iv_pred = coeffs['a'] + coeffs['b']*x + coeffs['c']*(x**2)
+        # Clamp to quantile band (with small buffer)
+        lo = max(0.01, coeffs.get('q10', 0.01) * 0.8)
+        hi = min(5.0, coeffs.get('q90', 5.0) * 1.2)
+        return min(max(iv_pred, lo), hi)
 
     def identify_smile_mispricings(self, securities_data):
         """Identify mispricings using quadratic smile of IV vs strike.
@@ -400,7 +428,9 @@ class VolatilityTradingStrategy:
             return opportunities
         # Find RTM price
         rtm_price = None
+        security_by_ticker = {}
         for security in securities_data:
+            security_by_ticker[security['ticker']] = security
             if security['ticker'] == 'RTM':
                 rtm_price = self._mid_price(security)
                 break
@@ -411,28 +441,59 @@ class VolatilityTradingStrategy:
         if len(iv_points) < 3:
             logger.debug("Insufficient IV points to fit smile")
             return opportunities
-        coeffs = self.fit_quadratic_smile(iv_points)
+        coeffs = self.fit_quadratic_smile(iv_points, rtm_price)
         if coeffs is None:
+            return opportunities
+        # Require minimum smile fit quality
+        if coeffs.get('r2', 0.0) < MIN_SMILE_R2:
+            logger.debug(f"Smile fit R^2 below threshold ({coeffs.get('r2', 0.0):.3f} < {MIN_SMILE_R2:.2f}); skipping smile trades this tick")
             return opportunities
         # Generate opportunities by comparing market price to BS price using smile IV
         for p in iv_points:
             strike = p['strike']
             option_type = p['option_type']
+            sec = security_by_ticker.get(p['ticker'], {})
             market_price = p['market_price']
-            smile_iv = max(0.0001, min(5.0, self.predict_smile_iv(strike, coeffs)))
-            theo_price = self.calculate_black_scholes_price(rtm_price, strike, time_to_expiry, smile_iv, option_type)
+            bid = sec.get('bid', None)
+            ask = sec.get('ask', None)
+            # Spread filters
+            rel_spread_ok = True
+            if bid is not None and ask is not None and bid > 0 and ask >= bid:
+                mid = (bid + ask) / 2.0
+                abs_spread = ask - bid
+                rel_spread = abs_spread / max(0.01, mid)
+                # Require reasonable liquidity
+                if rel_spread > 0.08 or abs_spread > 0.10:
+                    rel_spread_ok = False
+            if not rel_spread_ok:
+                continue
+
+            # ATM proximity filter early in session
+            moneyness = strike / max(1e-9, rtm_price)
+            if abs(moneyness - 1.0) > 0.10 and current_tick < TRADING_SECONDS * 0.5:
+                # Skip far OTM/ITM early; focus near-ATM to reduce tail risk
+                continue
+
+            smile_iv = max(0.0001, min(1.5, self.predict_smile_iv(strike, rtm_price, coeffs)))
+            theo_smile = self.calculate_black_scholes_price(rtm_price, strike, time_to_expiry, smile_iv, option_type)
+            # Anchor theo to analysts' forecast to capture learning lag: blend 60% smile, 40% forecast
+            theo_forecast = self.calculate_black_scholes_price(rtm_price, strike, time_to_expiry, max(0.01, min(1.5, self.forecasted_volatility)), option_type)
+            theo_price = np.nanmean([theo_smile, theo_forecast]) if not (np.isnan(theo_smile) and np.isnan(theo_forecast)) else theo_smile
             if np.isnan(theo_price) or theo_price <= 0:
                 continue
             price_diff = market_price - theo_price  # positive => market overpriced
-            # Tighter thresholds: at least $0.01 or 0.3% of theo price
-            threshold = max(0.01, 0.003 * theo_price)
-            # Also require meaningful IV residual or price diff; skip only if both are small
+            # Tighter thresholds with vega-normalization
             iv_residual = p['iv'] - smile_iv
-            iv_residual_threshold = 0.005  # 0.5% absolute IV points
-            if abs(price_diff) < threshold and abs(iv_residual) < iv_residual_threshold:
+            greeks = self.calculate_greeks(rtm_price, strike, time_to_expiry, smile_iv, option_type)
+            vega_val = abs(greeks.get('vega', 0.0))
+            # Convert price diff to implied vol points via vega
+            vol_equiv = abs(price_diff) / max(vega_val, 1e-6)
+            base_price_threshold = max(0.01, 0.0025 * theo_price)  # 0.25% or 1c
+            vol_equiv_threshold = 0.003  # 0.3 vol points
+            min_vega = 0.02  # require minimum sensitivity
+            if (abs(price_diff) < base_price_threshold and vol_equiv < vol_equiv_threshold) or vega_val < min_vega:
                 continue
             action = 'SELL' if price_diff > 0 else 'BUY'
-            greeks = self.calculate_greeks(rtm_price, strike, time_to_expiry, smile_iv, option_type)
             opportunity = {
                 'ticker': p['ticker'],
                 'option_type': option_type,
@@ -444,7 +505,7 @@ class VolatilityTradingStrategy:
                 'price_diff': price_diff,
                 'greeks': greeks,
                 'action': action,
-                'confidence': min(abs(price_diff) / max(0.10, theo_price), 1.0)
+                'confidence': min(max(vol_equiv, abs(price_diff) / max(0.10, theo_price)), 1.0)
             }
             opportunities.append(opportunity)
         # Sort by absolute price mispricing first, fallback to residual magnitude
@@ -518,7 +579,7 @@ class VolatilityTradingStrategy:
             min_vol_diff = 0.02  # 2% volatility difference (more reasonable threshold)
             
             # Only trade if volatility difference is significant AND reasonable
-            if vol_diff > min_vol_diff and implied_vol < 3.0:  # Allow higher implied vol (up to 300%)
+            if vol_diff > min_vol_diff and implied_vol < 5.0:  # Allow higher implied vol (up to 500%)
                 # Implied vol > forecasted vol: Option is overpriced, SELL
                 opportunity = {
                     'ticker': ticker,
@@ -563,15 +624,20 @@ class VolatilityTradingStrategy:
         if time_to_expiry <= 0:
             return 0
         
-        # Get RTM price
+        # Get RTM price and include RTM position delta directly
         rtm_price = None
         for security in securities_data:
             if security['ticker'] == 'RTM':
-                rtm_price = security['last']
+                rtm_price = security.get('last', None)
+                # Include current RTM position as delta (1 share = delta 1)
+                try:
+                    total_delta += security.get('position', 0)
+                except Exception:
+                    pass
                 break
         
         if rtm_price is None:
-            return 0
+            return total_delta
         
         # Calculate delta for each option position
         for security in securities_data:
@@ -579,10 +645,8 @@ class VolatilityTradingStrategy:
             if ticker == 'RTM':
                 continue
                 
-            position = security.get('position', 0)
-            size = security.get('size', 0)
-            
-            if position == 0 or size == 0:
+            position_contracts = security.get('position', 0)
+            if position_contracts == 0:
                 continue
             
             # Determine option type and strike
@@ -600,12 +664,9 @@ class VolatilityTradingStrategy:
                 continue
             
             # Calculate delta for this option
-            greeks = self.calculate_greeks(
-                rtm_price, strike, time_to_expiry, self.forecasted_volatility, option_type
-            )
-            
-            # Add to total delta (position * size * delta)
-            total_delta += position * size * greeks['delta']
+            greeks = self.calculate_greeks(rtm_price, strike, time_to_expiry, self.forecasted_volatility, option_type)
+            # Add to total delta: contracts * 100 shares per contract * option delta
+            total_delta += position_contracts * 100 * greeks.get('delta', 0.0)
         
         return total_delta
     
@@ -734,7 +795,7 @@ class VolatilityTradingStrategy:
             required_rtm_hedge = -trade_delta * 100  # Convert to shares (1 contract = 100 shares)
             if abs(required_rtm_hedge) > 10:  # Only hedge if significant
                 hedge_action = 'BUY' if required_rtm_hedge > 0 else 'SELL'
-                hedge_quantity = min(abs(required_rtm_hedge), 100)  # Limit hedge size
+                hedge_quantity = int(round(min(abs(required_rtm_hedge), 100)))  # Limit hedge size and round to whole shares
                 self.submit_order('RTM', hedge_action, hedge_quantity)
                 logger.info(f"Immediate hedge: {hedge_action} {hedge_quantity} RTM shares (delta: {trade_delta:.2f})")
     
@@ -759,14 +820,17 @@ class VolatilityTradingStrategy:
                     import re
                     lower_body = body.lower()
 
-                    # Derive a first-week cutoff in ticks (default 5*15=75 unless specified in news)
-                    first_week_cutoff = 75
+                    # Derive ticks-per-day and a first-week cutoff in ticks
+                    first_week_cutoff = 5 * max(1, self.ticks_per_day)
                     try:
                         # e.g., "20 trading days that are each 15 ticks in length"
                         days_ticks_match = re.search(r'(\d+)\s+trading\s+days.*?each\s+(\d+)\s+ticks', lower_body)
                         if days_ticks_match:
                             ticks_per_day = int(days_ticks_match.group(2))
-                            first_week_cutoff = 5 * max(1, ticks_per_day)
+                            if ticks_per_day > 0:
+                                self.ticks_per_day = ticks_per_day
+                                first_week_cutoff = 5 * self.ticks_per_day
+                                logger.info(f"Detected ticks_per_day from news: {self.ticks_per_day}")
                     except Exception:
                         pass
 
@@ -783,6 +847,7 @@ class VolatilityTradingStrategy:
                             logger.debug(f"Ignoring realized vol news at tick {current_tick} (cutoff {first_week_cutoff}, already_set={self.realized_vol_set_tick is not None})")
 
                     # Parse forecast (range preferred)
+                    parsed_any = False
                     if 'next week' in lower_body or 'forecast' in lower_body:
                         range_match = re.search(r'between\s+(\d+(?:\.\d+)?)%\s+and\s+(\d+(?:\.\d+)?)%', lower_body)
                         if range_match:
@@ -790,21 +855,25 @@ class VolatilityTradingStrategy:
                             vol_max = float(range_match.group(2)) / 100
                             self.forecasted_volatility = (vol_min + vol_max) / 2
                             logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%} (range: {vol_min:.1%}-{vol_max:.1%})")
+                            parsed_any = True
                         else:
                             # Fallback: capture a percentage near 'next week' or 'forecast' keywords
                             single_forecast_match = re.search(r'(?:next\s+week|forecast)[^%]*?(\d+(?:\.\d+)?)%', lower_body)
                             if single_forecast_match:
                                 self.forecasted_volatility = float(single_forecast_match.group(1)) / 100
                                 logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%}")
+                                parsed_any = True
 
                     # If nothing matched but there is a percentage, do not misassign risk-free to realized
-                    generic_match = re.findall(r'(\d+(?:\.\d+)?)%', lower_body)
-                    if (not realized_match) and (not ('next week' in lower_body or 'forecast' in lower_body)) and generic_match:
-                        # Keep behavior conservative: assign to forecasted, not current, to avoid 0% risk-free capture
-                        fallback_val = float(generic_match[-1]) / 100  # prefer the last percentage
-                        self.forecasted_volatility = fallback_val
-                        logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%}")
-                    else:
+                    if not parsed_any:
+                        generic_match = re.findall(r'(\d+(?:\.\d+)?)%', lower_body)
+                        if (not realized_match) and (not ('next week' in lower_body or 'forecast' in lower_body)) and generic_match:
+                            # Keep behavior conservative: assign to forecasted, not current, to avoid 0% risk-free capture
+                            fallback_val = float(generic_match[-1]) / 100  # prefer the last percentage
+                            self.forecasted_volatility = fallback_val
+                            logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%}")
+                            parsed_any = True
+                    if not parsed_any and not realized_match:
                         logger.warning(f"Could not extract volatility from: {body}")
                 else:
                     logger.debug(f"Non-volatility news: {headline}")
@@ -871,22 +940,69 @@ class VolatilityTradingStrategy:
                 # Identify mispricing opportunities using quadratic IV smile
                 opportunities = self.identify_smile_mispricings(securities_data)
                 
+                # Fallback: if no smile-based opps, try forecast-based opportunities
+                if not opportunities:
+                    fb_opps = self.identify_mispricing_opportunities(securities_data)
+                    if fb_opps:
+                        logger.info(f"Using forecast-based opportunities: {len(fb_opps)} found")
+                        # Map forecast-based opp into the structure expected by execute_option_trade
+                        # by adding smile-compatible fields
+                        mapped = []
+                        for o in fb_opps:
+                            # Estimate theo using forecasted vol for pricing-based diff
+                            rtmsc = next(s for s in securities_data if s['ticker']=='RTM')
+                            rtmmid = self._mid_price(rtmsc)
+                            theo = self.calculate_black_scholes_price(
+                                rtmmid,
+                                o['strike'],
+                                self.time_to_expiry(self.get_current_tick()),
+                                self.forecasted_volatility,
+                                o['option_type']
+                            )
+                            price_diff = o['market_price'] - (theo if not np.isnan(theo) else o['market_price'])
+                            mapped.append({
+                                'ticker': o['ticker'],
+                                'option_type': o['option_type'],
+                                'strike': o['strike'],
+                                'market_price': o['market_price'],
+                                'smile_iv': o['implied_vol'],
+                                'iv_residual': o['vol_diff'],
+                                'theo_price': theo,
+                                'price_diff': price_diff,
+                                'greeks': o['greeks'],
+                                'action': o['action'],
+                                'confidence': o['confidence']
+                            })
+                        # Prioritize by absolute price_diff
+                        mapped.sort(key=lambda x: abs(x['price_diff']), reverse=True)
+                        opportunities = mapped
+                
                 # Execute trades for volatility mispricing opportunities (with smart filtering)
                 traded_this_tick = set()  # Track what we've already traded this tick
+                trades_placed = 0
                 for opportunity in opportunities:
                     # Don't trade the same option multiple times in one tick
                     if opportunity['ticker'] in traded_this_tick:
                         continue
+                    # Per-ticker cooldown
+                    last_tick_for_ticker = self.last_trade_tick_by_ticker.get(opportunity['ticker'])
+                    if last_tick_for_ticker is not None and (tick - last_tick_for_ticker) < SAME_TICKER_COOLDOWN_TICKS:
+                        continue
+                    # Trade count limit per tick
+                    if trades_placed >= MAX_OPTIONS_PER_TICK:
+                        break
                     
                     # Execute the trade
                     self.execute_option_trade(opportunity)
                     traded_this_tick.add(opportunity['ticker'])
+                    self.last_trade_tick_by_ticker[opportunity['ticker']] = tick
+                    trades_placed += 1
                 
                 # Execute delta hedge - Stay within ±7000 limit
                 required_hedge = self.calculate_required_hedge(portfolio_delta)
                 
-                # Simple delta hedging: hedge when delta exceeds 2000
-                if abs(portfolio_delta) > 2000:
+                # More proactive delta hedging
+                if abs(portfolio_delta) > DELTA_HEDGE_TRIGGER:
                     logger.info(f"Hedging delta exposure: {portfolio_delta:.0f}")
                     self.execute_hedge(required_hedge, rtm_price)
                 

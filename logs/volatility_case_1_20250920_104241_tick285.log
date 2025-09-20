@@ -1,0 +1,1868 @@
+2025-09-20 10:42:41,367 - INFO - === NEW CASE #1 STARTED ===
+2025-09-20 10:42:41,367 - INFO - Case log file: logs/volatility_case_1_20250920_104241_tick285.log
+2025-09-20 10:42:41,367 - INFO - Case tick: 285
+2025-09-20 10:42:41,367 - INFO - New case detected - resetting trade counter (tick: 285)
+2025-09-20 10:42:41,368 - INFO - Case is active! Starting strategy (tick: 285, status: ACTIVE)
+2025-09-20 10:42:41,368 - INFO - Starting volatility trading strategy
+2025-09-20 10:42:41,368 - INFO - Waiting for case to become active...
+2025-09-20 10:42:41,372 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,373 - INFO - Processing tick 285/300 (status: ACTIVE)
+2025-09-20 10:42:41,373 - INFO - Before news processing - Current: 20.0%, Forecasted: 20.0%
+2025-09-20 10:42:41,374 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:41,374 - DEBUG - Processing 7 news items
+2025-09-20 10:42:41,375 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,375 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:41,376 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:41,376 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:41,376 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:41,376 - DEBUG - News headline: News 3
+2025-09-20 10:42:41,376 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:41,376 - INFO - Found volatility news: News 3
+2025-09-20 10:42:41,376 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:41,377 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:41,377 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:41,377 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:41,377 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:41,377 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:41,377 - DEBUG - News headline: News 2
+2025-09-20 10:42:41,377 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:41,377 - INFO - Found volatility news: News 2
+2025-09-20 10:42:41,377 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:41,377 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:41,377 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:41,377 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:41,377 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:41,378 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:41,378 - DEBUG - News headline: News 1
+2025-09-20 10:42:41,378 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:41,378 - INFO - Found volatility news: News 1
+2025-09-20 10:42:41,378 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:41,378 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:41,379 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:41,379 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:41,379 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:41,379 - DEBUG - Ignoring realized vol news at tick 285 (cutoff 75, already_set=False)
+2025-09-20 10:42:41,379 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:41,379 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:41,379 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:41,380 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9394
+2025-09-20 10:42:41,382 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,382 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,400 - INFO - Fitted IV smile (log-moneyness): a=3.9796, b=13.419606, c=-428.42206771, R^2=0.044, q10=387.5%, q90=421.8%
+2025-09-20 10:42:41,401 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:41,402 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,403 - INFO - SELL opportunity: RTM48C - Implied vol: 399.4% vs Forecast: 26.5%
+2025-09-20 10:42:41,403 - INFO - SELL opportunity: RTM48P - Implied vol: 374.2% vs Forecast: 26.5%
+2025-09-20 10:42:41,404 - INFO - SELL opportunity: RTM49C - Implied vol: 417.7% vs Forecast: 26.5%
+2025-09-20 10:42:41,404 - INFO - SELL opportunity: RTM49P - Implied vol: 352.3% vs Forecast: 26.5%
+2025-09-20 10:42:41,404 - INFO - SELL opportunity: RTM50P - Implied vol: 137.0% vs Forecast: 26.5%
+2025-09-20 10:42:41,405 - INFO - Using forecast-based opportunities: 5 found
+2025-09-20 10:42:41,406 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,409 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,417 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,418 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,419 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,422 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,423 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,425 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,455 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:41,455 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 47410
+2025-09-20 10:42:41,455 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #1)
+2025-09-20 10:42:41,457 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,459 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,461 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,491 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:41,492 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 47413
+2025-09-20 10:42:41,492 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #2)
+2025-09-20 10:42:41,525 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=93.4496293042226&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:41,526 - INFO - Order submitted: RTM SELL 93.4496293042226 - Order ID: 47416
+2025-09-20 10:42:41,526 - INFO - Immediate hedge: SELL 93.4496293042226 RTM shares (delta: 0.93)
+2025-09-20 10:42:41,528 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,530 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,532 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,561 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:41,561 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 47420
+2025-09-20 10:42:41,562 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #3)
+2025-09-20 10:42:41,563 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,565 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,567 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,598 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:41,599 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 47423
+2025-09-20 10:42:41,599 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #4)
+2025-09-20 10:42:41,631 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:41,632 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47426
+2025-09-20 10:42:41,632 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:41,636 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,641 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9393
+2025-09-20 10:42:41,644 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:41,678 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM50P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:41,678 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 47432
+2025-09-20 10:42:41,679 - INFO - Executing volatility trade: SELL 1 RTM50P (trade #5)
+2025-09-20 10:42:41,750 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:41,751 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47440
+2025-09-20 10:42:41,751 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:41,751 - INFO - Portfolio Delta: 0, Required Hedge: 0
+2025-09-20 10:42:41,752 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:41,752 - INFO - Found 5 trading opportunities
+2025-09-20 10:42:41,752 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:41,752 - DEBUG - Option RTM48C: Implied vol 399.4%
+2025-09-20 10:42:41,753 - DEBUG - Option RTM48P: Implied vol 374.2%
+2025-09-20 10:42:41,754 - DEBUG - Option RTM49C: Implied vol 417.7%
+2025-09-20 10:42:41,754 - DEBUG - Option RTM49P: Implied vol 352.3%
+2025-09-20 10:42:41,754 - DEBUG - Option RTM50C: Invalid implied vol 5.2010058359413085
+2025-09-20 10:42:41,755 - DEBUG - Option RTM50P: Implied vol 137.0%
+2025-09-20 10:42:41,756 - DEBUG - Option RTM51C: Invalid implied vol 8.017717231944133
+2025-09-20 10:42:41,756 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:41,756 - DEBUG - Option RTM52C: Invalid implied vol 10.033850453492734
+2025-09-20 10:42:41,756 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:41,756 - INFO - Using market-implied volatility: 374.2% (from 5 options)
+2025-09-20 10:42:41,756 - INFO - Opportunity 1: RTM48C SELL - price_diff=$0.28, smileIV=399.4%
+2025-09-20 10:42:41,756 - INFO - Opportunity 2: RTM48P SELL - price_diff=$0.26, smileIV=374.2%
+2025-09-20 10:42:41,757 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.04, smileIV=417.7%
+2025-09-20 10:42:41,757 - INFO - Top opportunity: RTM48C SELL - price_diff=$0.28, smileIV=399.4%
+2025-09-20 10:42:41,757 - INFO - Total trades executed: 5
+2025-09-20 10:42:42,262 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,263 - INFO - Processing tick 286/300 (status: ACTIVE)
+2025-09-20 10:42:42,264 - INFO - Before news processing - Current: 20.0%, Forecasted: 374.2%
+2025-09-20 10:42:42,268 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:42,269 - DEBUG - Processing 7 news items
+2025-09-20 10:42:42,273 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,274 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:42,275 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:42,275 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:42,275 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:42,276 - DEBUG - News headline: News 3
+2025-09-20 10:42:42,276 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:42,276 - INFO - Found volatility news: News 3
+2025-09-20 10:42:42,277 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:42,277 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:42,277 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:42,278 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:42,278 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:42,278 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:42,278 - DEBUG - News headline: News 2
+2025-09-20 10:42:42,279 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:42,279 - INFO - Found volatility news: News 2
+2025-09-20 10:42:42,279 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:42,279 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:42,280 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:42,285 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:42,285 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:42,286 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:42,286 - DEBUG - News headline: News 1
+2025-09-20 10:42:42,286 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:42,286 - INFO - Found volatility news: News 1
+2025-09-20 10:42:42,287 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:42,289 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:42,290 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:42,304 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:42,305 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:42,306 - DEBUG - Ignoring realized vol news at tick 286 (cutoff 75, already_set=False)
+2025-09-20 10:42:42,306 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:42,310 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:42,311 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:42,323 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9440
+2025-09-20 10:42:42,326 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,329 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,332 - INFO - Fitted IV smile (log-moneyness): a=3.9410, b=14.248727, c=-608.32230806, R^2=0.008, q10=388.6%, q90=402.8%
+2025-09-20 10:42:42,333 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:42,336 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,337 - INFO - SELL opportunity: RTM48C - Implied vol: 412.3% vs Forecast: 26.5%
+2025-09-20 10:42:42,339 - INFO - SELL opportunity: RTM48P - Implied vol: 399.2% vs Forecast: 26.5%
+2025-09-20 10:42:42,340 - INFO - SELL opportunity: RTM49C - Implied vol: 438.3% vs Forecast: 26.5%
+2025-09-20 10:42:42,340 - INFO - SELL opportunity: RTM49P - Implied vol: 370.0% vs Forecast: 26.5%
+2025-09-20 10:42:42,344 - INFO - Using forecast-based opportunities: 4 found
+2025-09-20 10:42:42,347 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,349 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,353 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,357 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,361 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9440
+2025-09-20 10:42:42,367 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9440
+2025-09-20 10:42:42,370 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,401 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:42,402 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 47529
+2025-09-20 10:42:42,403 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #6)
+2025-09-20 10:42:42,407 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9440
+2025-09-20 10:42:42,410 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9440
+2025-09-20 10:42:42,414 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,446 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:42,448 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 47533
+2025-09-20 10:42:42,449 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #7)
+2025-09-20 10:42:42,485 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=97.46800999226579&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:42,486 - INFO - Order submitted: RTM SELL 97.46800999226579 - Order ID: 47538
+2025-09-20 10:42:42,486 - INFO - Immediate hedge: SELL 97.46800999226579 RTM shares (delta: 0.97)
+2025-09-20 10:42:42,488 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9432
+2025-09-20 10:42:42,490 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9432
+2025-09-20 10:42:42,492 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,525 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:42,526 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 47541
+2025-09-20 10:42:42,526 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #8)
+2025-09-20 10:42:42,529 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9432
+2025-09-20 10:42:42,531 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9432
+2025-09-20 10:42:42,534 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:42,565 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:42,566 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 47544
+2025-09-20 10:42:42,566 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #9)
+2025-09-20 10:42:42,596 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:42,596 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47549
+2025-09-20 10:42:42,597 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:42,597 - INFO - Portfolio Delta: 295, Required Hedge: -295
+2025-09-20 10:42:42,597 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:42,597 - INFO - Found 4 trading opportunities
+2025-09-20 10:42:42,597 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:42,598 - DEBUG - Option RTM48C: Implied vol 412.3%
+2025-09-20 10:42:42,598 - DEBUG - Option RTM48P: Implied vol 399.2%
+2025-09-20 10:42:42,598 - DEBUG - Option RTM49C: Implied vol 438.3%
+2025-09-20 10:42:42,598 - DEBUG - Option RTM49P: Implied vol 370.0%
+2025-09-20 10:42:42,598 - DEBUG - Option RTM50C: Invalid implied vol 5.428057249411906
+2025-09-20 10:42:42,598 - DEBUG - Option RTM50P: Invalid implied vol nan
+2025-09-20 10:42:42,598 - DEBUG - Option RTM51C: Invalid implied vol 7.469519178666984
+2025-09-20 10:42:42,599 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:42,599 - DEBUG - Option RTM52C: Invalid implied vol 9.395774029842162
+2025-09-20 10:42:42,599 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:42,599 - INFO - Using market-implied volatility: 405.8% (from 4 options)
+2025-09-20 10:42:42,599 - INFO - Opportunity 1: RTM48C SELL - price_diff=$0.27, smileIV=412.3%
+2025-09-20 10:42:42,599 - INFO - Opportunity 2: RTM48P SELL - price_diff=$0.26, smileIV=399.2%
+2025-09-20 10:42:42,599 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.04, smileIV=438.3%
+2025-09-20 10:42:42,599 - INFO - Top opportunity: RTM48C SELL - price_diff=$0.27, smileIV=412.3%
+2025-09-20 10:42:42,599 - INFO - Total trades executed: 9
+2025-09-20 10:42:43,105 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,106 - INFO - Processing tick 287/300 (status: ACTIVE)
+2025-09-20 10:42:43,107 - INFO - Before news processing - Current: 20.0%, Forecasted: 405.8%
+2025-09-20 10:42:43,111 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:43,112 - DEBUG - Processing 7 news items
+2025-09-20 10:42:43,114 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,115 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:43,116 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:43,116 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:43,116 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:43,117 - DEBUG - News headline: News 3
+2025-09-20 10:42:43,117 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:43,117 - INFO - Found volatility news: News 3
+2025-09-20 10:42:43,118 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:43,118 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:43,119 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:43,119 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:43,119 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:43,119 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:43,119 - DEBUG - News headline: News 2
+2025-09-20 10:42:43,120 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:43,120 - INFO - Found volatility news: News 2
+2025-09-20 10:42:43,120 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:43,121 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:43,121 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:43,121 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:43,121 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:43,122 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:43,122 - DEBUG - News headline: News 1
+2025-09-20 10:42:43,122 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:43,122 - INFO - Found volatility news: News 1
+2025-09-20 10:42:43,122 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:43,122 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:43,123 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:43,123 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:43,123 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:43,123 - DEBUG - Ignoring realized vol news at tick 287 (cutoff 75, already_set=False)
+2025-09-20 10:42:43,123 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:43,123 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:43,124 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:43,126 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9508
+2025-09-20 10:42:43,129 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,131 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,133 - INFO - Fitted IV smile (log-moneyness): a=4.2422, b=-64.090020, c=513.65388756, R^2=0.595, q10=177.8%, q90=403.8%
+2025-09-20 10:42:43,133 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:43,135 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,136 - INFO - SELL opportunity: RTM48C - Implied vol: 389.7% vs Forecast: 26.5%
+2025-09-20 10:42:43,137 - INFO - SELL opportunity: RTM48P - Implied vol: 403.1% vs Forecast: 26.5%
+2025-09-20 10:42:43,137 - INFO - SELL opportunity: RTM49C - Implied vol: 380.9% vs Forecast: 26.5%
+2025-09-20 10:42:43,138 - INFO - SELL opportunity: RTM49P - Implied vol: 438.8% vs Forecast: 26.5%
+2025-09-20 10:42:43,138 - INFO - Using forecast-based opportunities: 4 found
+2025-09-20 10:42:43,140 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,141 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,142 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,144 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,145 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9508
+2025-09-20 10:42:43,146 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9508
+2025-09-20 10:42:43,147 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,185 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:43,186 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 47600
+2025-09-20 10:42:43,187 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #10)
+2025-09-20 10:42:43,240 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=20.87194635039763&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:43,242 - INFO - Order submitted: RTM SELL 20.87194635039763 - Order ID: 47602
+2025-09-20 10:42:43,243 - INFO - Immediate hedge: SELL 20.87194635039763 RTM shares (delta: 0.21)
+2025-09-20 10:42:43,244 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9505
+2025-09-20 10:42:43,246 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9505
+2025-09-20 10:42:43,248 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,279 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:43,280 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 47607
+2025-09-20 10:42:43,280 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #11)
+2025-09-20 10:42:43,313 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=79.12805364960236&action=BUY HTTP/1.1" 200 194
+2025-09-20 10:42:43,314 - INFO - Order submitted: RTM BUY 79.12805364960236 - Order ID: 47613
+2025-09-20 10:42:43,314 - INFO - Immediate hedge: BUY 79.12805364960236 RTM shares (delta: -0.79)
+2025-09-20 10:42:43,317 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9505
+2025-09-20 10:42:43,321 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9505
+2025-09-20 10:42:43,355 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,394 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:43,401 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 47621
+2025-09-20 10:42:43,402 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #12)
+2025-09-20 10:42:43,439 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:43,440 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47624
+2025-09-20 10:42:43,441 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:43,445 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9622
+2025-09-20 10:42:43,452 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9622
+2025-09-20 10:42:43,455 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:43,486 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:43,491 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 47628
+2025-09-20 10:42:43,492 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #13)
+2025-09-20 10:42:43,497 - INFO - Portfolio Delta: 183, Required Hedge: -183
+2025-09-20 10:42:43,499 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:43,501 - INFO - Found 4 trading opportunities
+2025-09-20 10:42:43,501 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:43,502 - DEBUG - Option RTM48C: Implied vol 389.7%
+2025-09-20 10:42:43,503 - DEBUG - Option RTM48P: Implied vol 403.1%
+2025-09-20 10:42:43,504 - DEBUG - Option RTM49C: Implied vol 380.9%
+2025-09-20 10:42:43,504 - DEBUG - Option RTM49P: Implied vol 438.8%
+2025-09-20 10:42:43,505 - DEBUG - Option RTM50C: Invalid implied vol 6.00281362357622
+2025-09-20 10:42:43,507 - DEBUG - Option RTM50P: Invalid implied vol 5.308963711748162
+2025-09-20 10:42:43,509 - DEBUG - Option RTM51C: Invalid implied vol 8.323782036398015
+2025-09-20 10:42:43,510 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:43,510 - DEBUG - Option RTM52C: Invalid implied vol 10.499030979245699
+2025-09-20 10:42:43,511 - DEBUG - Option RTM52P: Invalid implied vol 9.450046688259116
+2025-09-20 10:42:43,511 - INFO - Using market-implied volatility: 396.4% (from 4 options)
+2025-09-20 10:42:43,512 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.27, smileIV=403.1%
+2025-09-20 10:42:43,512 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.26, smileIV=389.7%
+2025-09-20 10:42:43,512 - INFO - Opportunity 3: RTM49P SELL - price_diff=$0.05, smileIV=438.8%
+2025-09-20 10:42:43,513 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.27, smileIV=403.1%
+2025-09-20 10:42:43,513 - INFO - Total trades executed: 13
+2025-09-20 10:42:44,017 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,018 - INFO - Processing tick 288/300 (status: ACTIVE)
+2025-09-20 10:42:44,018 - INFO - Before news processing - Current: 20.0%, Forecasted: 396.4%
+2025-09-20 10:42:44,023 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:44,024 - DEBUG - Processing 7 news items
+2025-09-20 10:42:44,028 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,029 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:44,030 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:44,030 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:44,030 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:44,031 - DEBUG - News headline: News 3
+2025-09-20 10:42:44,031 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:44,031 - INFO - Found volatility news: News 3
+2025-09-20 10:42:44,032 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:44,032 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:44,032 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:44,033 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:44,033 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:44,034 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:44,034 - DEBUG - News headline: News 2
+2025-09-20 10:42:44,035 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:44,035 - INFO - Found volatility news: News 2
+2025-09-20 10:42:44,036 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:44,036 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:44,037 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:44,037 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:44,037 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:44,038 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:44,038 - DEBUG - News headline: News 1
+2025-09-20 10:42:44,038 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:44,039 - INFO - Found volatility news: News 1
+2025-09-20 10:42:44,039 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:44,039 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:44,040 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:44,040 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:44,040 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:44,041 - DEBUG - Ignoring realized vol news at tick 288 (cutoff 75, already_set=False)
+2025-09-20 10:42:44,041 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:44,042 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:44,042 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:44,046 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9684
+2025-09-20 10:42:44,051 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,053 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,058 - INFO - Fitted IV smile (log-moneyness): a=3.8802, b=18.436590, c=-158.16949642, R^2=0.771, q10=387.9%, q90=424.8%
+2025-09-20 10:42:44,060 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:44,063 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,065 - INFO - SELL opportunity: RTM48C - Implied vol: 390.1% vs Forecast: 26.5%
+2025-09-20 10:42:44,065 - INFO - SELL opportunity: RTM48P - Implied vol: 390.1% vs Forecast: 26.5%
+2025-09-20 10:42:44,067 - INFO - SELL opportunity: RTM49C - Implied vol: 433.4% vs Forecast: 26.5%
+2025-09-20 10:42:44,068 - INFO - SELL opportunity: RTM49P - Implied vol: 393.9% vs Forecast: 26.5%
+2025-09-20 10:42:44,069 - INFO - SELL opportunity: RTM50P - Implied vol: 153.2% vs Forecast: 26.5%
+2025-09-20 10:42:44,071 - INFO - Using forecast-based opportunities: 5 found
+2025-09-20 10:42:44,076 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,080 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,083 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,087 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,091 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,094 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9684
+2025-09-20 10:42:44,097 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9684
+2025-09-20 10:42:44,101 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,136 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:44,138 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 47714
+2025-09-20 10:42:44,139 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #14)
+2025-09-20 10:42:44,172 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=95.43435611378173&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:44,174 - INFO - Order submitted: RTM SELL 95.43435611378173 - Order ID: 47716
+2025-09-20 10:42:44,175 - INFO - Immediate hedge: SELL 95.43435611378173 RTM shares (delta: 0.95)
+2025-09-20 10:42:44,179 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9684
+2025-09-20 10:42:44,183 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9684
+2025-09-20 10:42:44,186 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,219 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:44,220 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 47721
+2025-09-20 10:42:44,220 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #15)
+2025-09-20 10:42:44,231 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9629
+2025-09-20 10:42:44,239 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9629
+2025-09-20 10:42:44,241 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,273 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:44,274 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 47724
+2025-09-20 10:42:44,274 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #16)
+2025-09-20 10:42:44,278 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9629
+2025-09-20 10:42:44,282 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9629
+2025-09-20 10:42:44,285 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,317 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:44,318 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 47728
+2025-09-20 10:42:44,319 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #17)
+2025-09-20 10:42:44,363 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:44,364 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47731
+2025-09-20 10:42:44,365 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:44,383 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9623
+2025-09-20 10:42:44,385 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9623
+2025-09-20 10:42:44,387 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,417 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM50P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:44,419 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 47735
+2025-09-20 10:42:44,419 - INFO - Executing volatility trade: SELL 1 RTM50P (trade #18)
+2025-09-20 10:42:44,452 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:44,454 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47738
+2025-09-20 10:42:44,455 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:44,456 - INFO - Portfolio Delta: 673, Required Hedge: -673
+2025-09-20 10:42:44,457 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:44,457 - INFO - Found 5 trading opportunities
+2025-09-20 10:42:44,458 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:44,458 - DEBUG - Option RTM48C: Implied vol 390.1%
+2025-09-20 10:42:44,459 - DEBUG - Option RTM48P: Implied vol 390.1%
+2025-09-20 10:42:44,459 - DEBUG - Option RTM49C: Implied vol 433.4%
+2025-09-20 10:42:44,460 - DEBUG - Option RTM49P: Implied vol 393.9%
+2025-09-20 10:42:44,460 - DEBUG - Option RTM50C: Invalid implied vol 6.563939728490533
+2025-09-20 10:42:44,461 - DEBUG - Option RTM50P: Implied vol 153.2%
+2025-09-20 10:42:44,461 - DEBUG - Option RTM51C: Invalid implied vol 8.964080377499265
+2025-09-20 10:42:44,461 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:44,462 - DEBUG - Option RTM52C: Invalid implied vol 11.218185845038423
+2025-09-20 10:42:44,462 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:44,462 - INFO - Using market-implied volatility: 390.1% (from 5 options)
+2025-09-20 10:42:44,462 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.24, smileIV=390.1%
+2025-09-20 10:42:44,463 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.24, smileIV=390.1%
+2025-09-20 10:42:44,463 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.03, smileIV=433.4%
+2025-09-20 10:42:44,463 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.24, smileIV=390.1%
+2025-09-20 10:42:44,463 - INFO - Total trades executed: 18
+2025-09-20 10:42:44,967 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,968 - INFO - Processing tick 289/300 (status: ACTIVE)
+2025-09-20 10:42:44,968 - INFO - Before news processing - Current: 20.0%, Forecasted: 390.1%
+2025-09-20 10:42:44,972 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:44,973 - DEBUG - Processing 7 news items
+2025-09-20 10:42:44,975 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,976 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:44,976 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:44,977 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:44,977 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:44,977 - DEBUG - News headline: News 3
+2025-09-20 10:42:44,977 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:44,977 - INFO - Found volatility news: News 3
+2025-09-20 10:42:44,977 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:44,978 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:44,978 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:44,978 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:44,978 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:44,979 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:44,979 - DEBUG - News headline: News 2
+2025-09-20 10:42:44,979 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:44,979 - INFO - Found volatility news: News 2
+2025-09-20 10:42:44,979 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:44,979 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:44,980 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:44,980 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:44,980 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:44,980 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:44,980 - DEBUG - News headline: News 1
+2025-09-20 10:42:44,981 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:44,981 - INFO - Found volatility news: News 1
+2025-09-20 10:42:44,981 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:44,981 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:44,981 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:44,981 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:44,981 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:44,982 - DEBUG - Ignoring realized vol news at tick 289 (cutoff 75, already_set=False)
+2025-09-20 10:42:44,982 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:44,982 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:44,982 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:44,984 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9545
+2025-09-20 10:42:44,985 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,987 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:44,992 - INFO - Fitted IV smile (log-moneyness): a=4.0831, b=-67.461943, c=624.66760982, R^2=0.643, q10=184.4%, q90=400.9%
+2025-09-20 10:42:44,994 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:44,998 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,000 - INFO - SELL opportunity: RTM48C - Implied vol: 409.6% vs Forecast: 26.5%
+2025-09-20 10:42:45,000 - INFO - SELL opportunity: RTM48P - Implied vol: 394.7% vs Forecast: 26.5%
+2025-09-20 10:42:45,001 - INFO - SELL opportunity: RTM49C - Implied vol: 384.6% vs Forecast: 26.5%
+2025-09-20 10:42:45,001 - INFO - SELL opportunity: RTM49P - Implied vol: 347.5% vs Forecast: 26.5%
+2025-09-20 10:42:45,002 - INFO - Using forecast-based opportunities: 4 found
+2025-09-20 10:42:45,004 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,005 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,008 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,010 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,012 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9545
+2025-09-20 10:42:45,015 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9545
+2025-09-20 10:42:45,018 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,047 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:45,048 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 47801
+2025-09-20 10:42:45,048 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #19)
+2025-09-20 10:42:45,079 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.78877293928035&action=BUY HTTP/1.1" 200 196
+2025-09-20 10:42:45,080 - INFO - Order submitted: RTM BUY 99.78877293928035 - Order ID: 47805
+2025-09-20 10:42:45,081 - INFO - Immediate hedge: BUY 99.78877293928035 RTM shares (delta: -1.00)
+2025-09-20 10:42:45,084 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9545
+2025-09-20 10:42:45,088 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9545
+2025-09-20 10:42:45,092 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,124 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:45,126 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 47814
+2025-09-20 10:42:45,127 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #20)
+2025-09-20 10:42:45,131 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9545
+2025-09-20 10:42:45,135 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9545
+2025-09-20 10:42:45,140 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,173 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:45,176 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 47819
+2025-09-20 10:42:45,176 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #21)
+2025-09-20 10:42:45,192 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9551
+2025-09-20 10:42:45,194 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9551
+2025-09-20 10:42:45,195 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,231 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:45,235 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 47826
+2025-09-20 10:42:45,235 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #22)
+2025-09-20 10:42:45,285 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:45,286 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47833
+2025-09-20 10:42:45,286 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:45,286 - INFO - Portfolio Delta: 202, Required Hedge: -202
+2025-09-20 10:42:45,287 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:45,287 - INFO - Found 4 trading opportunities
+2025-09-20 10:42:45,287 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:45,288 - DEBUG - Option RTM48C: Implied vol 409.6%
+2025-09-20 10:42:45,288 - DEBUG - Option RTM48P: Implied vol 394.7%
+2025-09-20 10:42:45,289 - DEBUG - Option RTM49C: Implied vol 384.6%
+2025-09-20 10:42:45,290 - DEBUG - Option RTM49P: Implied vol 347.5%
+2025-09-20 10:42:45,290 - DEBUG - Option RTM50C: Invalid implied vol 6.27700734139972
+2025-09-20 10:42:45,290 - DEBUG - Option RTM50P: Invalid implied vol nan
+2025-09-20 10:42:45,291 - DEBUG - Option RTM51C: Invalid implied vol 8.813081819330835
+2025-09-20 10:42:45,291 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:45,291 - DEBUG - Option RTM52C: Invalid implied vol 11.185936935700678
+2025-09-20 10:42:45,292 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:45,292 - INFO - Using market-implied volatility: 389.7% (from 4 options)
+2025-09-20 10:42:45,292 - INFO - Opportunity 1: RTM48C SELL - price_diff=$0.22, smileIV=409.6%
+2025-09-20 10:42:45,292 - INFO - Opportunity 2: RTM48P SELL - price_diff=$0.21, smileIV=394.7%
+2025-09-20 10:42:45,292 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.03, smileIV=384.6%
+2025-09-20 10:42:45,293 - INFO - Top opportunity: RTM48C SELL - price_diff=$0.22, smileIV=409.6%
+2025-09-20 10:42:45,293 - INFO - Total trades executed: 22
+2025-09-20 10:42:45,796 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,797 - INFO - Processing tick 289/300 (status: ACTIVE)
+2025-09-20 10:42:45,798 - INFO - Before news processing - Current: 20.0%, Forecasted: 389.7%
+2025-09-20 10:42:45,801 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:45,802 - DEBUG - Processing 7 news items
+2025-09-20 10:42:45,805 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,806 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:45,807 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:45,808 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:45,809 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:45,809 - DEBUG - News headline: News 3
+2025-09-20 10:42:45,810 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:45,810 - INFO - Found volatility news: News 3
+2025-09-20 10:42:45,811 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:45,811 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:45,811 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:45,812 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:45,812 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:45,812 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:45,813 - DEBUG - News headline: News 2
+2025-09-20 10:42:45,813 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:45,813 - INFO - Found volatility news: News 2
+2025-09-20 10:42:45,814 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:45,814 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:45,814 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:45,815 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:45,815 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:45,815 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:45,816 - DEBUG - News headline: News 1
+2025-09-20 10:42:45,816 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:45,816 - INFO - Found volatility news: News 1
+2025-09-20 10:42:45,817 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:45,817 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:45,818 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:45,818 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:45,819 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:45,819 - DEBUG - Ignoring realized vol news at tick 289 (cutoff 75, already_set=False)
+2025-09-20 10:42:45,819 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:45,820 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:45,821 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:45,825 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9540
+2025-09-20 10:42:45,829 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,832 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,835 - INFO - Fitted IV smile (log-moneyness): a=4.0831, b=-67.461943, c=624.66760982, R^2=0.643, q10=184.4%, q90=400.9%
+2025-09-20 10:42:45,836 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:45,841 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,842 - INFO - SELL opportunity: RTM48C - Implied vol: 424.4% vs Forecast: 26.5%
+2025-09-20 10:42:45,843 - INFO - SELL opportunity: RTM48P - Implied vol: 409.6% vs Forecast: 26.5%
+2025-09-20 10:42:45,843 - INFO - SELL opportunity: RTM49C - Implied vol: 347.5% vs Forecast: 26.5%
+2025-09-20 10:42:45,844 - INFO - SELL opportunity: RTM49P - Implied vol: 299.2% vs Forecast: 26.5%
+2025-09-20 10:42:45,844 - INFO - SELL opportunity: RTM50P - Implied vol: 144.8% vs Forecast: 26.5%
+2025-09-20 10:42:45,845 - INFO - SELL opportunity: RTM51P - Implied vol: 218.4% vs Forecast: 26.5%
+2025-09-20 10:42:45,845 - INFO - Using forecast-based opportunities: 6 found
+2025-09-20 10:42:45,848 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,851 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,853 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,856 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,858 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,862 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,865 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9540
+2025-09-20 10:42:45,868 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9540
+2025-09-20 10:42:45,872 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:45,911 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:45,913 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 47910
+2025-09-20 10:42:45,913 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #23)
+2025-09-20 10:42:45,954 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.78877293928035&action=BUY HTTP/1.1" 200 196
+2025-09-20 10:42:45,956 - INFO - Order submitted: RTM BUY 99.78877293928035 - Order ID: 47913
+2025-09-20 10:42:45,956 - INFO - Immediate hedge: BUY 99.78877293928035 RTM shares (delta: -1.00)
+2025-09-20 10:42:45,965 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9557
+2025-09-20 10:42:45,976 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9557
+2025-09-20 10:42:45,977 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,007 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:46,007 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 47916
+2025-09-20 10:42:46,009 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #24)
+2025-09-20 10:42:46,011 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,021 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,022 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,052 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:46,053 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 47921
+2025-09-20 10:42:46,054 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #25)
+2025-09-20 10:42:46,056 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,058 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,060 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,090 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:46,091 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 47925
+2025-09-20 10:42:46,092 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #26)
+2025-09-20 10:42:46,132 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:46,132 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47930
+2025-09-20 10:42:46,133 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:46,134 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,136 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,138 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,168 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM51P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:46,169 - INFO - Order submitted: RTM51P SELL 1 - Order ID: 47940
+2025-09-20 10:42:46,169 - INFO - Executing volatility trade: SELL 1 RTM51P (trade #27)
+2025-09-20 10:42:46,202 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:46,203 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47943
+2025-09-20 10:42:46,204 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:46,208 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,213 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9599
+2025-09-20 10:42:46,330 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,368 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM50P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:46,369 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 47953
+2025-09-20 10:42:46,369 - INFO - Executing volatility trade: SELL 1 RTM50P (trade #28)
+2025-09-20 10:42:46,418 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:46,421 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 47958
+2025-09-20 10:42:46,421 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:46,421 - INFO - Portfolio Delta: 202, Required Hedge: -202
+2025-09-20 10:42:46,423 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:46,424 - INFO - Found 6 trading opportunities
+2025-09-20 10:42:46,424 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:46,426 - DEBUG - Option RTM48C: Implied vol 424.4%
+2025-09-20 10:42:46,428 - DEBUG - Option RTM48P: Implied vol 409.6%
+2025-09-20 10:42:46,429 - DEBUG - Option RTM49C: Implied vol 347.5%
+2025-09-20 10:42:46,430 - DEBUG - Option RTM49P: Implied vol 299.2%
+2025-09-20 10:42:46,430 - DEBUG - Option RTM50C: Invalid implied vol 5.544013581931225
+2025-09-20 10:42:46,431 - DEBUG - Option RTM50P: Implied vol 144.8%
+2025-09-20 10:42:46,431 - DEBUG - Option RTM51C: Invalid implied vol 7.873339190016696
+2025-09-20 10:42:46,432 - DEBUG - Option RTM51P: Implied vol 218.4%
+2025-09-20 10:42:46,434 - DEBUG - Option RTM52C: Invalid implied vol 11.992975611778338
+2025-09-20 10:42:46,435 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:46,437 - INFO - Using market-implied volatility: 323.4% (from 6 options)
+2025-09-20 10:42:46,437 - INFO - Opportunity 1: RTM48C SELL - price_diff=$0.23, smileIV=424.4%
+2025-09-20 10:42:46,437 - INFO - Opportunity 2: RTM48P SELL - price_diff=$0.22, smileIV=409.6%
+2025-09-20 10:42:46,438 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.02, smileIV=347.5%
+2025-09-20 10:42:46,439 - INFO - Top opportunity: RTM48C SELL - price_diff=$0.23, smileIV=424.4%
+2025-09-20 10:42:46,441 - INFO - Total trades executed: 28
+2025-09-20 10:42:46,943 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,944 - INFO - Processing tick 291/300 (status: ACTIVE)
+2025-09-20 10:42:46,944 - INFO - Before news processing - Current: 20.0%, Forecasted: 323.4%
+2025-09-20 10:42:46,949 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:46,957 - DEBUG - Processing 7 news items
+2025-09-20 10:42:46,960 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,963 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:46,963 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:46,963 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:46,963 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:46,964 - DEBUG - News headline: News 3
+2025-09-20 10:42:46,964 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:46,965 - INFO - Found volatility news: News 3
+2025-09-20 10:42:46,965 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:46,965 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:46,965 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:46,966 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:46,966 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:46,966 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:46,966 - DEBUG - News headline: News 2
+2025-09-20 10:42:46,966 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:46,966 - INFO - Found volatility news: News 2
+2025-09-20 10:42:46,966 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:46,966 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:46,967 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:46,967 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:46,967 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:46,967 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:46,967 - DEBUG - News headline: News 1
+2025-09-20 10:42:46,967 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:46,968 - INFO - Found volatility news: News 1
+2025-09-20 10:42:46,968 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:46,968 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:46,968 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:46,968 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:46,969 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:46,969 - DEBUG - Ignoring realized vol news at tick 291 (cutoff 75, already_set=False)
+2025-09-20 10:42:46,969 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:46,969 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:46,969 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:46,972 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9704
+2025-09-20 10:42:46,973 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,974 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,976 - INFO - Fitted IV smile (log-moneyness): a=3.8589, b=-14.424171, c=1187.88767356, R^2=0.347, q10=383.7%, q90=401.2%
+2025-09-20 10:42:46,977 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:46,983 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,983 - INFO - SELL opportunity: RTM48C - Implied vol: 384.5% vs Forecast: 26.5%
+2025-09-20 10:42:46,984 - INFO - SELL opportunity: RTM48P - Implied vol: 400.9% vs Forecast: 26.5%
+2025-09-20 10:42:46,985 - INFO - SELL opportunity: RTM49C - Implied vol: 401.2% vs Forecast: 26.5%
+2025-09-20 10:42:46,985 - INFO - SELL opportunity: RTM49P - Implied vol: 401.2% vs Forecast: 26.5%
+2025-09-20 10:42:46,986 - INFO - Using forecast-based opportunities: 4 found
+2025-09-20 10:42:46,988 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,990 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,993 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,994 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:46,996 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9704
+2025-09-20 10:42:46,999 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9704
+2025-09-20 10:42:47,001 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,031 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:47,032 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48038
+2025-09-20 10:42:47,032 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #29)
+2025-09-20 10:42:47,038 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9700
+2025-09-20 10:42:47,048 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9700
+2025-09-20 10:42:47,050 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,079 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:47,080 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48044
+2025-09-20 10:42:47,080 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #30)
+2025-09-20 10:42:47,110 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=97.4261177841363&action=BUY HTTP/1.1" 200 194
+2025-09-20 10:42:47,115 - INFO - Order submitted: RTM BUY 97.4261177841363 - Order ID: 48047
+2025-09-20 10:42:47,115 - INFO - Immediate hedge: BUY 97.4261177841363 RTM shares (delta: -0.97)
+2025-09-20 10:42:47,117 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9700
+2025-09-20 10:42:47,118 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9700
+2025-09-20 10:42:47,127 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,161 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:47,161 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 48053
+2025-09-20 10:42:47,162 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #31)
+2025-09-20 10:42:47,166 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9700
+2025-09-20 10:42:47,170 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9700
+2025-09-20 10:42:47,173 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,206 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:47,207 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 48058
+2025-09-20 10:42:47,208 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #32)
+2025-09-20 10:42:47,240 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:47,241 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 48064
+2025-09-20 10:42:47,242 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:47,242 - INFO - Portfolio Delta: 431, Required Hedge: -431
+2025-09-20 10:42:47,243 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:47,243 - INFO - Found 4 trading opportunities
+2025-09-20 10:42:47,244 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:47,245 - DEBUG - Option RTM48C: Implied vol 384.5%
+2025-09-20 10:42:47,245 - DEBUG - Option RTM48P: Implied vol 400.9%
+2025-09-20 10:42:47,246 - DEBUG - Option RTM49C: Implied vol 401.2%
+2025-09-20 10:42:47,246 - DEBUG - Option RTM49P: Implied vol 401.2%
+2025-09-20 10:42:47,247 - DEBUG - Option RTM50C: Invalid implied vol 7.092411971598362
+2025-09-20 10:42:47,247 - DEBUG - Option RTM50P: Invalid implied vol nan
+2025-09-20 10:42:47,247 - DEBUG - Option RTM51C: Invalid implied vol 9.888129347765647
+2025-09-20 10:42:47,248 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:47,248 - DEBUG - Option RTM52C: Invalid implied vol 12.506401337361611
+2025-09-20 10:42:47,248 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:47,248 - INFO - Using market-implied volatility: 401.0% (from 4 options)
+2025-09-20 10:42:47,249 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.21, smileIV=400.9%
+2025-09-20 10:42:47,249 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.20, smileIV=384.5%
+2025-09-20 10:42:47,249 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.02, smileIV=401.2%
+2025-09-20 10:42:47,249 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.21, smileIV=400.9%
+2025-09-20 10:42:47,249 - INFO - Total trades executed: 32
+2025-09-20 10:42:47,755 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,755 - INFO - Processing tick 291/300 (status: ACTIVE)
+2025-09-20 10:42:47,756 - INFO - Before news processing - Current: 20.0%, Forecasted: 401.0%
+2025-09-20 10:42:47,759 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:47,761 - DEBUG - Processing 7 news items
+2025-09-20 10:42:47,796 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,797 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:47,797 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:47,797 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:47,798 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:47,798 - DEBUG - News headline: News 3
+2025-09-20 10:42:47,798 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:47,798 - INFO - Found volatility news: News 3
+2025-09-20 10:42:47,798 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:47,798 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:47,798 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:47,799 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:47,799 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:47,799 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:47,799 - DEBUG - News headline: News 2
+2025-09-20 10:42:47,799 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:47,799 - INFO - Found volatility news: News 2
+2025-09-20 10:42:47,799 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:47,799 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:47,800 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:47,800 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:47,800 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:47,800 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:47,800 - DEBUG - News headline: News 1
+2025-09-20 10:42:47,800 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:47,800 - INFO - Found volatility news: News 1
+2025-09-20 10:42:47,800 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:47,800 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:47,800 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:47,801 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:47,801 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:47,801 - DEBUG - Ignoring realized vol news at tick 291 (cutoff 75, already_set=False)
+2025-09-20 10:42:47,802 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:47,802 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:47,802 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:47,808 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9633
+2025-09-20 10:42:47,811 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,819 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,821 - INFO - Fitted IV smile (log-moneyness): a=3.8927, b=-14.357761, c=1360.18645214, R^2=0.382, q10=385.9%, q90=416.4%
+2025-09-20 10:42:47,821 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:47,822 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,823 - INFO - SELL opportunity: RTM48C - Implied vol: 391.8% vs Forecast: 26.5%
+2025-09-20 10:42:47,823 - INFO - SELL opportunity: RTM48P - Implied vol: 391.8% vs Forecast: 26.5%
+2025-09-20 10:42:47,823 - INFO - SELL opportunity: RTM49C - Implied vol: 343.1% vs Forecast: 26.5%
+2025-09-20 10:42:47,823 - INFO - SELL opportunity: RTM49P - Implied vol: 475.6% vs Forecast: 26.5%
+2025-09-20 10:42:47,823 - INFO - SELL opportunity: RTM50P - Implied vol: 164.1% vs Forecast: 26.5%
+2025-09-20 10:42:47,824 - INFO - SELL opportunity: RTM51P - Implied vol: 246.1% vs Forecast: 26.5%
+2025-09-20 10:42:47,824 - INFO - Using forecast-based opportunities: 6 found
+2025-09-20 10:42:47,825 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,826 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,827 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,828 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,829 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,831 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,832 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9633
+2025-09-20 10:42:47,833 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9633
+2025-09-20 10:42:47,835 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,867 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:47,870 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48109
+2025-09-20 10:42:47,871 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #33)
+2025-09-20 10:42:47,875 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9633
+2025-09-20 10:42:47,878 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9633
+2025-09-20 10:42:47,880 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:47,927 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:47,929 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48133
+2025-09-20 10:42:47,931 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #34)
+2025-09-20 10:42:47,967 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=98.57606996891874&action=BUY HTTP/1.1" 200 194
+2025-09-20 10:42:47,969 - INFO - Order submitted: RTM BUY 98.57606996891874 - Order ID: 48138
+2025-09-20 10:42:47,970 - INFO - Immediate hedge: BUY 98.57606996891874 RTM shares (delta: -0.99)
+2025-09-20 10:42:47,976 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9661
+2025-09-20 10:42:47,981 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9661
+2025-09-20 10:42:47,986 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,025 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:48,026 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 48141
+2025-09-20 10:42:48,026 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #35)
+2025-09-20 10:42:48,060 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:48,062 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 48144
+2025-09-20 10:42:48,062 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:48,073 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9613
+2025-09-20 10:42:48,082 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9613
+2025-09-20 10:42:48,083 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,115 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:48,116 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 48152
+2025-09-20 10:42:48,116 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #36)
+2025-09-20 10:42:48,119 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9613
+2025-09-20 10:42:48,123 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9613
+2025-09-20 10:42:48,127 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,158 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM51P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:48,159 - INFO - Order submitted: RTM51P SELL 1 - Order ID: 48158
+2025-09-20 10:42:48,159 - INFO - Executing volatility trade: SELL 1 RTM51P (trade #37)
+2025-09-20 10:42:48,191 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:48,192 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 48167
+2025-09-20 10:42:48,193 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:48,196 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9613
+2025-09-20 10:42:48,199 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9613
+2025-09-20 10:42:48,201 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,238 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM50P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:48,239 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 48175
+2025-09-20 10:42:48,240 - INFO - Executing volatility trade: SELL 1 RTM50P (trade #38)
+2025-09-20 10:42:48,289 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:48,291 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 48181
+2025-09-20 10:42:48,292 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:48,292 - INFO - Portfolio Delta: 420, Required Hedge: -420
+2025-09-20 10:42:48,293 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:48,293 - INFO - Found 6 trading opportunities
+2025-09-20 10:42:48,294 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:48,295 - DEBUG - Option RTM48C: Implied vol 391.8%
+2025-09-20 10:42:48,295 - DEBUG - Option RTM48P: Implied vol 391.8%
+2025-09-20 10:42:48,296 - DEBUG - Option RTM49C: Implied vol 343.1%
+2025-09-20 10:42:48,297 - DEBUG - Option RTM49P: Implied vol 475.6%
+2025-09-20 10:42:48,297 - DEBUG - Option RTM50C: Invalid implied vol 6.24100452700707
+2025-09-20 10:42:48,298 - DEBUG - Option RTM50P: Implied vol 164.1%
+2025-09-20 10:42:48,299 - DEBUG - Option RTM51C: Invalid implied vol 8.810870622416793
+2025-09-20 10:42:48,299 - DEBUG - Option RTM51P: Implied vol 246.1%
+2025-09-20 10:42:48,300 - DEBUG - Option RTM52C: Invalid implied vol 11.228536277075019
+2025-09-20 10:42:48,300 - DEBUG - Option RTM52P: Invalid implied vol 12.478429619360666
+2025-09-20 10:42:48,301 - INFO - Using market-implied volatility: 367.4% (from 6 options)
+2025-09-20 10:42:48,301 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.20, smileIV=391.8%
+2025-09-20 10:42:48,302 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.20, smileIV=391.8%
+2025-09-20 10:42:48,302 - INFO - Opportunity 3: RTM49P SELL - price_diff=$0.04, smileIV=475.6%
+2025-09-20 10:42:48,302 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.20, smileIV=391.8%
+2025-09-20 10:42:48,302 - INFO - Total trades executed: 38
+2025-09-20 10:42:48,813 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,813 - INFO - Processing tick 292/300 (status: ACTIVE)
+2025-09-20 10:42:48,813 - INFO - Before news processing - Current: 20.0%, Forecasted: 367.4%
+2025-09-20 10:42:48,815 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:48,815 - DEBUG - Processing 7 news items
+2025-09-20 10:42:48,816 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,816 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:48,816 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:48,816 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:48,816 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:48,817 - DEBUG - News headline: News 3
+2025-09-20 10:42:48,817 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:48,817 - INFO - Found volatility news: News 3
+2025-09-20 10:42:48,817 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:48,817 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:48,817 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:48,817 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:48,817 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:48,817 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:48,817 - DEBUG - News headline: News 2
+2025-09-20 10:42:48,817 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:48,817 - INFO - Found volatility news: News 2
+2025-09-20 10:42:48,818 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:48,818 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:48,819 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:48,819 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:48,819 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:48,819 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:48,819 - DEBUG - News headline: News 1
+2025-09-20 10:42:48,819 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:48,820 - INFO - Found volatility news: News 1
+2025-09-20 10:42:48,820 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:48,820 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:48,821 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:48,821 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:48,821 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:48,821 - DEBUG - Ignoring realized vol news at tick 292 (cutoff 75, already_set=False)
+2025-09-20 10:42:48,821 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:48,822 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:48,822 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:48,824 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9596
+2025-09-20 10:42:48,826 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,828 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,829 - INFO - Fitted IV smile (log-moneyness): a=3.8192, b=-17.303144, c=109.99645803, R^2=0.379, q10=301.7%, q90=394.0%
+2025-09-20 10:42:48,829 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:48,831 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,832 - INFO - SELL opportunity: RTM48C - Implied vol: 375.1% vs Forecast: 26.5%
+2025-09-20 10:42:48,833 - INFO - SELL opportunity: RTM48P - Implied vol: 392.7% vs Forecast: 26.5%
+2025-09-20 10:42:48,833 - INFO - SELL opportunity: RTM49C - Implied vol: 350.8% vs Forecast: 26.5%
+2025-09-20 10:42:48,833 - INFO - SELL opportunity: RTM49P - Implied vol: 350.8% vs Forecast: 26.5%
+2025-09-20 10:42:48,833 - INFO - SELL opportunity: RTM52P - Implied vol: 340.2% vs Forecast: 26.5%
+2025-09-20 10:42:48,834 - INFO - Using forecast-based opportunities: 5 found
+2025-09-20 10:42:48,835 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,836 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,837 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,839 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,840 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,842 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9596
+2025-09-20 10:42:48,843 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9596
+2025-09-20 10:42:48,847 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:48,928 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:48,930 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48262
+2025-09-20 10:42:48,934 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #39)
+2025-09-20 10:42:48,951 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9621
+2025-09-20 10:42:48,955 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9621
+2025-09-20 10:42:48,959 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,014 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:49,015 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48269
+2025-09-20 10:42:49,016 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #40)
+2025-09-20 10:42:49,049 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.96025136041413&action=BUY HTTP/1.1" 200 196
+2025-09-20 10:42:49,050 - INFO - Order submitted: RTM BUY 99.96025136041413 - Order ID: 48274
+2025-09-20 10:42:49,051 - INFO - Immediate hedge: BUY 99.96025136041413 RTM shares (delta: -1.00)
+2025-09-20 10:42:49,057 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9706
+2025-09-20 10:42:49,065 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9706
+2025-09-20 10:42:49,073 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,103 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:49,105 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 48283
+2025-09-20 10:42:49,106 - INFO - Executing volatility trade: SELL 1 RTM49P (trade #41)
+2025-09-20 10:42:49,137 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:49,138 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 48293
+2025-09-20 10:42:49,138 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:49,141 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9706
+2025-09-20 10:42:49,144 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9706
+2025-09-20 10:42:49,147 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,180 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:49,181 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 48301
+2025-09-20 10:42:49,182 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #42)
+2025-09-20 10:42:49,186 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9706
+2025-09-20 10:42:49,190 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9706
+2025-09-20 10:42:49,193 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,226 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM52P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:49,227 - INFO - Order submitted: RTM52P SELL 1 - Order ID: 48308
+2025-09-20 10:42:49,228 - INFO - Executing volatility trade: SELL 1 RTM52P (trade #43)
+2025-09-20 10:42:49,266 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:49,268 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 48316
+2025-09-20 10:42:49,268 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:49,269 - INFO - Portfolio Delta: 601, Required Hedge: -601
+2025-09-20 10:42:49,270 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:49,270 - INFO - Found 5 trading opportunities
+2025-09-20 10:42:49,271 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:49,271 - DEBUG - Option RTM48C: Implied vol 375.1%
+2025-09-20 10:42:49,272 - DEBUG - Option RTM48P: Implied vol 392.7%
+2025-09-20 10:42:49,272 - DEBUG - Option RTM49C: Implied vol 350.8%
+2025-09-20 10:42:49,273 - DEBUG - Option RTM49P: Implied vol 350.8%
+2025-09-20 10:42:49,274 - DEBUG - Option RTM50C: Invalid implied vol 6.50093216934134
+2025-09-20 10:42:49,274 - DEBUG - Option RTM50P: Invalid implied vol 7.36044353965733
+2025-09-20 10:42:49,275 - DEBUG - Option RTM51C: Invalid implied vol 9.232308554822437
+2025-09-20 10:42:49,276 - DEBUG - Option RTM51P: Invalid implied vol 10.334254464500912
+2025-09-20 10:42:49,276 - DEBUG - Option RTM52C: Invalid implied vol 14.063010454165786
+2025-09-20 10:42:49,276 - DEBUG - Option RTM52P: Implied vol 340.2%
+2025-09-20 10:42:49,277 - INFO - Using market-implied volatility: 350.8% (from 5 options)
+2025-09-20 10:42:49,277 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.17, smileIV=392.7%
+2025-09-20 10:42:49,277 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.16, smileIV=375.1%
+2025-09-20 10:42:49,277 - INFO - Opportunity 3: RTM49P SELL - price_diff=$0.01, smileIV=350.8%
+2025-09-20 10:42:49,278 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.17, smileIV=392.7%
+2025-09-20 10:42:49,278 - INFO - Total trades executed: 43
+2025-09-20 10:42:49,783 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,785 - INFO - Processing tick 293/300 (status: ACTIVE)
+2025-09-20 10:42:49,785 - INFO - Before news processing - Current: 20.0%, Forecasted: 350.8%
+2025-09-20 10:42:49,789 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:49,790 - DEBUG - Processing 7 news items
+2025-09-20 10:42:49,793 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,793 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:49,794 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:49,794 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:49,794 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:49,795 - DEBUG - News headline: News 3
+2025-09-20 10:42:49,795 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:49,795 - INFO - Found volatility news: News 3
+2025-09-20 10:42:49,795 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:49,795 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:49,796 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:49,796 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:49,797 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:49,797 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:49,797 - DEBUG - News headline: News 2
+2025-09-20 10:42:49,798 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:49,798 - INFO - Found volatility news: News 2
+2025-09-20 10:42:49,798 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:49,798 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:49,798 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:49,798 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:49,799 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:49,799 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:49,799 - DEBUG - News headline: News 1
+2025-09-20 10:42:49,799 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:49,799 - INFO - Found volatility news: News 1
+2025-09-20 10:42:49,799 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:49,800 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:49,800 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:49,800 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:49,800 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:49,800 - DEBUG - Ignoring realized vol news at tick 293 (cutoff 75, already_set=False)
+2025-09-20 10:42:49,800 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:49,801 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:49,801 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:49,804 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:49,807 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,809 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,811 - DEBUG - Insufficient IV points to fit smile
+2025-09-20 10:42:49,813 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,814 - INFO - SELL opportunity: RTM48C - Implied vol: 356.3% vs Forecast: 26.5%
+2025-09-20 10:42:49,814 - INFO - SELL opportunity: RTM48P - Implied vol: 376.2% vs Forecast: 26.5%
+2025-09-20 10:42:49,815 - INFO - SELL opportunity: RTM49C - Implied vol: 488.3% vs Forecast: 26.5%
+2025-09-20 10:42:49,816 - INFO - Using forecast-based opportunities: 3 found
+2025-09-20 10:42:49,829 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,830 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,833 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,836 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:49,842 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:49,845 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:49,929 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:49,930 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48371
+2025-09-20 10:42:49,931 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #44)
+2025-09-20 10:42:49,963 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.99999844497525&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:49,967 - INFO - Order submitted: RTM SELL 99.99999844497525 - Order ID: 48378
+2025-09-20 10:42:49,969 - INFO - Immediate hedge: SELL 99.99999844497525 RTM shares (delta: 1.00)
+2025-09-20 10:42:49,977 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9771
+2025-09-20 10:42:49,979 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9771
+2025-09-20 10:42:49,981 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,011 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:50,012 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48382
+2025-09-20 10:42:50,012 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #45)
+2025-09-20 10:42:50,014 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9771
+2025-09-20 10:42:50,017 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9771
+2025-09-20 10:42:50,019 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,051 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:50,052 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 48389
+2025-09-20 10:42:50,052 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #46)
+2025-09-20 10:42:50,053 - INFO - Hedging delta exposure: 2500
+2025-09-20 10:42:50,055 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,089 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:50,091 - INFO - Order submitted: RTM SELL 100 - Order ID: 48391
+2025-09-20 10:42:50,093 - INFO - Executing conservative hedge: SELL 100 RTM shares (exposure: -2499.9999720095543) (trade #47)
+2025-09-20 10:42:50,093 - INFO - Portfolio Delta: 2500, Required Hedge: -2500
+2025-09-20 10:42:50,093 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:50,094 - INFO - Found 3 trading opportunities
+2025-09-20 10:42:50,094 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:50,095 - DEBUG - Option RTM48C: Implied vol 356.3%
+2025-09-20 10:42:50,096 - DEBUG - Option RTM48P: Implied vol 376.2%
+2025-09-20 10:42:50,096 - DEBUG - Option RTM49C: Implied vol 488.3%
+2025-09-20 10:42:50,097 - DEBUG - Option RTM49P: Invalid implied vol 5.606366217960397
+2025-09-20 10:42:50,097 - DEBUG - Option RTM50C: Invalid implied vol 9.005917405256234
+2025-09-20 10:42:50,098 - DEBUG - Option RTM50P: Invalid implied vol nan
+2025-09-20 10:42:50,098 - DEBUG - Option RTM51C: Invalid implied vol 10.86439349078699
+2025-09-20 10:42:50,098 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:50,099 - DEBUG - Option RTM52C: Invalid implied vol 16.134660226910494
+2025-09-20 10:42:50,099 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:50,099 - INFO - Using market-implied volatility: 376.2% (from 3 options)
+2025-09-20 10:42:50,099 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.12, smileIV=376.2%
+2025-09-20 10:42:50,099 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.11, smileIV=356.3%
+2025-09-20 10:42:50,100 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.01, smileIV=488.3%
+2025-09-20 10:42:50,100 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.12, smileIV=376.2%
+2025-09-20 10:42:50,100 - INFO - Total trades executed: 47
+2025-09-20 10:42:50,603 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,603 - INFO - Processing tick 294/300 (status: ACTIVE)
+2025-09-20 10:42:50,603 - INFO - Before news processing - Current: 20.0%, Forecasted: 376.2%
+2025-09-20 10:42:50,605 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:50,605 - DEBUG - Processing 7 news items
+2025-09-20 10:42:50,606 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,606 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:50,606 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:50,606 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:50,606 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:50,606 - DEBUG - News headline: News 3
+2025-09-20 10:42:50,606 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:50,607 - INFO - Found volatility news: News 3
+2025-09-20 10:42:50,607 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:50,607 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:50,607 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:50,607 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:50,608 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:50,608 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:50,608 - DEBUG - News headline: News 2
+2025-09-20 10:42:50,608 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:50,608 - INFO - Found volatility news: News 2
+2025-09-20 10:42:50,608 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:50,609 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:50,609 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:50,609 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:50,609 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:50,609 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:50,609 - DEBUG - News headline: News 1
+2025-09-20 10:42:50,609 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:50,610 - INFO - Found volatility news: News 1
+2025-09-20 10:42:50,610 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:50,610 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:50,610 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:50,610 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:50,611 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:50,611 - DEBUG - Ignoring realized vol news at tick 294 (cutoff 75, already_set=False)
+2025-09-20 10:42:50,611 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:50,611 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:50,611 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:50,614 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9610
+2025-09-20 10:42:50,617 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,621 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,625 - INFO - Fitted IV smile (log-moneyness): a=4.1894, b=-13.292353, c=-151.47252354, R^2=0.334, q10=256.3%, q90=455.6%
+2025-09-20 10:42:50,627 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:50,631 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,634 - INFO - SELL opportunity: RTM48C - Implied vol: 409.0% vs Forecast: 26.5%
+2025-09-20 10:42:50,635 - INFO - SELL opportunity: RTM48P - Implied vol: 429.1% vs Forecast: 26.5%
+2025-09-20 10:42:50,636 - INFO - SELL opportunity: RTM49C - Implied vol: 490.8% vs Forecast: 26.5%
+2025-09-20 10:42:50,638 - INFO - Using forecast-based opportunities: 3 found
+2025-09-20 10:42:50,642 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,649 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,654 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,657 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9610
+2025-09-20 10:42:50,664 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9610
+2025-09-20 10:42:50,667 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,699 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:50,701 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48444
+2025-09-20 10:42:50,701 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #48)
+2025-09-20 10:42:50,733 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.8586938038939&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:50,734 - INFO - Order submitted: RTM SELL 99.8586938038939 - Order ID: 48449
+2025-09-20 10:42:50,734 - INFO - Immediate hedge: SELL 99.8586938038939 RTM shares (delta: 1.00)
+2025-09-20 10:42:50,735 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9610
+2025-09-20 10:42:50,738 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9610
+2025-09-20 10:42:50,739 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,770 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:50,771 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48452
+2025-09-20 10:42:50,772 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #49)
+2025-09-20 10:42:50,776 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9610
+2025-09-20 10:42:50,781 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9610
+2025-09-20 10:42:50,784 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,816 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:50,817 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 48457
+2025-09-20 10:42:50,817 - INFO - Executing volatility trade: SELL 1 RTM49C (trade #50)
+2025-09-20 10:42:50,818 - INFO - Hedging delta exposure: 2597
+2025-09-20 10:42:50,820 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:50,821 - DEBUG - Skipping hedge - cooldown period (last hedge: tick 294)
+2025-09-20 10:42:50,821 - INFO - Portfolio Delta: 2597, Required Hedge: -2597
+2025-09-20 10:42:50,822 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:50,822 - INFO - Found 3 trading opportunities
+2025-09-20 10:42:50,822 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:50,823 - DEBUG - Option RTM48C: Implied vol 409.0%
+2025-09-20 10:42:50,824 - DEBUG - Option RTM48P: Implied vol 429.1%
+2025-09-20 10:42:50,824 - DEBUG - Option RTM49C: Implied vol 490.8%
+2025-09-20 10:42:50,825 - DEBUG - Option RTM49P: Invalid implied vol 6.215871239496774
+2025-09-20 10:42:50,825 - DEBUG - Option RTM50C: Invalid implied vol 8.291494407327951
+2025-09-20 10:42:50,826 - DEBUG - Option RTM50P: Invalid implied vol 9.35707526207142
+2025-09-20 10:42:50,826 - DEBUG - Option RTM51C: Invalid implied vol 11.409879013721945
+2025-09-20 10:42:50,827 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:50,827 - DEBUG - Option RTM52C: Invalid implied vol 15.933334879286837
+2025-09-20 10:42:50,827 - DEBUG - Option RTM52P: Invalid implied vol 14.352281901483774
+2025-09-20 10:42:50,828 - INFO - Using market-implied volatility: 429.1% (from 3 options)
+2025-09-20 10:42:50,828 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.17, smileIV=429.1%
+2025-09-20 10:42:50,828 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.16, smileIV=409.0%
+2025-09-20 10:42:50,828 - INFO - Opportunity 3: RTM49C SELL - price_diff=$0.01, smileIV=490.8%
+2025-09-20 10:42:50,829 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.17, smileIV=429.1%
+2025-09-20 10:42:50,829 - INFO - Total trades executed: 50
+2025-09-20 10:42:51,335 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,336 - INFO - Processing tick 295/300 (status: ACTIVE)
+2025-09-20 10:42:51,337 - INFO - Before news processing - Current: 20.0%, Forecasted: 429.1%
+2025-09-20 10:42:51,341 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:51,342 - DEBUG - Processing 7 news items
+2025-09-20 10:42:51,345 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,346 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:51,346 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:51,347 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:51,347 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:51,348 - DEBUG - News headline: News 3
+2025-09-20 10:42:51,348 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:51,348 - INFO - Found volatility news: News 3
+2025-09-20 10:42:51,349 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:51,349 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:51,349 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:51,350 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:51,350 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:51,351 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:51,351 - DEBUG - News headline: News 2
+2025-09-20 10:42:51,352 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:51,352 - INFO - Found volatility news: News 2
+2025-09-20 10:42:51,352 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:51,353 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:51,353 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:51,354 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:51,354 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:51,355 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:51,355 - DEBUG - News headline: News 1
+2025-09-20 10:42:51,355 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:51,356 - INFO - Found volatility news: News 1
+2025-09-20 10:42:51,356 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:51,356 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:51,357 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:51,357 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:51,357 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:51,358 - DEBUG - Ignoring realized vol news at tick 295 (cutoff 75, already_set=False)
+2025-09-20 10:42:51,358 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:51,358 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:51,359 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:51,365 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9757
+2025-09-20 10:42:51,383 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,385 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,389 - INFO - Fitted IV smile (log-moneyness): a=4.1925, b=-110.181019, c=1438.22965915, R^2=0.773, q10=193.0%, q90=438.7%
+2025-09-20 10:42:51,391 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:51,395 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,395 - INFO - SELL opportunity: RTM48C - Implied vol: 380.2% vs Forecast: 26.5%
+2025-09-20 10:42:51,396 - INFO - SELL opportunity: RTM48P - Implied vol: 403.2% vs Forecast: 26.5%
+2025-09-20 10:42:51,396 - INFO - Using forecast-based opportunities: 2 found
+2025-09-20 10:42:51,398 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,400 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,403 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9757
+2025-09-20 10:42:51,405 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9757
+2025-09-20 10:42:51,407 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,439 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:51,440 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48536
+2025-09-20 10:42:51,440 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #51)
+2025-09-20 10:42:51,495 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.99995431929764&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:51,496 - INFO - Order submitted: RTM SELL 99.99995431929764 - Order ID: 48538
+2025-09-20 10:42:51,497 - INFO - Immediate hedge: SELL 99.99995431929764 RTM shares (delta: 1.00)
+2025-09-20 10:42:51,501 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9757
+2025-09-20 10:42:51,511 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9757
+2025-09-20 10:42:51,515 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,547 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:51,548 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48546
+2025-09-20 10:42:51,551 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #52)
+2025-09-20 10:42:51,554 - INFO - Hedging delta exposure: 2700
+2025-09-20 10:42:51,557 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:51,588 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:51,589 - INFO - Order submitted: RTM SELL 100 - Order ID: 48551
+2025-09-20 10:42:51,590 - INFO - Executing conservative hedge: SELL 100 RTM shares (exposure: -2699.998995024548) (trade #53)
+2025-09-20 10:42:51,590 - INFO - Portfolio Delta: 2700, Required Hedge: -2700
+2025-09-20 10:42:51,590 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:51,591 - INFO - Found 2 trading opportunities
+2025-09-20 10:42:51,591 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:51,591 - DEBUG - Option RTM48C: Implied vol 380.2%
+2025-09-20 10:42:51,592 - DEBUG - Option RTM48P: Implied vol 403.2%
+2025-09-20 10:42:51,592 - DEBUG - Option RTM49C: Invalid implied vol 6.413126759880725
+2025-09-20 10:42:51,593 - DEBUG - Option RTM49P: Invalid implied vol 6.413126759880818
+2025-09-20 10:42:51,593 - DEBUG - Option RTM50C: Invalid implied vol 10.453251772853896
+2025-09-20 10:42:51,594 - DEBUG - Option RTM50P: Invalid implied vol 9.268831148655751
+2025-09-20 10:42:51,595 - DEBUG - Option RTM51C: Invalid implied vol 15.230766439215564
+2025-09-20 10:42:51,596 - DEBUG - Option RTM51P: Invalid implied vol 14.158100020201816
+2025-09-20 10:42:51,597 - DEBUG - Option RTM52C: Invalid implied vol 15.895063743476152
+2025-09-20 10:42:51,598 - DEBUG - Option RTM52P: Invalid implied vol 15.895063743476499
+2025-09-20 10:42:51,598 - INFO - Using market-implied volatility: 391.7% (from 2 options)
+2025-09-20 10:42:51,598 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.12, smileIV=403.2%
+2025-09-20 10:42:51,599 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.11, smileIV=380.2%
+2025-09-20 10:42:51,599 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.12, smileIV=403.2%
+2025-09-20 10:42:51,599 - INFO - Total trades executed: 53
+2025-09-20 10:42:52,105 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,106 - INFO - Processing tick 296/300 (status: ACTIVE)
+2025-09-20 10:42:52,106 - INFO - Before news processing - Current: 20.0%, Forecasted: 391.7%
+2025-09-20 10:42:52,110 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:52,111 - DEBUG - Processing 7 news items
+2025-09-20 10:42:52,114 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,114 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:52,115 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:52,115 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:52,115 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:52,115 - DEBUG - News headline: News 3
+2025-09-20 10:42:52,116 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:52,116 - INFO - Found volatility news: News 3
+2025-09-20 10:42:52,116 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:52,116 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:52,116 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:52,117 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:52,117 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:52,117 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:52,118 - DEBUG - News headline: News 2
+2025-09-20 10:42:52,118 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:52,118 - INFO - Found volatility news: News 2
+2025-09-20 10:42:52,118 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:52,118 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:52,118 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:52,119 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:52,119 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:52,119 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:52,119 - DEBUG - News headline: News 1
+2025-09-20 10:42:52,120 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:52,120 - INFO - Found volatility news: News 1
+2025-09-20 10:42:52,121 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:52,121 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:52,121 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:52,122 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:52,122 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:52,122 - DEBUG - Ignoring realized vol news at tick 296 (cutoff 75, already_set=False)
+2025-09-20 10:42:52,123 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:52,125 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:52,125 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:52,138 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9715
+2025-09-20 10:42:52,141 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,142 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,144 - INFO - Fitted IV smile (log-moneyness): a=4.3555, b=-152.726346, c=2344.21413584, R^2=0.860, q10=199.1%, q90=399.2%
+2025-09-20 10:42:52,145 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:52,148 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,149 - INFO - SELL opportunity: RTM48C - Implied vol: 363.9% vs Forecast: 26.5%
+2025-09-20 10:42:52,149 - INFO - SELL opportunity: RTM48P - Implied vol: 441.1% vs Forecast: 26.5%
+2025-09-20 10:42:52,150 - INFO - Using forecast-based opportunities: 2 found
+2025-09-20 10:42:52,153 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,155 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,157 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9715
+2025-09-20 10:42:52,160 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9715
+2025-09-20 10:42:52,162 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,194 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:52,195 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48611
+2025-09-20 10:42:52,195 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #54)
+2025-09-20 10:42:52,229 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.99998492046353&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:52,230 - INFO - Order submitted: RTM SELL 99.99998492046353 - Order ID: 48615
+2025-09-20 10:42:52,231 - INFO - Immediate hedge: SELL 99.99998492046353 RTM shares (delta: 1.00)
+2025-09-20 10:42:52,235 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9715
+2025-09-20 10:42:52,240 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9715
+2025-09-20 10:42:52,243 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,275 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:52,277 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48624
+2025-09-20 10:42:52,278 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #55)
+2025-09-20 10:42:52,279 - INFO - Hedging delta exposure: 2800
+2025-09-20 10:42:52,282 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,315 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:52,317 - INFO - Order submitted: RTM SELL 100 - Order ID: 48627
+2025-09-20 10:42:52,317 - INFO - Executing conservative hedge: SELL 100 RTM shares (exposure: -2799.999638091125) (trade #56)
+2025-09-20 10:42:52,318 - INFO - Portfolio Delta: 2800, Required Hedge: -2800
+2025-09-20 10:42:52,319 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:52,319 - INFO - Found 2 trading opportunities
+2025-09-20 10:42:52,319 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:52,320 - DEBUG - Option RTM48C: Implied vol 363.9%
+2025-09-20 10:42:52,321 - DEBUG - Option RTM48P: Implied vol 441.1%
+2025-09-20 10:42:52,321 - DEBUG - Option RTM49C: Invalid implied vol 6.191235873520337
+2025-09-20 10:42:52,322 - DEBUG - Option RTM49P: Invalid implied vol 7.120655441961479
+2025-09-20 10:42:52,322 - DEBUG - Option RTM50C: Invalid implied vol 11.64171466274233
+2025-09-20 10:42:52,322 - DEBUG - Option RTM50P: Invalid implied vol 10.321315567152022
+2025-09-20 10:42:52,323 - DEBUG - Option RTM51C: Invalid implied vol 15.785974889740212
+2025-09-20 10:42:52,323 - DEBUG - Option RTM51P: Invalid implied vol 14.13347512192268
+2025-09-20 10:42:52,323 - DEBUG - Option RTM52C: Invalid implied vol 19.68184082733252
+2025-09-20 10:42:52,324 - DEBUG - Option RTM52P: Invalid implied vol 17.73255694417602
+2025-09-20 10:42:52,324 - INFO - Using market-implied volatility: 402.5% (from 2 options)
+2025-09-20 10:42:52,324 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.12, smileIV=441.1%
+2025-09-20 10:42:52,324 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.09, smileIV=363.9%
+2025-09-20 10:42:52,325 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.12, smileIV=441.1%
+2025-09-20 10:42:52,325 - INFO - Total trades executed: 56
+2025-09-20 10:42:52,830 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,831 - INFO - Processing tick 296/300 (status: ACTIVE)
+2025-09-20 10:42:52,832 - INFO - Before news processing - Current: 20.0%, Forecasted: 402.5%
+2025-09-20 10:42:52,836 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:52,836 - DEBUG - Processing 7 news items
+2025-09-20 10:42:52,839 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,840 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:52,841 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:52,841 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:52,842 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:52,842 - DEBUG - News headline: News 3
+2025-09-20 10:42:52,842 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:52,842 - INFO - Found volatility news: News 3
+2025-09-20 10:42:52,842 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:52,843 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:52,843 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:52,844 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:52,844 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:52,844 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:52,845 - DEBUG - News headline: News 2
+2025-09-20 10:42:52,845 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:52,845 - INFO - Found volatility news: News 2
+2025-09-20 10:42:52,846 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:52,846 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:52,846 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:52,846 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:52,846 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:52,847 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:52,847 - DEBUG - News headline: News 1
+2025-09-20 10:42:52,847 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:52,847 - INFO - Found volatility news: News 1
+2025-09-20 10:42:52,847 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:52,848 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:52,848 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:52,848 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:52,848 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:52,848 - DEBUG - Ignoring realized vol news at tick 296 (cutoff 75, already_set=False)
+2025-09-20 10:42:52,849 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:52,849 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:52,849 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:52,852 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9755
+2025-09-20 10:42:52,856 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,860 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,862 - INFO - Fitted IV smile (log-moneyness): a=4.3555, b=-152.726346, c=2344.21413584, R^2=0.860, q10=199.1%, q90=399.2%
+2025-09-20 10:42:52,864 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:52,876 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,877 - INFO - SELL opportunity: RTM48C - Implied vol: 363.9% vs Forecast: 26.5%
+2025-09-20 10:42:52,877 - INFO - SELL opportunity: RTM48P - Implied vol: 389.8% vs Forecast: 26.5%
+2025-09-20 10:42:52,878 - INFO - Using forecast-based opportunities: 2 found
+2025-09-20 10:42:52,880 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,881 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,884 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9755
+2025-09-20 10:42:52,887 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9755
+2025-09-20 10:42:52,889 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:52,963 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:52,966 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48676
+2025-09-20 10:42:52,966 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #57)
+2025-09-20 10:42:53,006 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.99998492046353&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:53,006 - INFO - Order submitted: RTM SELL 99.99998492046353 - Order ID: 48677
+2025-09-20 10:42:53,007 - INFO - Immediate hedge: SELL 99.99998492046353 RTM shares (delta: 1.00)
+2025-09-20 10:42:53,011 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9768
+2025-09-20 10:42:53,022 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9768
+2025-09-20 10:42:53,023 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,053 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:53,055 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48679
+2025-09-20 10:42:53,055 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #58)
+2025-09-20 10:42:53,056 - INFO - Hedging delta exposure: 2900
+2025-09-20 10:42:53,058 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,090 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:53,091 - INFO - Order submitted: RTM SELL 100 - Order ID: 48688
+2025-09-20 10:42:53,092 - INFO - Executing conservative hedge: SELL 100 RTM shares (exposure: -2899.9996079320517) (trade #59)
+2025-09-20 10:42:53,092 - INFO - Portfolio Delta: 2900, Required Hedge: -2900
+2025-09-20 10:42:53,092 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:53,092 - INFO - Found 2 trading opportunities
+2025-09-20 10:42:53,093 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:53,093 - DEBUG - Option RTM48C: Implied vol 363.9%
+2025-09-20 10:42:53,094 - DEBUG - Option RTM48P: Implied vol 389.8%
+2025-09-20 10:42:53,094 - DEBUG - Option RTM49C: Invalid implied vol 6.191235873520337
+2025-09-20 10:42:53,095 - DEBUG - Option RTM49P: Invalid implied vol 7.120655441961479
+2025-09-20 10:42:53,095 - DEBUG - Option RTM50C: Invalid implied vol 10.32131556715213
+2025-09-20 10:42:53,096 - DEBUG - Option RTM50P: Invalid implied vol nan
+2025-09-20 10:42:53,096 - DEBUG - Option RTM51C: Invalid implied vol 14.13347512192281
+2025-09-20 10:42:53,097 - DEBUG - Option RTM51P: Invalid implied vol 15.785974889740155
+2025-09-20 10:42:53,097 - DEBUG - Option RTM52C: Invalid implied vol 17.732556944176075
+2025-09-20 10:42:53,098 - DEBUG - Option RTM52P: Invalid implied vol 19.681840827332447
+2025-09-20 10:42:53,098 - INFO - Using market-implied volatility: 376.8% (from 2 options)
+2025-09-20 10:42:53,098 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.10, smileIV=389.8%
+2025-09-20 10:42:53,098 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.09, smileIV=363.9%
+2025-09-20 10:42:53,098 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.10, smileIV=389.8%
+2025-09-20 10:42:53,099 - INFO - Total trades executed: 59
+2025-09-20 10:42:53,605 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,606 - INFO - Processing tick 297/300 (status: ACTIVE)
+2025-09-20 10:42:53,607 - INFO - Before news processing - Current: 20.0%, Forecasted: 376.8%
+2025-09-20 10:42:53,612 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:53,613 - DEBUG - Processing 7 news items
+2025-09-20 10:42:53,616 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,617 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:53,618 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:53,619 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:53,619 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:53,619 - DEBUG - News headline: News 3
+2025-09-20 10:42:53,620 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:53,620 - INFO - Found volatility news: News 3
+2025-09-20 10:42:53,621 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:53,621 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:53,621 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:53,622 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:53,622 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:53,622 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:53,623 - DEBUG - News headline: News 2
+2025-09-20 10:42:53,623 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:53,623 - INFO - Found volatility news: News 2
+2025-09-20 10:42:53,624 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:53,625 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:53,625 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:53,625 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:53,625 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:53,625 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:53,626 - DEBUG - News headline: News 1
+2025-09-20 10:42:53,626 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:53,626 - INFO - Found volatility news: News 1
+2025-09-20 10:42:53,626 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:53,626 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:53,627 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:53,627 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:53,627 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:53,627 - DEBUG - Ignoring realized vol news at tick 297 (cutoff 75, already_set=False)
+2025-09-20 10:42:53,627 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:53,628 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:53,628 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:53,631 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:53,634 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,639 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,641 - DEBUG - Insufficient IV points to fit smile
+2025-09-20 10:42:53,646 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,647 - INFO - SELL opportunity: RTM48C - Implied vol: 353.4% vs Forecast: 26.5%
+2025-09-20 10:42:53,647 - INFO - SELL opportunity: RTM48P - Implied vol: 439.7% vs Forecast: 26.5%
+2025-09-20 10:42:53,648 - INFO - SELL opportunity: RTM50P - Implied vol: 306.3% vs Forecast: 26.5%
+2025-09-20 10:42:53,651 - INFO - Using forecast-based opportunities: 3 found
+2025-09-20 10:42:53,656 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,660 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,662 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,667 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9753
+2025-09-20 10:42:53,674 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9753
+2025-09-20 10:42:53,678 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,713 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:53,715 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48732
+2025-09-20 10:42:53,716 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #60)
+2025-09-20 10:42:53,756 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=99.96346136038959&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:53,757 - INFO - Order submitted: RTM SELL 99.96346136038959 - Order ID: 48734
+2025-09-20 10:42:53,757 - INFO - Immediate hedge: SELL 99.96346136038959 RTM shares (delta: 1.00)
+2025-09-20 10:42:53,760 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9753
+2025-09-20 10:42:53,775 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9753
+2025-09-20 10:42:53,778 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,809 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:53,811 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48741
+2025-09-20 10:42:53,811 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #61)
+2025-09-20 10:42:53,812 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9753
+2025-09-20 10:42:53,814 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9753
+2025-09-20 10:42:53,815 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,845 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM50P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:53,846 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 48744
+2025-09-20 10:42:53,846 - INFO - Executing volatility trade: SELL 1 RTM50P (trade #62)
+2025-09-20 10:42:53,878 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=SELL HTTP/1.1" 200 197
+2025-09-20 10:42:53,880 - INFO - Order submitted: RTM SELL 100.0 - Order ID: 48746
+2025-09-20 10:42:53,880 - INFO - Immediate hedge: SELL 100.0 RTM shares (delta: 1.00)
+2025-09-20 10:42:53,881 - INFO - Hedging delta exposure: 2999
+2025-09-20 10:42:53,884 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:53,886 - DEBUG - Skipping hedge - cooldown period (last hedge: tick 297)
+2025-09-20 10:42:53,887 - INFO - Portfolio Delta: 2999, Required Hedge: -2999
+2025-09-20 10:42:53,888 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:53,889 - INFO - Found 3 trading opportunities
+2025-09-20 10:42:53,890 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:53,891 - DEBUG - Option RTM48C: Implied vol 353.4%
+2025-09-20 10:42:53,891 - DEBUG - Option RTM48P: Implied vol 439.7%
+2025-09-20 10:42:53,892 - DEBUG - Option RTM49C: Invalid implied vol 7.878410980618274
+2025-09-20 10:42:53,894 - DEBUG - Option RTM49P: Invalid implied vol 7.878410980618427
+2025-09-20 10:42:53,895 - DEBUG - Option RTM50C: Invalid implied vol 13.127879456981066
+2025-09-20 10:42:53,895 - DEBUG - Option RTM50P: Implied vol 306.3%
+2025-09-20 10:42:53,895 - DEBUG - Option RTM51C: Invalid implied vol 16.044004346912534
+2025-09-20 10:42:53,895 - DEBUG - Option RTM51P: Invalid implied vol 17.928160754998803
+2025-09-20 10:42:53,896 - DEBUG - Option RTM52C: Invalid implied vol 20.20788017642283
+2025-09-20 10:42:53,896 - DEBUG - Option RTM52P: Invalid implied vol 22.4363716900771
+2025-09-20 10:42:53,896 - INFO - Using market-implied volatility: 353.4% (from 3 options)
+2025-09-20 10:42:53,896 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.12, smileIV=439.7%
+2025-09-20 10:42:53,896 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.09, smileIV=353.4%
+2025-09-20 10:42:53,897 - INFO - Opportunity 3: RTM50P SELL - price_diff=$0.00, smileIV=306.3%
+2025-09-20 10:42:53,897 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.12, smileIV=439.7%
+2025-09-20 10:42:53,897 - INFO - Total trades executed: 62
+2025-09-20 10:42:54,402 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,405 - INFO - Processing tick 298/300 (status: ACTIVE)
+2025-09-20 10:42:54,405 - INFO - Before news processing - Current: 20.0%, Forecasted: 353.4%
+2025-09-20 10:42:54,410 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:54,411 - DEBUG - Processing 7 news items
+2025-09-20 10:42:54,421 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,423 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:54,423 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:54,423 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:54,424 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:54,424 - DEBUG - News headline: News 3
+2025-09-20 10:42:54,425 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:54,426 - INFO - Found volatility news: News 3
+2025-09-20 10:42:54,426 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:54,427 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:54,427 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:54,428 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:54,428 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:54,429 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:54,429 - DEBUG - News headline: News 2
+2025-09-20 10:42:54,430 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:54,430 - INFO - Found volatility news: News 2
+2025-09-20 10:42:54,431 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:54,432 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:54,432 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:54,433 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:54,434 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:54,435 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:54,435 - DEBUG - News headline: News 1
+2025-09-20 10:42:54,436 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:54,436 - INFO - Found volatility news: News 1
+2025-09-20 10:42:54,437 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:54,437 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:54,437 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:54,437 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:54,438 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:54,438 - DEBUG - Ignoring realized vol news at tick 298 (cutoff 75, already_set=False)
+2025-09-20 10:42:54,439 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:54,439 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:54,439 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:54,443 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9760
+2025-09-20 10:42:54,446 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,451 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,453 - INFO - Fitted IV smile (log-moneyness): a=3.8009, b=-194.852543, c=4676.21788093, R^2=1.000, q10=229.9%, q90=392.4%
+2025-09-20 10:42:54,455 - INFO - Smile-based opportunities found: 0
+2025-09-20 10:42:54,458 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,459 - INFO - SELL opportunity: RTM48C - Implied vol: 338.7% vs Forecast: 26.5%
+2025-09-20 10:42:54,461 - INFO - SELL opportunity: RTM48P - Implied vol: 408.0% vs Forecast: 26.5%
+2025-09-20 10:42:54,464 - INFO - Using forecast-based opportunities: 2 found
+2025-09-20 10:42:54,468 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,471 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,476 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9760
+2025-09-20 10:42:54,481 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9760
+2025-09-20 10:42:54,485 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,519 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:54,520 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48804
+2025-09-20 10:42:54,521 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #63)
+2025-09-20 10:42:54,525 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9760
+2025-09-20 10:42:54,529 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9760
+2025-09-20 10:42:54,533 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:54,566 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:54,568 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48809
+2025-09-20 10:42:54,569 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #64)
+2025-09-20 10:42:54,602 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=98.05960711018238&action=BUY HTTP/1.1" 200 194
+2025-09-20 10:42:54,604 - INFO - Order submitted: RTM BUY 98.05960711018238 - Order ID: 48810
+2025-09-20 10:42:54,604 - INFO - Immediate hedge: BUY 98.05960711018238 RTM shares (delta: -0.98)
+2025-09-20 10:42:54,606 - INFO - Portfolio Delta: 258, Required Hedge: -258
+2025-09-20 10:42:54,606 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:54,607 - INFO - Found 2 trading opportunities
+2025-09-20 10:42:54,607 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:54,608 - DEBUG - Option RTM48C: Implied vol 338.7%
+2025-09-20 10:42:54,609 - DEBUG - Option RTM48P: Implied vol 408.0%
+2025-09-20 10:42:54,609 - DEBUG - Option RTM49C: Invalid implied vol 8.797950055775216
+2025-09-20 10:42:54,610 - DEBUG - Option RTM49P: Invalid implied vol 7.6024138498665375
+2025-09-20 10:42:54,610 - DEBUG - Option RTM50C: Invalid implied vol 15.304231901537879
+2025-09-20 10:42:54,610 - DEBUG - Option RTM50P: Invalid implied vol 13.53525478157993
+2025-09-20 10:42:54,611 - DEBUG - Option RTM51C: Invalid implied vol 21.221563515243282
+2025-09-20 10:42:54,611 - DEBUG - Option RTM51P: Invalid implied vol 21.221563515243123
+2025-09-20 10:42:54,611 - DEBUG - Option RTM52C: Invalid implied vol 24.092986233898273
+2025-09-20 10:42:54,612 - DEBUG - Option RTM52P: Invalid implied vol 26.7673819184943
+2025-09-20 10:42:54,612 - INFO - Using market-implied volatility: 373.4% (from 2 options)
+2025-09-20 10:42:54,613 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.10, smileIV=408.0%
+2025-09-20 10:42:54,613 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.08, smileIV=338.7%
+2025-09-20 10:42:54,614 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.10, smileIV=408.0%
+2025-09-20 10:42:54,614 - INFO - Total trades executed: 64
+2025-09-20 10:42:55,118 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,119 - INFO - Processing tick 299/300 (status: ACTIVE)
+2025-09-20 10:42:55,119 - INFO - Before news processing - Current: 20.0%, Forecasted: 373.4%
+2025-09-20 10:42:55,123 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:55,124 - DEBUG - Processing 7 news items
+2025-09-20 10:42:55,127 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,129 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:55,129 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:55,130 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:55,130 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:55,130 - DEBUG - News headline: News 3
+2025-09-20 10:42:55,131 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:55,131 - INFO - Found volatility news: News 3
+2025-09-20 10:42:55,131 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:55,131 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:55,131 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:55,131 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:55,132 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:55,132 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:55,132 - DEBUG - News headline: News 2
+2025-09-20 10:42:55,132 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:55,132 - INFO - Found volatility news: News 2
+2025-09-20 10:42:55,132 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:55,133 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:55,133 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:55,133 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:55,133 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:55,133 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:55,134 - DEBUG - News headline: News 1
+2025-09-20 10:42:55,134 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:55,134 - INFO - Found volatility news: News 1
+2025-09-20 10:42:55,135 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:55,135 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:55,135 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:55,135 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:55,135 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:55,136 - DEBUG - Ignoring realized vol news at tick 299 (cutoff 75, already_set=False)
+2025-09-20 10:42:55,136 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:55,136 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:55,136 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:55,139 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9769
+2025-09-20 10:42:55,142 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,146 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,146 - DEBUG - Insufficient IV points to fit smile
+2025-09-20 10:42:55,148 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,149 - INFO - SELL opportunity: RTM48C - Implied vol: 351.4% vs Forecast: 26.5%
+2025-09-20 10:42:55,149 - INFO - SELL opportunity: RTM48P - Implied vol: 438.2% vs Forecast: 26.5%
+2025-09-20 10:42:55,151 - INFO - Using forecast-based opportunities: 2 found
+2025-09-20 10:42:55,153 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,155 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,157 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9769
+2025-09-20 10:42:55,162 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9769
+2025-09-20 10:42:55,165 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,198 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:55,198 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48870
+2025-09-20 10:42:55,198 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #65)
+2025-09-20 10:42:55,203 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9764
+2025-09-20 10:42:55,211 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9764
+2025-09-20 10:42:55,213 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,244 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:55,245 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 48872
+2025-09-20 10:42:55,245 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #66)
+2025-09-20 10:42:55,275 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=BUY HTTP/1.1" 200 196
+2025-09-20 10:42:55,277 - INFO - Order submitted: RTM BUY 100.0 - Order ID: 48876
+2025-09-20 10:42:55,277 - INFO - Immediate hedge: BUY 100.0 RTM shares (delta: -1.00)
+2025-09-20 10:42:55,277 - INFO - Portfolio Delta: 100, Required Hedge: -100
+2025-09-20 10:42:55,278 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:55,278 - INFO - Found 2 trading opportunities
+2025-09-20 10:42:55,278 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:42:55,278 - DEBUG - Option RTM48C: Implied vol 351.4%
+2025-09-20 10:42:55,279 - DEBUG - Option RTM48P: Implied vol 438.2%
+2025-09-20 10:42:55,279 - DEBUG - Option RTM49C: Invalid implied vol 10.598801463363387
+2025-09-20 10:42:55,279 - DEBUG - Option RTM49P: Invalid implied vol nan
+2025-09-20 10:42:55,280 - DEBUG - Option RTM50C: Invalid implied vol 19.98978689313616
+2025-09-20 10:42:55,280 - DEBUG - Option RTM50P: Invalid implied vol nan
+2025-09-20 10:42:55,281 - DEBUG - Option RTM51C: Invalid implied vol 28.44601606717993
+2025-09-20 10:42:55,281 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:42:55,281 - DEBUG - Option RTM52C: Invalid implied vol 36.34370966250786
+2025-09-20 10:42:55,282 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:42:55,282 - INFO - Using market-implied volatility: 394.8% (from 2 options)
+2025-09-20 10:42:55,282 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.02, smileIV=438.2%
+2025-09-20 10:42:55,282 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.01, smileIV=351.4%
+2025-09-20 10:42:55,282 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.02, smileIV=438.2%
+2025-09-20 10:42:55,282 - INFO - Total trades executed: 66
+2025-09-20 10:42:55,788 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,789 - INFO - Processing tick 299/300 (status: ACTIVE)
+2025-09-20 10:42:55,790 - INFO - Before news processing - Current: 20.0%, Forecasted: 394.8%
+2025-09-20 10:42:55,793 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 1456
+2025-09-20 10:42:55,794 - DEBUG - Processing 7 news items
+2025-09-20 10:42:55,799 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,800 - DEBUG - News headline: Announcement 3
+2025-09-20 10:42:55,800 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:55,800 - INFO - Found volatility news: Announcement 3
+2025-09-20 10:42:55,801 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:55,801 - DEBUG - News headline: News 3
+2025-09-20 10:42:55,801 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:55,801 - INFO - Found volatility news: News 3
+2025-09-20 10:42:55,801 - INFO - Updated forecasted volatility to 22.5% (range: 20.0%-25.0%)
+2025-09-20 10:42:55,802 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 20% and 25%
+2025-09-20 10:42:55,802 - DEBUG - News headline: Announcement 2
+2025-09-20 10:42:55,802 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 35%
+2025-09-20 10:42:55,802 - INFO - Found volatility news: Announcement 2
+2025-09-20 10:42:55,803 - INFO - Updated forecasted volatility to 35.0%
+2025-09-20 10:42:55,803 - DEBUG - News headline: News 2
+2025-09-20 10:42:55,803 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:55,803 - INFO - Found volatility news: News 2
+2025-09-20 10:42:55,803 - INFO - Updated forecasted volatility to 36.5% (range: 34.0%-39.0%)
+2025-09-20 10:42:55,804 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 34% and 39%
+2025-09-20 10:42:55,804 - DEBUG - News headline: Announcement 1
+2025-09-20 10:42:55,805 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM this week will be 25%
+2025-09-20 10:42:55,805 - INFO - Found volatility news: Announcement 1
+2025-09-20 10:42:55,805 - INFO - Updated forecasted volatility to 25.0%
+2025-09-20 10:42:55,805 - DEBUG - News headline: News 1
+2025-09-20 10:42:55,806 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:55,806 - INFO - Found volatility news: News 1
+2025-09-20 10:42:55,806 - INFO - Updated forecasted volatility to 26.5% (range: 24.0%-29.0%)
+2025-09-20 10:42:55,806 - WARNING - Could not extract volatility from: The analysts have informed you that the realized volatility of RTM next week will be between 24% and 29%
+2025-09-20 10:42:55,806 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:55,806 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:55,807 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:42:55,807 - DEBUG - Ignoring realized vol news at tick 299 (cutoff 75, already_set=False)
+2025-09-20 10:42:55,807 - WARNING - Could not extract volatility from: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 24%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:42:55,807 - INFO - News processing complete - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:55,807 - INFO - After news processing - Current: 20.0%, Forecasted: 26.5%
+2025-09-20 10:42:55,811 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:55,814 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,817 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,818 - DEBUG - Insufficient IV points to fit smile
+2025-09-20 10:42:55,822 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,822 - INFO - SELL opportunity: RTM48C - Implied vol: 496.8% vs Forecast: 26.5%
+2025-09-20 10:42:55,823 - INFO - SELL opportunity: RTM48P - Implied vol: 496.8% vs Forecast: 26.5%
+2025-09-20 10:42:55,823 - INFO - Using forecast-based opportunities: 2 found
+2025-09-20 10:42:55,826 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,829 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,833 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:55,837 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:55,840 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:42:55,873 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 195
+2025-09-20 10:42:55,874 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 48912
+2025-09-20 10:42:55,875 - INFO - Executing volatility trade: SELL 1 RTM48P (trade #67)
+2025-09-20 10:42:55,880 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:55,886 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9759
+2025-09-20 10:42:55,891 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 154
+2025-09-20 10:43:02,513 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 500 70
+2025-09-20 10:43:02,514 - ERROR - Failed to submit order: {"code":"INTERNAL_SERVER_ERROR","message":"Simulation is not active."}
+2025-09-20 10:43:02,515 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #68)
+2025-09-20 10:43:02,567 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=100.0&action=BUY HTTP/1.1" 500 70
+2025-09-20 10:43:02,568 - ERROR - Failed to submit order: {"code":"INTERNAL_SERVER_ERROR","message":"Simulation is not active."}
+2025-09-20 10:43:02,568 - INFO - Immediate hedge: BUY 100.0 RTM shares (delta: -1.00)
+2025-09-20 10:43:02,568 - INFO - Portfolio Delta: 0, Required Hedge: -0
+2025-09-20 10:43:02,569 - INFO - Current Volatility: 20.0%, Forecasted: 26.5%
+2025-09-20 10:43:02,569 - INFO - Found 2 trading opportunities
+2025-09-20 10:43:02,569 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:43:02,569 - DEBUG - Option RTM48C: Implied vol 496.8%
+2025-09-20 10:43:02,570 - DEBUG - Option RTM48P: Implied vol 496.8%
+2025-09-20 10:43:02,570 - DEBUG - Option RTM49C: Invalid implied vol 9.178746836319762
+2025-09-20 10:43:02,570 - DEBUG - Option RTM49P: Invalid implied vol nan
+2025-09-20 10:43:02,571 - DEBUG - Option RTM50C: Invalid implied vol 17.714465991637965
+2025-09-20 10:43:02,571 - DEBUG - Option RTM50P: Invalid implied vol nan
+2025-09-20 10:43:02,571 - DEBUG - Option RTM51C: Invalid implied vol 25.472832335128487
+2025-09-20 10:43:02,571 - DEBUG - Option RTM51P: Invalid implied vol nan
+2025-09-20 10:43:02,572 - DEBUG - Option RTM52C: Invalid implied vol 36.42772443615506
+2025-09-20 10:43:02,572 - DEBUG - Option RTM52P: Invalid implied vol nan
+2025-09-20 10:43:02,572 - INFO - Using market-implied volatility: 496.8% (from 2 options)
+2025-09-20 10:43:02,572 - INFO - Opportunity 1: RTM48P SELL - price_diff=$0.03, smileIV=496.8%
+2025-09-20 10:43:02,574 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.03, smileIV=496.8%
+2025-09-20 10:43:02,574 - INFO - Top opportunity: RTM48P SELL - price_diff=$0.03, smileIV=496.8%
+2025-09-20 10:43:02,574 - INFO - Total trades executed: 68
+2025-09-20 10:43:03,079 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:03,081 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:05,085 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:05,086 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:07,092 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:07,093 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:09,099 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:09,100 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:11,105 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:11,106 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:13,113 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:13,156 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:15,161 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:15,162 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:17,167 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:17,168 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:43:18,590 - INFO - Shutdown signal received
+2025-09-20 10:43:19,173 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:43:19,173 - INFO - Case not active (status: STOPPED, tick: 0)

@@ -1,0 +1,92 @@
+2025-09-20 10:56:18,072 - INFO - === NEW CASE #1 STARTED ===
+2025-09-20 10:56:18,073 - INFO - Case log file: logs/volatility_case_1_20250920_105618_tick245.log
+2025-09-20 10:56:18,073 - INFO - Case tick: 245
+2025-09-20 10:56:18,073 - INFO - New case detected - resetting trade counter (tick: 245)
+2025-09-20 10:56:18,073 - INFO - Case is active! Starting strategy (tick: 245, status: ACTIVE)
+2025-09-20 10:56:18,074 - INFO - Starting volatility trading strategy
+2025-09-20 10:56:18,074 - INFO - Waiting for case to become active...
+2025-09-20 10:56:18,101 - ERROR - Error checking case status: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-20 10:56:18,101 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:20,103 - DEBUG - Starting new HTTP connection (2): localhost:9999
+2025-09-20 10:56:24,334 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:24,335 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:24,335 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:26,339 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:26,341 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:26,341 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:28,346 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:28,347 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:28,348 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:30,354 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:30,355 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:30,355 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:32,364 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:32,368 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:32,369 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:34,372 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:34,373 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:34,374 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:36,378 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:36,379 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:36,381 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:38,399 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:38,401 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:38,402 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:40,407 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:40,408 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:40,409 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:42,414 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:42,416 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:42,416 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:44,422 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:44,424 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:44,424 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:46,430 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:46,431 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:46,431 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:48,434 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:48,436 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:48,436 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:50,441 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:50,443 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:50,443 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:52,464 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:52,471 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:52,473 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:54,480 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:54,481 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:54,482 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:56,487 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:56,489 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:56,489 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:56:58,493 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:56:58,494 - ERROR - Failed to get case status: 401
+2025-09-20 10:56:58,495 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:00,498 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:57:00,499 - ERROR - Failed to get case status: 401
+2025-09-20 10:57:00,500 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:02,504 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:57:02,505 - ERROR - Failed to get case status: 401
+2025-09-20 10:57:02,506 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:04,511 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:57:04,512 - ERROR - Failed to get case status: 401
+2025-09-20 10:57:04,512 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:06,519 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:57:06,520 - ERROR - Failed to get case status: 401
+2025-09-20 10:57:06,520 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:08,524 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:57:08,524 - ERROR - Failed to get case status: 401
+2025-09-20 10:57:08,524 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:10,530 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:57:10,530 - ERROR - Failed to get case status: 401
+2025-09-20 10:57:10,531 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:12,535 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 401 54
+2025-09-20 10:57:12,536 - ERROR - Failed to get case status: 401
+2025-09-20 10:57:12,537 - INFO - Case not active (status: ERROR, tick: 0)
+2025-09-20 10:57:14,558 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:57:14,559 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:57:16,565 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:57:16,566 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:57:18,578 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:57:18,579 - INFO - Case not active (status: STOPPED, tick: 0)
+2025-09-20 10:57:19,493 - INFO - Shutdown signal received

@@ -110,9 +110,12 @@ class ArbitrageStrategy:
         self.profit_per_trade = 0.0
         self.win_rate = 0.0
         self.best_arbitrage_edge = 0.0
-        self.profit_target = 10000.0  # Daily profit target
         self.max_drawdown = 0.0
         self.current_drawdown = 0.0
+        self.current_tick = 0
+        self.WARMUP_TICKS = 120  # avoid early-case noise for first N ticks
+        self.MAX_EDGE_CAP = 0.50  # cap unrealistic edges in CAD
+        self.MIN_BOOK_SPREAD = 0.01  # require decent quality quotes
         
         logger.info(f"ArbitrageStrategy initialized in {mode.value} mode")
 
@@ -163,6 +166,19 @@ class ArbitrageStrategy:
         except Exception as e:
             logger.error(f"Error getting prices for {ticker}: {e}")
             return 0.0, 1e12
+
+    def _valid_quote(self, bid: float, ask: float) -> bool:
+        """Check if a quote is usable (non-empty, finite, reasonable spread)."""
+        if bid <= 0 or ask <= 0 or ask <= bid:
+            return False
+        if (ask - bid) > 10_000:  # sanity guard
+            return False
+        if (ask - bid) < self.MIN_BOOK_SPREAD:
+            return False
+        return True
+
+    def in_warmup(self) -> bool:
+        return self.current_tick <= self.WARMUP_TICKS
 
     def get_positions(self) -> Dict[str, int]:
         """Get current positions for all instruments"""
@@ -223,6 +239,9 @@ class ArbitrageStrategy:
             bull_bid, bull_ask = self.get_best_bid_ask(self.BULL)
             bear_bid, bear_ask = self.get_best_bid_ask(self.BEAR)
             usd_bid, usd_ask = self.get_best_bid_ask(self.USD)
+            # Quote quality guards
+            if not (self._valid_quote(bull_bid, bull_ask) and self._valid_quote(bear_bid, bear_ask) and self._valid_quote(usd_bid, usd_ask)):
+                return 0.0, 0.0
             
             # Fair value = (BULL + BEAR) * FX rate
             basket_value_bid = (bull_bid + bear_bid)
@@ -369,26 +388,37 @@ class ArbitrageStrategy:
             ritc_bid_usd, ritc_ask_usd = self.get_best_bid_ask(self.RITC)
             usd_bid, usd_ask = self.get_best_bid_ask(self.USD)
             
+            # Skip during warmup or with bad books
+            if self.in_warmup():
+                return False, "WARMUP", 0.0
+            if not (self._valid_quote(bull_bid, bull_ask) and self._valid_quote(bear_bid, bear_ask) and self._valid_quote(ritc_bid_usd, ritc_ask_usd) and self._valid_quote(usd_bid, usd_ask)):
+                return False, "BAD_BOOK", 0.0
+
             # Convert RITC to CAD
             ritc_bid_cad = ritc_bid_usd * usd_bid
             ritc_ask_cad = ritc_ask_usd * usd_ask
 
             # Calculate fair value
             fair_value_bid, fair_value_ask = self.calculate_fair_value()
+            if fair_value_bid == 0.0 and fair_value_ask == 0.0:
+                return False, "NO_FAIR_VALUE", 0.0
             
-            # AGGRESSIVE PROFIT OPTIMIZATION - Lower thresholds for more opportunities
-            # Check for overpricing (ETF > Fair Value) - More sensitive
-            if ritc_ask_cad > fair_value_bid + self.ARB_THRESHOLD_CAD:
+            # Include costs and cap edges
+            effective_threshold = self.ARB_THRESHOLD_CAD + self.FEE_MKT * 2  # ETF + 2 legs stocks
+            # Check for overpricing (ETF > Fair Value)
+            if ritc_ask_cad > fair_value_bid + effective_threshold:
                 edge = ritc_ask_cad - fair_value_bid
+                edge = min(edge, self.MAX_EDGE_CAP)
                 # Track best arbitrage edge for profit optimization
                 if edge > self.best_arbitrage_edge:
                     self.best_arbitrage_edge = edge
                 logger.info(f"OVERPRICED opportunity detected: edge=${edge:.4f}")
                 return True, "OVERPRICED", edge
             
-            # Check for underpricing (ETF < Fair Value) - More sensitive
-            elif fair_value_ask > ritc_bid_cad + self.ARB_THRESHOLD_CAD:
+            # Check for underpricing (ETF < Fair Value)
+            elif fair_value_ask > ritc_bid_cad + effective_threshold:
                 edge = fair_value_ask - ritc_bid_cad
+                edge = min(edge, self.MAX_EDGE_CAP)
                 # Track best arbitrage edge for profit optimization
                 if edge > self.best_arbitrage_edge:
                     self.best_arbitrage_edge = edge
@@ -407,17 +437,27 @@ class ArbitrageStrategy:
             # DYNAMIC QUANTITY SIZING FOR MAXIMUM PROFITS
             # Scale quantity based on edge size - bigger edge = bigger position
             edge_multiplier = min(edge / 0.1, 3.0)  # Scale up to 3x for large edges
-            quantity = int(min(self.ORDER_QTY * edge_multiplier, self.MAX_SIZE_EQUITY))
+            base_qty = self.ORDER_QTY
+            if self.in_warmup():
+                base_qty = max(int(self.ORDER_QTY * 0.25), 500)  # smaller during warmup
+            if self.total_profit < 0:
+                base_qty = max(int(base_qty * 0.6), 500)  # smaller in drawdown
+            quantity = int(min(base_qty * edge_multiplier, self.MAX_SIZE_EQUITY))
             
             # Calculate expected profit
             expected_profit = edge * quantity
             logger.info(f"Executing {direction} arbitrage: qty={quantity}, edge=${edge:.4f}, expected_profit=${expected_profit:.2f}")
             
+            # Use guarded limit orders at top-of-book to avoid crossing wide spreads
             if direction == "OVERPRICED":
-                # Short ETF, buy stocks - PROFIT OPTIMIZED
-                success1 = self.place_order(self.RITC, "SELL", quantity, "MARKET")
-                success2 = self.place_order(self.BULL, "BUY", quantity, "MARKET")
-                success3 = self.place_order(self.BEAR, "BUY", quantity, "MARKET")
+                etf_bid, etf_ask = self.get_best_bid_ask(self.RITC)
+                bull_bid, bull_ask = self.get_best_bid_ask(self.BULL)
+                bear_bid, bear_ask = self.get_best_bid_ask(self.BEAR)
+                if not (self._valid_quote(etf_bid, etf_ask) and self._valid_quote(bull_bid, bull_ask) and self._valid_quote(bear_bid, bear_ask)):
+                    return False
+                success1 = self.place_order(self.RITC, "SELL", quantity, "LIMIT", price=etf_bid)  # join bid to short
+                success2 = self.place_order(self.BULL, "BUY", quantity, "LIMIT", price=bull_ask)  # join ask to buy
+                success3 = self.place_order(self.BEAR, "BUY", quantity, "LIMIT", price=bear_ask)
                 
                 if success1 and success2 and success3:
                     self.successful_arbitrages += 1
@@ -428,10 +468,14 @@ class ArbitrageStrategy:
                     return True
                     
             elif direction == "UNDERPRICED":
-                # Buy ETF, short stocks - PROFIT OPTIMIZED
-                success1 = self.place_order(self.RITC, "BUY", quantity, "MARKET")
-                success2 = self.place_order(self.BULL, "SELL", quantity, "MARKET")
-                success3 = self.place_order(self.BEAR, "SELL", quantity, "MARKET")
+                etf_bid, etf_ask = self.get_best_bid_ask(self.RITC)
+                bull_bid, bull_ask = self.get_best_bid_ask(self.BULL)
+                bear_bid, bear_ask = self.get_best_bid_ask(self.BEAR)
+                if not (self._valid_quote(etf_bid, etf_ask) and self._valid_quote(bull_bid, bull_ask) and self._valid_quote(bear_bid, bear_ask)):
+                    return False
+                success1 = self.place_order(self.RITC, "BUY", quantity, "LIMIT", price=etf_ask)  # join ask to buy
+                success2 = self.place_order(self.BULL, "SELL", quantity, "LIMIT", price=bull_bid)  # join bid to sell
+                success3 = self.place_order(self.BEAR, "SELL", quantity, "LIMIT", price=bear_bid)
                 
                 if success1 and success2 and success3:
                     self.successful_arbitrages += 1
@@ -501,9 +545,7 @@ class ArbitrageStrategy:
                 self.win_rate = self.successful_arbitrages / max(self.trade_count, 1)
                 self.profit_per_trade = self.total_profit / max(self.successful_arbitrages, 1)
             
-            # Check if we've hit profit target
-            if self.total_profit >= self.profit_target:
-                logger.info(f"PROFIT TARGET REACHED! Total profit: ${self.total_profit:.2f}")
+            # Profit target logic removed – focus on continuous profit maximization
             
         except Exception as e:
             logger.error(f"Error updating PnL: {e}")
@@ -511,13 +553,7 @@ class ArbitrageStrategy:
     def optimize_for_profits(self):
         """PROFIT OPTIMIZATION METHOD - Aggressive profit maximization"""
         try:
-            # Check if we're close to profit target
-            if self.total_profit >= self.profit_target * 0.8:
-                logger.info("Near profit target - increasing aggressiveness!")
-                # Lower threshold for more opportunities
-                self.ARB_THRESHOLD_CAD = 0.03
-                # Increase order size
-                self.ORDER_QTY = min(self.ORDER_QTY * 1.2, self.MAX_SIZE_EQUITY)
+            # Profit target logic removed – optional adaptive aggressiveness can be added here
             
             # If we're losing money, be more conservative
             if self.total_profit < 0:
@@ -525,8 +561,8 @@ class ArbitrageStrategy:
                 self.ARB_THRESHOLD_CAD = 0.08
                 self.ORDER_QTY = max(self.ORDER_QTY * 0.8, 1000)
             
-            # Log profit status
-            logger.info(f"Profit Status: Total=${self.total_profit:.2f}, Target=${self.profit_target:.2f}, Win Rate={self.win_rate:.2%}")
+            # Log profit status (no profit target)
+            logger.info(f"Profit Status: Total=${self.total_profit:.2f}, Win Rate={self.win_rate:.2%}")
             
         except Exception as e:
             logger.error(f"Error in profit optimization: {e}")
@@ -574,6 +610,8 @@ class ArbitrageStrategy:
         try:
             tick, status = self.get_tick_status()
             while status == "ACTIVE":
+                # Track current tick for warmup logic
+                self.current_tick = tick
                 result = self.step_once()
                 
                 # Log status
@@ -595,13 +633,12 @@ class ArbitrageStrategy:
         runtime = time.time() - self.start_time
         
         print("\n" + "="*60)
-        print("PROFIT-OPTIMIZED ARBITRAGE STRATEGY SUMMARY 🚀")
+        print("PROFIT-OPTIMIZED ARBITRAGE STRATEGY SUMMARY")
         print("="*60)
         print(f"Runtime: {runtime:.2f} seconds")
         print(f"Total Trades: {self.trade_count}")
         print(f"Successful Arbitrages: {self.successful_arbitrages}")
         print(f"Total Profit: ${self.total_profit:.2f}")
-        print(f"Profit Target: ${self.profit_target:.2f}")
         print(f"Win Rate: {self.win_rate:.2%}")
         print(f"Max Profit Trade: ${self.max_profit_trade:.2f}")
         print(f"Profit per Trade: ${self.profit_per_trade:.2f}")
@@ -613,12 +650,12 @@ class ArbitrageStrategy:
         print(f"Net Exposure: ${self.exposure_net:.2f}")
         print(f"Tender Decisions: {len(self.tender_decisions)}")
         print(f"Converter Usage: {len(self.converter_usage)}")
-        
-        # Profit performance analysis
+
+        # Performance analysis (no profit target)
         if self.total_profit > 0:
-            print(f"\nPROFIT PERFORMANCE: {self.total_profit/self.profit_target*100:.1f}% of target achieved!")
+            print(f"\nPROFIT PERFORMANCE: +${self.total_profit:.2f} cumulative profit")
         else:
-            print(f"\nLOSS PERFORMANCE: ${abs(self.total_profit):.2f} loss")
+            print(f"\nLOSS PERFORMANCE: -${abs(self.total_profit):.2f} cumulative loss")
         
         # Print recent trades
         if self.trades:
