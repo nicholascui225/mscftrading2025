@@ -2394,3 +2394,376 @@
 2025-09-20 10:59:22,945 - INFO - Opportunity 3: RTM51P SELL - price_diff=$0.02, smileIV=18.1%
 2025-09-20 10:59:22,945 - INFO - Top opportunity: RTM52C BUY - price_diff=$-0.02, smileIV=17.5%
 2025-09-20 10:59:22,946 - INFO - Total trades executed: 44
+2025-09-20 10:59:23,450 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:23,452 - INFO - Processing tick 34/300 (status: ACTIVE)
+2025-09-20 10:59:23,452 - INFO - Before news processing - Current: 16.0%, Forecasted: 18.3%
+2025-09-20 10:59:23,457 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 372
+2025-09-20 10:59:23,458 - DEBUG - Processing 1 news items
+2025-09-20 10:59:23,461 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:23,462 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:23,462 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 16%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:59:23,462 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:23,462 - INFO - Detected ticks_per_day from news: 15
+2025-09-20 10:59:23,463 - DEBUG - Ignoring realized vol news at tick 34 (cutoff 75, already_set=True)
+2025-09-20 10:59:23,463 - INFO - News processing complete - Current: 16.0%, Forecasted: 18.3%
+2025-09-20 10:59:23,463 - INFO - After news processing - Current: 16.0%, Forecasted: 18.3%
+2025-09-20 10:59:23,466 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9644
+2025-09-20 10:59:23,468 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:23,473 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:23,477 - INFO - Fitted IV smile (log-moneyness): a=0.1757, b=-0.059991, c=1.15841102, R^2=0.742, q10=17.4%, q90=18.3%
+2025-09-20 10:59:23,480 - INFO - Smile-based opportunities found: 10
+2025-09-20 10:59:23,481 - INFO - Top smile opp: RTM52C BUY | diff=$-0.03 | smileIV=17.5% | res=-0.14%
+2025-09-20 10:59:23,483 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9644
+2025-09-20 10:59:23,487 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9644
+2025-09-20 10:59:23,489 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:23,522 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49C&type=MARKET&quantity=1&action=BUY HTTP/1.1" 200 192
+2025-09-20 10:59:23,523 - INFO - Order submitted: RTM49C BUY 1 - Order ID: 5846
+2025-09-20 10:59:23,523 - INFO - Executing volatility trade: BUY 1 RTM49C (trade #45)
+2025-09-20 10:59:23,566 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=75&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:23,567 - INFO - Order submitted: RTM SELL 75 - Order ID: 5848
+2025-09-20 10:59:23,567 - INFO - Immediate hedge: SELL 75 RTM shares (delta: 0.75)
+2025-09-20 10:59:23,567 - INFO - Portfolio Delta: 12, Required Hedge: -12
+2025-09-20 10:59:23,567 - INFO - Current Volatility: 16.0%, Forecasted: 18.3%
+2025-09-20 10:59:23,567 - INFO - Found 10 trading opportunities
+2025-09-20 10:59:23,567 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:59:23,568 - DEBUG - Option RTM48C: Implied vol 18.0%
+2025-09-20 10:59:23,568 - DEBUG - Option RTM48P: Implied vol 18.3%
+2025-09-20 10:59:23,568 - DEBUG - Option RTM49C: Implied vol 17.2%
+2025-09-20 10:59:23,568 - DEBUG - Option RTM49P: Implied vol 17.6%
+2025-09-20 10:59:23,568 - DEBUG - Option RTM50C: Implied vol 17.6%
+2025-09-20 10:59:23,568 - DEBUG - Option RTM50P: Implied vol 17.8%
+2025-09-20 10:59:23,569 - DEBUG - Option RTM51C: Implied vol 17.6%
+2025-09-20 10:59:23,570 - DEBUG - Option RTM51P: Implied vol 17.8%
+2025-09-20 10:59:23,570 - DEBUG - Option RTM52C: Implied vol 17.4%
+2025-09-20 10:59:23,570 - DEBUG - Option RTM52P: Implied vol 17.6%
+2025-09-20 10:59:23,570 - INFO - Using market-implied volatility: 17.6% (from 10 options)
+2025-09-20 10:59:23,571 - INFO - Opportunity 1: RTM52C BUY - price_diff=$-0.03, smileIV=17.5%
+2025-09-20 10:59:23,571 - INFO - Opportunity 2: RTM49C BUY - price_diff=$-0.02, smileIV=17.9%
+2025-09-20 10:59:23,571 - INFO - Opportunity 3: RTM52P BUY - price_diff=$-0.02, smileIV=17.5%
+2025-09-20 10:59:23,571 - INFO - Top opportunity: RTM52C BUY - price_diff=$-0.03, smileIV=17.5%
+2025-09-20 10:59:23,571 - INFO - Total trades executed: 45
+2025-09-20 10:59:24,073 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,074 - INFO - Processing tick 34/300 (status: ACTIVE)
+2025-09-20 10:59:24,074 - INFO - Before news processing - Current: 16.0%, Forecasted: 17.6%
+2025-09-20 10:59:24,077 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 372
+2025-09-20 10:59:24,077 - DEBUG - Processing 1 news items
+2025-09-20 10:59:24,080 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,081 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:24,081 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 16%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:59:24,082 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:24,082 - INFO - Detected ticks_per_day from news: 15
+2025-09-20 10:59:24,083 - DEBUG - Ignoring realized vol news at tick 34 (cutoff 75, already_set=True)
+2025-09-20 10:59:24,084 - INFO - News processing complete - Current: 16.0%, Forecasted: 17.6%
+2025-09-20 10:59:24,084 - INFO - After news processing - Current: 16.0%, Forecasted: 17.6%
+2025-09-20 10:59:24,094 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9634
+2025-09-20 10:59:24,101 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,112 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,113 - INFO - Fitted IV smile (log-moneyness): a=0.1757, b=-0.059991, c=1.15841102, R^2=0.742, q10=17.4%, q90=18.3%
+2025-09-20 10:59:24,117 - INFO - Smile-based opportunities found: 10
+2025-09-20 10:59:24,118 - INFO - Top smile opp: RTM48C SELL | diff=$0.01 | smileIV=18.2% | res=0.11%
+2025-09-20 10:59:24,121 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9633
+2025-09-20 10:59:24,124 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9633
+2025-09-20 10:59:24,130 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,164 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM48C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:24,165 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 5935
+2025-09-20 10:59:24,165 - INFO - Executing volatility trade: SELL 1 RTM48C (trade #46)
+2025-09-20 10:59:24,195 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=86&action=BUY HTTP/1.1" 200 192
+2025-09-20 10:59:24,196 - INFO - Order submitted: RTM BUY 86 - Order ID: 5940
+2025-09-20 10:59:24,197 - INFO - Immediate hedge: BUY 86 RTM shares (delta: -0.86)
+2025-09-20 10:59:24,197 - INFO - Portfolio Delta: 7, Required Hedge: -7
+2025-09-20 10:59:24,198 - INFO - Current Volatility: 16.0%, Forecasted: 17.6%
+2025-09-20 10:59:24,198 - INFO - Found 10 trading opportunities
+2025-09-20 10:59:24,198 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:59:24,198 - DEBUG - Option RTM48C: Implied vol 18.2%
+2025-09-20 10:59:24,199 - DEBUG - Option RTM48P: Implied vol 17.9%
+2025-09-20 10:59:24,199 - DEBUG - Option RTM49C: Implied vol 17.5%
+2025-09-20 10:59:24,200 - DEBUG - Option RTM49P: Implied vol 17.7%
+2025-09-20 10:59:24,200 - DEBUG - Option RTM50C: Implied vol 17.6%
+2025-09-20 10:59:24,200 - DEBUG - Option RTM50P: Implied vol 17.5%
+2025-09-20 10:59:24,200 - DEBUG - Option RTM51C: Implied vol 17.9%
+2025-09-20 10:59:24,201 - DEBUG - Option RTM51P: Implied vol 17.8%
+2025-09-20 10:59:24,201 - DEBUG - Option RTM52C: Implied vol 17.3%
+2025-09-20 10:59:24,201 - DEBUG - Option RTM52P: Implied vol 17.5%
+2025-09-20 10:59:24,201 - INFO - Using market-implied volatility: 17.7% (from 10 options)
+2025-09-20 10:59:24,201 - INFO - Opportunity 1: RTM48C SELL - price_diff=$0.01, smileIV=18.2%
+2025-09-20 10:59:24,202 - INFO - Opportunity 2: RTM48P SELL - price_diff=$0.01, smileIV=18.2%
+2025-09-20 10:59:24,202 - INFO - Opportunity 3: RTM52C BUY - price_diff=$-0.01, smileIV=17.5%
+2025-09-20 10:59:24,202 - INFO - Top opportunity: RTM48C SELL - price_diff=$0.01, smileIV=18.2%
+2025-09-20 10:59:24,202 - INFO - Total trades executed: 46
+2025-09-20 10:59:24,705 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,706 - INFO - Processing tick 35/300 (status: ACTIVE)
+2025-09-20 10:59:24,706 - INFO - Before news processing - Current: 16.0%, Forecasted: 17.7%
+2025-09-20 10:59:24,710 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 372
+2025-09-20 10:59:24,712 - DEBUG - Processing 1 news items
+2025-09-20 10:59:24,715 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,716 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:24,717 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 16%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:59:24,717 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:24,718 - INFO - Detected ticks_per_day from news: 15
+2025-09-20 10:59:24,718 - DEBUG - Ignoring realized vol news at tick 35 (cutoff 75, already_set=True)
+2025-09-20 10:59:24,719 - INFO - News processing complete - Current: 16.0%, Forecasted: 17.7%
+2025-09-20 10:59:24,719 - INFO - After news processing - Current: 16.0%, Forecasted: 17.7%
+2025-09-20 10:59:24,722 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9643
+2025-09-20 10:59:24,727 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,730 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,735 - INFO - Fitted IV smile (log-moneyness): a=0.1737, b=0.072903, c=4.79327138, R^2=0.901, q10=17.4%, q90=18.3%
+2025-09-20 10:59:24,738 - INFO - Smile-based opportunities found: 10
+2025-09-20 10:59:24,739 - INFO - Top smile opp: RTM49P BUY | diff=$-0.01 | smileIV=17.6% | res=-0.24%
+2025-09-20 10:59:24,743 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9643
+2025-09-20 10:59:24,749 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9643
+2025-09-20 10:59:24,752 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:24,783 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM49P&type=MARKET&quantity=1&action=BUY HTTP/1.1" 200 192
+2025-09-20 10:59:24,784 - INFO - Order submitted: RTM49P BUY 1 - Order ID: 6011
+2025-09-20 10:59:24,785 - INFO - Executing volatility trade: BUY 1 RTM49P (trade #47)
+2025-09-20 10:59:24,815 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=25&action=BUY HTTP/1.1" 200 192
+2025-09-20 10:59:24,816 - INFO - Order submitted: RTM BUY 25 - Order ID: 6014
+2025-09-20 10:59:24,816 - INFO - Immediate hedge: BUY 25 RTM shares (delta: -0.25)
+2025-09-20 10:59:24,817 - INFO - Portfolio Delta: 9, Required Hedge: -9
+2025-09-20 10:59:24,817 - INFO - Current Volatility: 16.0%, Forecasted: 17.7%
+2025-09-20 10:59:24,818 - INFO - Found 10 trading opportunities
+2025-09-20 10:59:24,818 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:59:24,819 - DEBUG - Option RTM48C: Implied vol 17.7%
+2025-09-20 10:59:24,820 - DEBUG - Option RTM48P: Implied vol 18.0%
+2025-09-20 10:59:24,821 - DEBUG - Option RTM49C: Implied vol 17.6%
+2025-09-20 10:59:24,822 - DEBUG - Option RTM49P: Implied vol 17.6%
+2025-09-20 10:59:24,822 - DEBUG - Option RTM50C: Implied vol 17.1%
+2025-09-20 10:59:24,826 - DEBUG - Option RTM50P: Implied vol 17.3%
+2025-09-20 10:59:24,829 - DEBUG - Option RTM51C: Implied vol 17.4%
+2025-09-20 10:59:24,830 - DEBUG - Option RTM51P: Implied vol 17.4%
+2025-09-20 10:59:24,830 - DEBUG - Option RTM52C: Implied vol 17.6%
+2025-09-20 10:59:24,831 - DEBUG - Option RTM52P: Implied vol 17.9%
+2025-09-20 10:59:24,832 - INFO - Using market-implied volatility: 17.6% (from 10 options)
+2025-09-20 10:59:24,833 - INFO - Opportunity 1: RTM49P BUY - price_diff=$-0.01, smileIV=17.6%
+2025-09-20 10:59:24,834 - INFO - Opportunity 2: RTM48C SELL - price_diff=$0.01, smileIV=18.3%
+2025-09-20 10:59:24,834 - INFO - Opportunity 3: RTM48P SELL - price_diff=$0.01, smileIV=18.3%
+2025-09-20 10:59:24,835 - INFO - Top opportunity: RTM49P BUY - price_diff=$-0.01, smileIV=17.6%
+2025-09-20 10:59:24,835 - INFO - Total trades executed: 47
+2025-09-20 10:59:25,340 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,340 - INFO - Processing tick 36/300 (status: ACTIVE)
+2025-09-20 10:59:25,340 - INFO - Before news processing - Current: 16.0%, Forecasted: 17.6%
+2025-09-20 10:59:25,341 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 553
+2025-09-20 10:59:25,342 - DEBUG - Processing 2 news items
+2025-09-20 10:59:25,345 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,345 - DEBUG - News headline: News 1
+2025-09-20 10:59:25,346 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 12% and 17%
+2025-09-20 10:59:25,346 - INFO - Found volatility news: News 1
+2025-09-20 10:59:25,347 - INFO - Updated forecasted volatility to 14.5% (range: 12.0%-17.0%)
+2025-09-20 10:59:25,348 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:25,349 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 16%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:59:25,349 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:25,350 - INFO - Detected ticks_per_day from news: 15
+2025-09-20 10:59:25,350 - DEBUG - Ignoring realized vol news at tick 36 (cutoff 75, already_set=True)
+2025-09-20 10:59:25,350 - INFO - News processing complete - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:25,351 - INFO - After news processing - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:25,354 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9712
+2025-09-20 10:59:25,355 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,360 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,361 - INFO - Fitted IV smile (log-moneyness): a=0.1816, b=-0.045069, c=-2.16920654, R^2=0.159, q10=17.6%, q90=18.5%
+2025-09-20 10:59:25,362 - INFO - Smile-based opportunities found: 10
+2025-09-20 10:59:25,362 - INFO - Top smile opp: RTM50C SELL | diff=$0.12 | smileIV=18.2% | res=0.37%
+2025-09-20 10:59:25,365 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9712
+2025-09-20 10:59:25,368 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9712
+2025-09-20 10:59:25,372 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,410 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM50C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:25,410 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 6089
+2025-09-20 10:59:25,410 - INFO - Executing volatility trade: SELL 1 RTM50C (trade #48)
+2025-09-20 10:59:25,442 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=60&action=BUY HTTP/1.1" 200 192
+2025-09-20 10:59:25,442 - INFO - Order submitted: RTM BUY 60 - Order ID: 6095
+2025-09-20 10:59:25,442 - INFO - Immediate hedge: BUY 60 RTM shares (delta: -0.60)
+2025-09-20 10:59:25,442 - INFO - Portfolio Delta: -8, Required Hedge: 8
+2025-09-20 10:59:25,442 - INFO - Current Volatility: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:25,443 - INFO - Found 10 trading opportunities
+2025-09-20 10:59:25,443 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:59:25,443 - DEBUG - Option RTM48C: Implied vol 18.0%
+2025-09-20 10:59:25,443 - DEBUG - Option RTM48P: Implied vol 18.0%
+2025-09-20 10:59:25,443 - DEBUG - Option RTM49C: Implied vol 17.4%
+2025-09-20 10:59:25,443 - DEBUG - Option RTM49P: Implied vol 17.6%
+2025-09-20 10:59:25,443 - DEBUG - Option RTM50C: Implied vol 18.5%
+2025-09-20 10:59:25,444 - DEBUG - Option RTM50P: Implied vol 18.5%
+2025-09-20 10:59:25,444 - DEBUG - Option RTM51C: Implied vol 17.9%
+2025-09-20 10:59:25,444 - DEBUG - Option RTM51P: Implied vol 18.3%
+2025-09-20 10:59:25,444 - DEBUG - Option RTM52C: Implied vol 17.5%
+2025-09-20 10:59:25,444 - DEBUG - Option RTM52P: Implied vol 17.7%
+2025-09-20 10:59:25,444 - INFO - Using market-implied volatility: 18.0% (from 10 options)
+2025-09-20 10:59:25,444 - INFO - Opportunity 1: RTM50C SELL - price_diff=$0.12, smileIV=18.2%
+2025-09-20 10:59:25,445 - INFO - Opportunity 2: RTM50P SELL - price_diff=$0.12, smileIV=18.2%
+2025-09-20 10:59:25,445 - INFO - Opportunity 3: RTM51P SELL - price_diff=$0.11, smileIV=18.1%
+2025-09-20 10:59:25,445 - INFO - Top opportunity: RTM50C SELL - price_diff=$0.12, smileIV=18.2%
+2025-09-20 10:59:25,445 - INFO - Total trades executed: 48
+2025-09-20 10:59:25,949 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,951 - INFO - Processing tick 36/300 (status: ACTIVE)
+2025-09-20 10:59:25,952 - INFO - Before news processing - Current: 16.0%, Forecasted: 18.0%
+2025-09-20 10:59:25,957 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 553
+2025-09-20 10:59:25,958 - DEBUG - Processing 2 news items
+2025-09-20 10:59:25,961 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,962 - DEBUG - News headline: News 1
+2025-09-20 10:59:25,963 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 12% and 17%
+2025-09-20 10:59:25,963 - INFO - Found volatility news: News 1
+2025-09-20 10:59:25,964 - INFO - Updated forecasted volatility to 14.5% (range: 12.0%-17.0%)
+2025-09-20 10:59:25,964 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:25,964 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 16%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:59:25,964 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:25,965 - INFO - Detected ticks_per_day from news: 15
+2025-09-20 10:59:25,965 - DEBUG - Ignoring realized vol news at tick 36 (cutoff 75, already_set=True)
+2025-09-20 10:59:25,965 - INFO - News processing complete - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:25,966 - INFO - After news processing - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:25,970 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9645
+2025-09-20 10:59:25,974 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,979 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:25,981 - INFO - Fitted IV smile (log-moneyness): a=0.1816, b=-0.045069, c=-2.16920654, R^2=0.159, q10=17.6%, q90=18.5%
+2025-09-20 10:59:25,985 - INFO - Smile-based opportunities found: 10
+2025-09-20 10:59:25,986 - INFO - Top smile opp: RTM50C SELL | diff=$0.12 | smileIV=18.2% | res=0.37%
+2025-09-20 10:59:25,990 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9645
+2025-09-20 10:59:25,996 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9645
+2025-09-20 10:59:26,002 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:26,037 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM50P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:26,039 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 6181
+2025-09-20 10:59:26,040 - INFO - Executing volatility trade: SELL 1 RTM50P (trade #49)
+2025-09-20 10:59:26,072 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=40&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:26,075 - INFO - Order submitted: RTM SELL 40 - Order ID: 6185
+2025-09-20 10:59:26,075 - INFO - Immediate hedge: SELL 40 RTM shares (delta: 0.40)
+2025-09-20 10:59:26,076 - INFO - Portfolio Delta: -10, Required Hedge: 10
+2025-09-20 10:59:26,076 - INFO - Current Volatility: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:26,077 - INFO - Found 10 trading opportunities
+2025-09-20 10:59:26,078 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:59:26,079 - DEBUG - Option RTM48C: Implied vol 18.0%
+2025-09-20 10:59:26,080 - DEBUG - Option RTM48P: Implied vol 17.7%
+2025-09-20 10:59:26,080 - DEBUG - Option RTM49C: Implied vol 17.3%
+2025-09-20 10:59:26,081 - DEBUG - Option RTM49P: Implied vol 17.3%
+2025-09-20 10:59:26,082 - DEBUG - Option RTM50C: Implied vol 18.5%
+2025-09-20 10:59:26,083 - DEBUG - Option RTM50P: Implied vol 18.3%
+2025-09-20 10:59:26,083 - DEBUG - Option RTM51C: Implied vol 18.0%
+2025-09-20 10:59:26,084 - DEBUG - Option RTM51P: Implied vol 18.0%
+2025-09-20 10:59:26,085 - DEBUG - Option RTM52C: Implied vol 17.6%
+2025-09-20 10:59:26,085 - DEBUG - Option RTM52P: Implied vol 17.8%
+2025-09-20 10:59:26,086 - INFO - Using market-implied volatility: 17.9% (from 10 options)
+2025-09-20 10:59:26,086 - INFO - Opportunity 1: RTM50C SELL - price_diff=$0.12, smileIV=18.2%
+2025-09-20 10:59:26,087 - INFO - Opportunity 2: RTM50P SELL - price_diff=$0.12, smileIV=18.2%
+2025-09-20 10:59:26,088 - INFO - Opportunity 3: RTM51P SELL - price_diff=$0.11, smileIV=18.1%
+2025-09-20 10:59:26,089 - INFO - Top opportunity: RTM50C SELL - price_diff=$0.12, smileIV=18.2%
+2025-09-20 10:59:26,089 - INFO - Total trades executed: 49
+2025-09-20 10:59:26,596 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:26,597 - INFO - Processing tick 37/300 (status: ACTIVE)
+2025-09-20 10:59:26,598 - INFO - Before news processing - Current: 16.0%, Forecasted: 17.9%
+2025-09-20 10:59:26,602 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 553
+2025-09-20 10:59:26,605 - DEBUG - Processing 2 news items
+2025-09-20 10:59:26,610 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:26,611 - DEBUG - News headline: News 1
+2025-09-20 10:59:26,612 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 12% and 17%
+2025-09-20 10:59:26,612 - INFO - Found volatility news: News 1
+2025-09-20 10:59:26,613 - INFO - Updated forecasted volatility to 14.5% (range: 12.0%-17.0%)
+2025-09-20 10:59:26,614 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:26,614 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 16%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:59:26,615 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:26,616 - INFO - Detected ticks_per_day from news: 15
+2025-09-20 10:59:26,617 - DEBUG - Ignoring realized vol news at tick 37 (cutoff 75, already_set=True)
+2025-09-20 10:59:26,617 - INFO - News processing complete - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:26,618 - INFO - After news processing - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:26,624 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9657
+2025-09-20 10:59:26,629 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:26,634 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:26,639 - INFO - Fitted IV smile (log-moneyness): a=0.1754, b=0.159973, c=3.66374974, R^2=0.861, q10=17.2%, q90=18.1%
+2025-09-20 10:59:26,643 - INFO - Smile-based opportunities found: 10
+2025-09-20 10:59:26,644 - INFO - Top smile opp: RTM51C SELL | diff=$0.09 | smileIV=17.7% | res=0.10%
+2025-09-20 10:59:26,649 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9657
+2025-09-20 10:59:26,653 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9657
+2025-09-20 10:59:26,658 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:26,694 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM51C&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:26,695 - INFO - Order submitted: RTM51C SELL 1 - Order ID: 6303
+2025-09-20 10:59:26,696 - INFO - Executing volatility trade: SELL 1 RTM51C (trade #50)
+2025-09-20 10:59:26,747 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=45&action=BUY HTTP/1.1" 200 192
+2025-09-20 10:59:26,748 - INFO - Order submitted: RTM BUY 45 - Order ID: 6310
+2025-09-20 10:59:26,748 - INFO - Immediate hedge: BUY 45 RTM shares (delta: -0.45)
+2025-09-20 10:59:26,748 - INFO - Portfolio Delta: -6, Required Hedge: 6
+2025-09-20 10:59:26,749 - INFO - Current Volatility: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:26,749 - INFO - Found 10 trading opportunities
+2025-09-20 10:59:26,749 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:59:26,749 - DEBUG - Option RTM48C: Implied vol 17.8%
+2025-09-20 10:59:26,749 - DEBUG - Option RTM48P: Implied vol 17.8%
+2025-09-20 10:59:26,750 - DEBUG - Option RTM49C: Implied vol 16.8%
+2025-09-20 10:59:26,750 - DEBUG - Option RTM49P: Implied vol 17.0%
+2025-09-20 10:59:26,750 - DEBUG - Option RTM50C: Implied vol 17.4%
+2025-09-20 10:59:26,750 - DEBUG - Option RTM50P: Implied vol 17.8%
+2025-09-20 10:59:26,750 - DEBUG - Option RTM51C: Implied vol 17.5%
+2025-09-20 10:59:26,751 - DEBUG - Option RTM51P: Implied vol 18.1%
+2025-09-20 10:59:26,751 - DEBUG - Option RTM52C: Implied vol 17.8%
+2025-09-20 10:59:26,751 - DEBUG - Option RTM52P: Implied vol 18.4%
+2025-09-20 10:59:26,751 - INFO - Using market-implied volatility: 17.8% (from 10 options)
+2025-09-20 10:59:26,751 - INFO - Opportunity 1: RTM51C SELL - price_diff=$0.09, smileIV=17.7%
+2025-09-20 10:59:26,752 - INFO - Opportunity 2: RTM51P SELL - price_diff=$0.09, smileIV=17.7%
+2025-09-20 10:59:26,752 - INFO - Opportunity 3: RTM52P SELL - price_diff=$0.09, smileIV=18.2%
+2025-09-20 10:59:26,752 - INFO - Top opportunity: RTM51C SELL - price_diff=$0.09, smileIV=17.7%
+2025-09-20 10:59:26,752 - INFO - Total trades executed: 50
+2025-09-20 10:59:27,261 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,263 - INFO - Processing tick 38/300 (status: ACTIVE)
+2025-09-20 10:59:27,264 - INFO - Before news processing - Current: 16.0%, Forecasted: 17.8%
+2025-09-20 10:59:27,269 - DEBUG - http://localhost:9999 "GET /v1/news HTTP/1.1" 200 553
+2025-09-20 10:59:27,270 - DEBUG - Processing 2 news items
+2025-09-20 10:59:27,274 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,275 - DEBUG - News headline: News 1
+2025-09-20 10:59:27,276 - DEBUG - News body: The analysts have informed you that the realized volatility of RTM next week will be between 12% and 17%
+2025-09-20 10:59:27,277 - INFO - Found volatility news: News 1
+2025-09-20 10:59:27,277 - INFO - Updated forecasted volatility to 14.5% (range: 12.0%-17.0%)
+2025-09-20 10:59:27,278 - DEBUG - News headline: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:27,278 - DEBUG - News body: The current risk free rate is 0%. RTM is an ETF that mimics one of the major indices in the simulated world and its current annualized realized volatility is 16%. This simulation consists of 20 trading days that are each 15 ticks in length.
+2025-09-20 10:59:27,279 - INFO - Found volatility news: Risk free rate and current annualized volatility of RTM
+2025-09-20 10:59:27,280 - INFO - Detected ticks_per_day from news: 15
+2025-09-20 10:59:27,280 - DEBUG - Ignoring realized vol news at tick 38 (cutoff 75, already_set=True)
+2025-09-20 10:59:27,281 - INFO - News processing complete - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:27,281 - INFO - After news processing - Current: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:27,287 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9664
+2025-09-20 10:59:27,292 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,300 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,306 - INFO - Fitted IV smile (log-moneyness): a=0.1782, b=-0.003490, c=-0.51900472, R^2=0.096, q10=17.6%, q90=18.0%
+2025-09-20 10:59:27,307 - DEBUG - Smile fit R^2 below threshold (0.096 < 0.10); skipping smile trades this tick
+2025-09-20 10:59:27,311 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,313 - INFO - SELL opportunity: RTM48C - Implied vol: 17.9% vs Forecast: 14.5%
+2025-09-20 10:59:27,315 - INFO - SELL opportunity: RTM48P - Implied vol: 17.3% vs Forecast: 14.5%
+2025-09-20 10:59:27,315 - INFO - SELL opportunity: RTM49C - Implied vol: 18.1% vs Forecast: 14.5%
+2025-09-20 10:59:27,316 - INFO - SELL opportunity: RTM49P - Implied vol: 17.9% vs Forecast: 14.5%
+2025-09-20 10:59:27,317 - INFO - SELL opportunity: RTM50C - Implied vol: 17.9% vs Forecast: 14.5%
+2025-09-20 10:59:27,317 - INFO - SELL opportunity: RTM50P - Implied vol: 17.6% vs Forecast: 14.5%
+2025-09-20 10:59:27,318 - INFO - SELL opportunity: RTM51C - Implied vol: 17.9% vs Forecast: 14.5%
+2025-09-20 10:59:27,318 - INFO - SELL opportunity: RTM51P - Implied vol: 17.8% vs Forecast: 14.5%
+2025-09-20 10:59:27,319 - INFO - SELL opportunity: RTM52C - Implied vol: 17.8% vs Forecast: 14.5%
+2025-09-20 10:59:27,321 - INFO - SELL opportunity: RTM52P - Implied vol: 17.6% vs Forecast: 14.5%
+2025-09-20 10:59:27,322 - INFO - Using forecast-based opportunities: 10 found
+2025-09-20 10:59:27,326 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,332 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,337 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,341 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,346 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,348 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,353 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,356 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,360 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,365 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,368 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9664
+2025-09-20 10:59:27,375 - DEBUG - http://localhost:9999 "GET /v1/securities HTTP/1.1" 200 9664
+2025-09-20 10:59:27,378 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 10:59:27,411 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM51P&type=MARKET&quantity=1&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:27,413 - INFO - Order submitted: RTM51P SELL 1 - Order ID: 6429
+2025-09-20 10:59:27,413 - INFO - Executing volatility trade: SELL 1 RTM51P (trade #51)
+2025-09-20 10:59:27,449 - DEBUG - http://localhost:9999 "POST /v1/orders?ticker=RTM&type=MARKET&quantity=59&action=SELL HTTP/1.1" 200 193
+2025-09-20 10:59:27,449 - INFO - Order submitted: RTM SELL 59 - Order ID: 6434
+2025-09-20 10:59:27,450 - INFO - Immediate hedge: SELL 59 RTM shares (delta: 0.59)
+2025-09-20 10:59:27,450 - INFO - Portfolio Delta: -10, Required Hedge: 10
+2025-09-20 10:59:27,450 - INFO - Current Volatility: 16.0%, Forecasted: 14.5%
+2025-09-20 10:59:27,450 - INFO - Found 10 trading opportunities
+2025-09-20 10:59:27,450 - INFO - Calculating market-implied volatility from options
+2025-09-20 10:59:27,451 - DEBUG - Option RTM48C: Implied vol 17.9%
+2025-09-20 10:59:27,451 - DEBUG - Option RTM48P: Implied vol 17.3%
+2025-09-20 10:59:27,451 - DEBUG - Option RTM49C: Implied vol 18.1%
+2025-09-20 10:59:27,451 - DEBUG - Option RTM49P: Implied vol 17.9%
+2025-09-20 10:59:27,451 - DEBUG - Option RTM50C: Implied vol 17.9%
+2025-09-20 10:59:27,452 - DEBUG - Option RTM50P: Implied vol 17.6%
+2025-09-20 10:59:27,452 - DEBUG - Option RTM51C: Implied vol 17.9%
+2025-09-20 10:59:27,452 - DEBUG - Option RTM51P: Implied vol 17.8%
+2025-09-20 10:59:27,452 - DEBUG - Option RTM52C: Implied vol 17.8%
+2025-09-20 10:59:27,452 - DEBUG - Option RTM52P: Implied vol 17.6%
+2025-09-20 10:59:27,453 - INFO - Using market-implied volatility: 17.9% (from 10 options)
+2025-09-20 10:59:27,453 - INFO - Opportunity 1: RTM51P SELL - price_diff=$0.18, smileIV=17.8%
+2025-09-20 10:59:27,454 - INFO - Opportunity 2: RTM51C SELL - price_diff=$0.18, smileIV=17.9%
+2025-09-20 10:59:27,454 - INFO - Opportunity 3: RTM50C SELL - price_diff=$0.17, smileIV=17.9%
+2025-09-20 10:59:27,454 - INFO - Top opportunity: RTM51P SELL - price_diff=$0.18, smileIV=17.8%
+2025-09-20 10:59:27,455 - INFO - Total trades executed: 51
