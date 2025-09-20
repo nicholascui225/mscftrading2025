@@ -1,0 +1,30 @@
+2025-09-20 11:32:38,820 - INFO - Initial logging setup - logs/volatility_trading_20250920_113238.log
+2025-09-20 11:32:38,820 - INFO - Checking case status...
+2025-09-20 11:32:38,822 - DEBUG - Starting new HTTP connection (1): localhost:9999
+2025-09-20 11:32:38,826 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:38,828 - INFO - Case not yet active (status: STOPPED, tick: 0)
+2025-09-20 11:32:38,830 - INFO - Waiting for case to start...
+2025-09-20 11:32:40,836 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:40,840 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:42,845 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:42,846 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:44,853 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:44,856 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:46,861 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:46,863 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:48,867 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:48,868 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:50,873 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:50,875 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:52,883 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:52,890 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:54,894 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:54,895 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:56,901 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:56,902 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:32:58,908 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:32:58,909 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:33:00,914 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:33:00,916 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 11:33:02,922 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 11:33:02,923 - INFO - Still waiting... (status: STOPPED, tick: 0)

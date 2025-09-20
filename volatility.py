@@ -77,9 +77,9 @@ DELTA_LIMIT = 7000
 PENALTY_RATE = 0.01
 
 # Additional risk and execution controls
-MAX_OPTIONS_PER_TICK = 1
-DELTA_HEDGE_TRIGGER = 1000
-NEAR_EXPIRY_TICKS_GATE = 20
+MAX_OPTIONS_PER_TICK = 2
+DELTA_HEDGE_TRIGGER = 200
+NEAR_EXPIRY_TICKS_GATE = 30
 SAME_TICKER_COOLDOWN_TICKS = 2
 MIN_SMILE_R2 = 0.10
 
@@ -482,18 +482,27 @@ class VolatilityTradingStrategy:
             if np.isnan(theo_price) or theo_price <= 0:
                 continue
             price_diff = market_price - theo_price  # positive => market overpriced
-            # Tighter thresholds with vega-normalization
+            # Fee-aware thresholds with vega-normalization
             iv_residual = p['iv'] - smile_iv
             greeks = self.calculate_greeks(rtm_price, strike, time_to_expiry, smile_iv, option_type)
             vega_val = abs(greeks.get('vega', 0.0))
             # Convert price diff to implied vol points via vega
             vol_equiv = abs(price_diff) / max(vega_val, 1e-6)
-            base_price_threshold = max(0.01, 0.0025 * theo_price)  # 0.25% or 1c
+            # Commission + spread per contract: ~$1.02; require 1.5x to be safe
+            fee_buffer = 1.5 * (OPTIONS_COMMISSION + 0.02)
+            base_price_threshold = max(fee_buffer/100.0, 0.003 * theo_price)  # scaled per share of 100
             vol_equiv_threshold = 0.003  # 0.3 vol points
             min_vega = 0.02  # require minimum sensitivity
             if (abs(price_diff) < base_price_threshold and vol_equiv < vol_equiv_threshold) or vega_val < min_vega:
                 continue
-            action = 'SELL' if price_diff > 0 else 'BUY'
+            # Bias to SELL unless BUY edge beats fees by 2x (to avoid small long theta drags)
+            if price_diff > 0:
+                action = 'SELL'
+            else:
+                if abs(price_diff) >= 2.0 * base_price_threshold:
+                    action = 'BUY'
+                else:
+                    continue
             opportunity = {
                 'ticker': p['ticker'],
                 'option_type': option_type,
@@ -787,17 +796,7 @@ class VolatilityTradingStrategy:
         self.total_trades += 1
         logger.info(f"Executing volatility trade: {action} {quantity} {ticker} (trade #{self.total_trades})")
         
-        # CRITICAL: Immediately hedge delta exposure after option trade
-        # This prevents the massive losses we've been seeing
-        trade_delta = opportunity['greeks']['delta'] * (1 if action == 'BUY' else -1)
-        if abs(trade_delta) > 0.1:  # Only hedge if significant delta
-            # Calculate required RTM hedge
-            required_rtm_hedge = -trade_delta * 100  # Convert to shares (1 contract = 100 shares)
-            if abs(required_rtm_hedge) > 10:  # Only hedge if significant
-                hedge_action = 'BUY' if required_rtm_hedge > 0 else 'SELL'
-                hedge_quantity = int(round(min(abs(required_rtm_hedge), 100)))  # Limit hedge size and round to whole shares
-                self.submit_order('RTM', hedge_action, hedge_quantity)
-                logger.info(f"Immediate hedge: {hedge_action} {hedge_quantity} RTM shares (delta: {trade_delta:.2f})")
+        # Defer hedging to centralized hedger in the main loop
     
     def process_news_updates(self):
         """Process news updates for volatility forecasts"""
@@ -991,6 +990,10 @@ class VolatilityTradingStrategy:
                     # Trade count limit per tick
                     if trades_placed >= MAX_OPTIONS_PER_TICK:
                         break
+                    # Suppress new option trades when near expiry or delta exceeds gate
+                    ticks_remaining = TRADING_SECONDS - tick
+                    if abs(portfolio_delta) > DELTA_HEDGE_TRIGGER or ticks_remaining <= NEAR_EXPIRY_TICKS_GATE:
+                        break
                     
                     # Execute the trade
                     self.execute_option_trade(opportunity)
@@ -1001,10 +1004,22 @@ class VolatilityTradingStrategy:
                 # Execute delta hedge - Stay within ±7000 limit
                 required_hedge = self.calculate_required_hedge(portfolio_delta)
                 
-                # More proactive delta hedging
+                # Target near-flat delta every loop if beyond small band
                 if abs(portfolio_delta) > DELTA_HEDGE_TRIGGER:
                     logger.info(f"Hedging delta exposure: {portfolio_delta:.0f}")
                     self.execute_hedge(required_hedge, rtm_price)
+
+                # End-of-session flattening: last 2 ticks, flatten RTM and place no new option trades
+                if TRADING_SECONDS - tick <= 2:
+                    live_pos = 0
+                    try:
+                        live_pos = self.get_current_position('RTM')
+                    except Exception:
+                        pass
+                    if live_pos != 0:
+                        flatten_action = 'SELL' if live_pos > 0 else 'BUY'
+                        self.submit_order('RTM', flatten_action, abs(int(live_pos)))
+                        logger.info(f"Final flatten RTM: {flatten_action} {abs(int(live_pos))} shares at tick {tick}")
                 
                 # Calculate delta penalty if over limit
                 delta_penalty = 0
