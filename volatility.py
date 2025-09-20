@@ -754,34 +754,37 @@ class VolatilityTradingStrategy:
                     
                     # Extract volatility information from news body
                     import re
-                    
-                    # Look for any percentage in the body
-                    vol_match = re.search(r'(\d+(?:\.\d+)?)%', body)
-                    if vol_match:
-                        vol_value = float(vol_match.group(1)) / 100
-                        if 'current annualized realized volatility' in body.lower():
-                            self.current_volatility = vol_value
-                            logger.info(f"Updated current volatility to {self.current_volatility:.1%}")
-                        elif 'next week' in body.lower() or 'forecast' in body.lower():
-                            # Handle range like "between 20% and 25%"
-                            range_match = re.search(r'between (\d+(?:\.\d+)?)% and (\d+(?:\.\d+)?)%', body)
-                            if range_match:
-                                vol_min = float(range_match.group(1)) / 100
-                                vol_max = float(range_match.group(2)) / 100
-                                self.forecasted_volatility = (vol_min + vol_max) / 2
-                                logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%} (range: {vol_min:.1%}-{vol_max:.1%})")
-                            else:
-                                self.forecasted_volatility = vol_value
-                                logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%}")
+                    lower_body = body.lower()
+
+                    # Explicitly parse realized volatility to avoid capturing risk-free rate
+                    realized_match = re.search(r'current\s+annualized\s+realized\s+volatility\s+is\s+(\d+(?:\.\d+)?)%', lower_body)
+                    if realized_match:
+                        realized_val = float(realized_match.group(1)) / 100
+                        self.current_volatility = realized_val
+                        logger.info(f"Updated current volatility to {self.current_volatility:.1%}")
+
+                    # Parse forecast (range preferred)
+                    if 'next week' in lower_body or 'forecast' in lower_body:
+                        range_match = re.search(r'between\s+(\d+(?:\.\d+)?)%\s+and\s+(\d+(?:\.\d+)?)%', lower_body)
+                        if range_match:
+                            vol_min = float(range_match.group(1)) / 100
+                            vol_max = float(range_match.group(2)) / 100
+                            self.forecasted_volatility = (vol_min + vol_max) / 2
+                            logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%} (range: {vol_min:.1%}-{vol_max:.1%})")
                         else:
-                            # If it's the first news item about volatility, it's likely current volatility
-                            if 'realized volatility' in body.lower() and self.current_volatility == 0.20:
-                                self.current_volatility = vol_value
-                                logger.info(f"Updated current volatility to {self.current_volatility:.1%}")
-                            else:
-                                # Default to forecasted volatility if unclear
-                                self.forecasted_volatility = vol_value
+                            # Fallback: capture a percentage near 'next week' or 'forecast' keywords
+                            single_forecast_match = re.search(r'(?:next\s+week|forecast)[^%]*?(\d+(?:\.\d+)?)%', lower_body)
+                            if single_forecast_match:
+                                self.forecasted_volatility = float(single_forecast_match.group(1)) / 100
                                 logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%}")
+
+                    # If nothing matched but there is a percentage, do not misassign risk-free to realized
+                    generic_match = re.findall(r'(\d+(?:\.\d+)?)%', lower_body)
+                    if (not realized_match) and (not ('next week' in lower_body or 'forecast' in lower_body)) and generic_match:
+                        # Keep behavior conservative: assign to forecasted, not current, to avoid 0% risk-free capture
+                        fallback_val = float(generic_match[-1]) / 100  # prefer the last percentage
+                        self.forecasted_volatility = fallback_val
+                        logger.info(f"Updated forecasted volatility to {self.forecasted_volatility:.1%}")
                     else:
                         logger.warning(f"Could not extract volatility from: {body}")
                 else:

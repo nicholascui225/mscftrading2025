@@ -1,0 +1,50 @@
+2025-09-20 09:58:29,870 - INFO - Initial logging setup - logs/volatility_trading_20250920_095829.log
+2025-09-20 09:58:29,871 - INFO - Checking case status...
+2025-09-20 09:58:29,872 - DEBUG - Starting new HTTP connection (1): localhost:9999
+2025-09-20 09:58:29,877 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:29,877 - INFO - Case not yet active (status: STOPPED, tick: 0)
+2025-09-20 09:58:29,877 - INFO - Waiting for case to start...
+2025-09-20 09:58:31,884 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:31,888 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:33,893 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:33,894 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:35,899 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:35,900 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:37,906 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:37,908 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:39,925 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:39,926 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:41,932 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:41,934 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:43,942 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:43,944 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:45,951 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:45,953 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:47,960 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:47,962 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:49,967 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:49,968 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:51,974 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:51,976 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:53,986 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:53,999 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:56,005 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:56,006 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:58:58,012 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:58:58,013 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:00,018 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:00,020 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:02,029 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:02,031 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:04,037 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:04,038 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:06,043 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:06,044 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:08,052 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:08,054 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:10,061 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:10,064 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:12,070 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:12,070 - INFO - Still waiting... (status: STOPPED, tick: 0)
+2025-09-20 09:59:14,075 - DEBUG - http://localhost:9999 "GET /v1/case HTTP/1.1" 200 153
+2025-09-20 09:59:14,076 - INFO - Still waiting... (status: STOPPED, tick: 0)

@@ -64,7 +64,7 @@ class ArbitrageStrategy:
     def __init__(self, mode: Mode = Mode.LIVE):
         self.mode = mode
         self.API = "http://localhost:9999/v1"
-        self.API_KEY = "GKAW3HJA"
+        self.API_KEY = "5E300MMZ"
         self.HDRS = {"X-API-Key": self.API_KEY}
         
         # Initialize session
