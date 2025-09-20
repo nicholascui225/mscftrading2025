@@ -64,7 +64,7 @@ class ArbitrageStrategy:
     def __init__(self, mode: Mode = Mode.LIVE):
         self.mode = mode
         self.API = "http://localhost:9999/v1"
-        self.API_KEY = "5E300MMZ"
+        self.API_KEY = "GKAW3HJA"
         self.HDRS = {"X-API-Key": self.API_KEY}
         
         # Initialize session
@@ -74,8 +74,8 @@ class ArbitrageStrategy:
         # Trading parameters - OPTIMIZED FOR PROFITS
         self.FEE_MKT = 0.02
         self.REBATE_LMT = 0.01
-        self.MAX_SIZE_EQUITY = 15000  # Increased for more profit potential
-        self.MAX_SIZE_FX = 3000000    # Increased FX capacity
+        self.MAX_SIZE_EQUITY = 10000  # Increased for more profit potential
+        self.MAX_SIZE_FX = 2500000    # Increased FX capacity
         
         # Risk parameters - OPTIMIZED FOR AGGRESSIVE TRADING
         self.MAX_LONG_NET = 35000     # Increased long exposure
@@ -503,7 +503,7 @@ class ArbitrageStrategy:
             
             # Check if we've hit profit target
             if self.total_profit >= self.profit_target:
-                logger.info(f"🎯 PROFIT TARGET REACHED! Total profit: ${self.total_profit:.2f}")
+                logger.info(f"PROFIT TARGET REACHED! Total profit: ${self.total_profit:.2f}")
             
         except Exception as e:
             logger.error(f"Error updating PnL: {e}")
@@ -513,7 +513,7 @@ class ArbitrageStrategy:
         try:
             # Check if we're close to profit target
             if self.total_profit >= self.profit_target * 0.8:
-                logger.info("🚀 Near profit target - increasing aggressiveness!")
+                logger.info("Near profit target - increasing aggressiveness!")
                 # Lower threshold for more opportunities
                 self.ARB_THRESHOLD_CAD = 0.03
                 # Increase order size
@@ -521,7 +521,7 @@ class ArbitrageStrategy:
             
             # If we're losing money, be more conservative
             if self.total_profit < 0:
-                logger.warning("⚠️ In drawdown - reducing risk")
+                logger.warning("In drawdown - reducing risk")
                 self.ARB_THRESHOLD_CAD = 0.08
                 self.ORDER_QTY = max(self.ORDER_QTY * 0.8, 1000)
             
@@ -547,7 +547,7 @@ class ArbitrageStrategy:
             for tender in profitable_tenders:
                 if self.accept_tender_offer(tender):
                     self.fast_unwind_tender(tender)
-                    logger.info(f"💰 Tender profit: ${tender['pnl']:.2f}")
+                    logger.info(f"Tender profit: ${tender['pnl']:.2f}")
             
             # 2. Check for ETF mispricing - AGGRESSIVE PROFIT HUNTING
             has_opportunity, direction, edge = self.detect_mispricing()
@@ -595,34 +595,34 @@ class ArbitrageStrategy:
         runtime = time.time() - self.start_time
         
         print("\n" + "="*60)
-        print("🚀 PROFIT-OPTIMIZED ARBITRAGE STRATEGY SUMMARY 🚀")
+        print("PROFIT-OPTIMIZED ARBITRAGE STRATEGY SUMMARY 🚀")
         print("="*60)
-        print(f"⏱️  Runtime: {runtime:.2f} seconds")
-        print(f"📊 Total Trades: {self.trade_count}")
-        print(f"✅ Successful Arbitrages: {self.successful_arbitrages}")
-        print(f"💰 Total Profit: ${self.total_profit:.2f}")
-        print(f"🎯 Profit Target: ${self.profit_target:.2f}")
-        print(f"📈 Win Rate: {self.win_rate:.2%}")
-        print(f"💎 Max Profit Trade: ${self.max_profit_trade:.2f}")
-        print(f"📊 Profit per Trade: ${self.profit_per_trade:.2f}")
-        print(f"🔥 Best Arbitrage Edge: ${self.best_arbitrage_edge:.4f}")
-        print(f"💵 Realized PnL: ${self.pnl_realized:.2f}")
-        print(f"📈 Unrealized PnL: ${self.pnl_unrealized:.2f}")
-        print(f"📊 Total PnL: ${self.pnl_realized + self.pnl_unrealized:.2f}")
-        print(f"⚖️  Gross Exposure: ${self.exposure_gross:.2f}")
-        print(f"📊 Net Exposure: ${self.exposure_net:.2f}")
-        print(f"🎯 Tender Decisions: {len(self.tender_decisions)}")
-        print(f"🔄 Converter Usage: {len(self.converter_usage)}")
+        print(f"Runtime: {runtime:.2f} seconds")
+        print(f"Total Trades: {self.trade_count}")
+        print(f"Successful Arbitrages: {self.successful_arbitrages}")
+        print(f"Total Profit: ${self.total_profit:.2f}")
+        print(f"Profit Target: ${self.profit_target:.2f}")
+        print(f"Win Rate: {self.win_rate:.2%}")
+        print(f"Max Profit Trade: ${self.max_profit_trade:.2f}")
+        print(f"Profit per Trade: ${self.profit_per_trade:.2f}")
+        print(f"Best Arbitrage Edge: ${self.best_arbitrage_edge:.4f}")
+        print(f"Realized PnL: ${self.pnl_realized:.2f}")
+        print(f"Unrealized PnL: ${self.pnl_unrealized:.2f}")
+        print(f"Total PnL: ${self.pnl_realized + self.pnl_unrealized:.2f}")
+        print(f"Gross Exposure: ${self.exposure_gross:.2f}")
+        print(f"Net Exposure: ${self.exposure_net:.2f}")
+        print(f"Tender Decisions: {len(self.tender_decisions)}")
+        print(f"Converter Usage: {len(self.converter_usage)}")
         
         # Profit performance analysis
         if self.total_profit > 0:
-            print(f"\n🎉 PROFIT PERFORMANCE: {self.total_profit/self.profit_target*100:.1f}% of target achieved!")
+            print(f"\nPROFIT PERFORMANCE: {self.total_profit/self.profit_target*100:.1f}% of target achieved!")
         else:
-            print(f"\n⚠️  LOSS PERFORMANCE: ${abs(self.total_profit):.2f} loss")
+            print(f"\nLOSS PERFORMANCE: ${abs(self.total_profit):.2f} loss")
         
         # Print recent trades
         if self.trades:
-            print(f"\n📋 Recent Trades (Last 10):")
+            print(f"\nRecent Trades (Last 10):")
             for trade in self.trades[-10:]:  # Last 10 trades
                 print(f"  {trade.ticker}: {trade.action} {trade.quantity} @ ${trade.price:.4f}")
         
