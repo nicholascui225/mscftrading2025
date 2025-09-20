@@ -134,6 +134,8 @@ class VolatilityTradingStrategy:
         self.total_penalties = 0  # Track total penalties incurred
         self.current_log_file = None  # Track current log file
         self.case_number = 0  # Track case number
+        # News state tracking
+        self.realized_vol_set_tick = None  # Tick when realized vol was last set
     
     def create_case_log_file(self, case_tick):
         """Create a new log file for the current case"""
@@ -741,6 +743,7 @@ class VolatilityTradingStrategy:
         try:
             news_data = self.get_news()
             logger.debug(f"Processing {len(news_data)} news items")
+            current_tick = self.get_current_tick()
             
             for news_item in news_data:
                 headline = news_item.get('headline', '')
@@ -756,12 +759,28 @@ class VolatilityTradingStrategy:
                     import re
                     lower_body = body.lower()
 
+                    # Derive a first-week cutoff in ticks (default 5*15=75 unless specified in news)
+                    first_week_cutoff = 75
+                    try:
+                        # e.g., "20 trading days that are each 15 ticks in length"
+                        days_ticks_match = re.search(r'(\d+)\s+trading\s+days.*?each\s+(\d+)\s+ticks', lower_body)
+                        if days_ticks_match:
+                            ticks_per_day = int(days_ticks_match.group(2))
+                            first_week_cutoff = 5 * max(1, ticks_per_day)
+                    except Exception:
+                        pass
+
                     # Explicitly parse realized volatility to avoid capturing risk-free rate
                     realized_match = re.search(r'current\s+annualized\s+realized\s+volatility\s+is\s+(\d+(?:\.\d+)?)%', lower_body)
                     if realized_match:
-                        realized_val = float(realized_match.group(1)) / 100
-                        self.current_volatility = realized_val
-                        logger.info(f"Updated current volatility to {self.current_volatility:.1%}")
+                        # Only consider realized vol message during the first week and only once per case
+                        if current_tick <= first_week_cutoff and self.realized_vol_set_tick is None:
+                            realized_val = float(realized_match.group(1)) / 100
+                            self.current_volatility = realized_val
+                            self.realized_vol_set_tick = current_tick
+                            logger.info(f"Updated current volatility to {self.current_volatility:.1%} (tick {current_tick} within first-week cutoff {first_week_cutoff})")
+                        else:
+                            logger.debug(f"Ignoring realized vol news at tick {current_tick} (cutoff {first_week_cutoff}, already_set={self.realized_vol_set_tick is not None})")
 
                     # Parse forecast (range preferred)
                     if 'next week' in lower_body or 'forecast' in lower_body:
