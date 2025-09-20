@@ -1,0 +1,2119 @@
+2025-09-20 00:22:22,995 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:22:22,996 - INFO - Starting arbitrage strategy...
+2025-09-20 00:22:23,004 - ERROR - Error getting tick status: 401 Client Error: Unauthorized for url: http://localhost:9999/v1/case
+2025-09-20 00:22:39,122 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:22:39,132 - ERROR - Error getting tick status: 401 Client Error: Unauthorized for url: http://localhost:9999/v1/case
+2025-09-20 00:24:08,664 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:24:08,667 - INFO - Starting arbitrage strategy...
+2025-09-20 00:24:08,678 - ERROR - Error getting tick status: 401 Client Error: Unauthorized for url: http://localhost:9999/v1/case/case
+2025-09-20 00:24:16,584 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:24:16,584 - INFO - Starting arbitrage strategy...
+2025-09-20 00:24:16,592 - ERROR - Error getting tick status: 401 Client Error: Unauthorized for url: http://localhost:9999/v1/case
+2025-09-20 00:29:24,806 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:29:24,806 - INFO - Starting arbitrage strategy...
+2025-09-20 00:29:24,815 - ERROR - Authentication failed. Make sure RIT Market Simulator is running with an active case.
+2025-09-20 00:30:36,525 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:30:36,525 - INFO - Starting arbitrage strategy...
+2025-09-20 00:30:36,537 - ERROR - Authentication failed. Make sure RIT Market Simulator is running with an active case.
+2025-09-20 00:30:41,130 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:30:41,131 - INFO - Starting arbitrage strategy...
+2025-09-20 00:30:41,143 - ERROR - Authentication failed. Make sure RIT Market Simulator is running with an active case.
+2025-09-20 00:32:23,912 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:32:23,922 - WARNING - Header auth failed, trying query parameter auth...
+2025-09-20 00:32:23,927 - ERROR - Authentication failed. Try these solutions:
+2025-09-20 00:32:23,927 - ERROR - 1. Ensure RIT Market Simulator case is ACTIVE
+2025-09-20 00:32:23,928 - ERROR - 2. Check if you need to log in to the RIT GUI first
+2025-09-20 00:32:23,928 - ERROR - 3. Verify the API key matches your RIT configuration
+2025-09-20 00:32:23,928 - ERROR - 4. Try restarting the RIT Market Simulator
+2025-09-20 00:34:46,249 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:34:46,250 - INFO - Starting arbitrage strategy...
+2025-09-20 00:34:46,263 - WARNING - Header auth failed, trying query parameter auth...
+2025-09-20 00:34:46,266 - ERROR - Authentication failed. Try these solutions:
+2025-09-20 00:34:46,267 - ERROR - 1. Ensure RIT Market Simulator case is ACTIVE
+2025-09-20 00:34:46,267 - ERROR - 2. Check if you need to log in to the RIT GUI first
+2025-09-20 00:34:46,267 - ERROR - 3. Verify the API key matches your RIT configuration
+2025-09-20 00:34:46,267 - ERROR - 4. Try restarting the RIT Market Simulator
+2025-09-20 00:36:31,746 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:36:31,747 - INFO - Starting arbitrage strategy...
+2025-09-20 00:36:31,853 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:31,886 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:31,918 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:31,918 - INFO - Overpricing arbitrage executed: edge=0.1126
+2025-09-20 00:36:31,936 - INFO - Tick 6: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.11257300000000114}
+2025-09-20 00:36:32,511 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:32,546 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:32,580 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:32,580 - INFO - Overpricing arbitrage executed: edge=0.1127
+2025-09-20 00:36:32,608 - INFO - Tick 7: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.11270499999999828}
+2025-09-20 00:36:33,190 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:33,234 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:33,285 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:33,285 - INFO - Overpricing arbitrage executed: edge=0.1227
+2025-09-20 00:36:33,308 - INFO - Tick 7: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.1227239999999945}
+2025-09-20 00:36:33,882 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:33,915 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:33,950 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:33,951 - INFO - Overpricing arbitrage executed: edge=0.1233
+2025-09-20 00:36:33,968 - INFO - Tick 8: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.12325199999999725}
+2025-09-20 00:36:34,551 - INFO - Order placed: BUY 5000 RITC (MARKET)
+2025-09-20 00:36:34,591 - INFO - Order placed: SELL 5000 BULL (MARKET)
+2025-09-20 00:36:34,628 - INFO - Order placed: SELL 5000 BEAR (MARKET)
+2025-09-20 00:36:34,629 - INFO - Underpricing arbitrage executed: edge=0.1835
+2025-09-20 00:36:34,647 - INFO - Tick 9: {'traded': True, 'direction': 'UNDERPRICED', 'edge': 0.18353499999999912}
+2025-09-20 00:36:35,215 - INFO - Order placed: BUY 5000 RITC (MARKET)
+2025-09-20 00:36:35,245 - INFO - Order placed: SELL 5000 BULL (MARKET)
+2025-09-20 00:36:35,285 - INFO - Order placed: SELL 5000 BEAR (MARKET)
+2025-09-20 00:36:35,285 - INFO - Underpricing arbitrage executed: edge=0.2036
+2025-09-20 00:36:35,302 - INFO - Tick 9: {'traded': True, 'direction': 'UNDERPRICED', 'edge': 0.20364899999999864}
+2025-09-20 00:36:35,879 - INFO - Order placed: BUY 5000 RITC (MARKET)
+2025-09-20 00:36:35,925 - INFO - Order placed: SELL 5000 BULL (MARKET)
+2025-09-20 00:36:35,960 - INFO - Order placed: SELL 5000 BEAR (MARKET)
+2025-09-20 00:36:35,961 - INFO - Underpricing arbitrage executed: edge=0.2137
+2025-09-20 00:36:35,993 - INFO - Tick 10: {'traded': True, 'direction': 'UNDERPRICED', 'edge': 0.2136860000000027}
+2025-09-20 00:36:36,565 - INFO - Order placed: BUY 5000 RITC (MARKET)
+2025-09-20 00:36:36,600 - INFO - Order placed: SELL 5000 BULL (MARKET)
+2025-09-20 00:36:36,634 - INFO - Order placed: SELL 5000 BEAR (MARKET)
+2025-09-20 00:36:36,635 - INFO - Underpricing arbitrage executed: edge=0.1939
+2025-09-20 00:36:36,653 - INFO - Tick 11: {'traded': True, 'direction': 'UNDERPRICED', 'edge': 0.19387599999999594}
+2025-09-20 00:36:37,231 - INFO - Order placed: BUY 5000 RITC (MARKET)
+2025-09-20 00:36:37,324 - INFO - Order placed: SELL 5000 BULL (MARKET)
+2025-09-20 00:36:37,361 - INFO - Order placed: SELL 5000 BEAR (MARKET)
+2025-09-20 00:36:37,361 - INFO - Underpricing arbitrage executed: edge=0.1838
+2025-09-20 00:36:37,391 - INFO - Tick 11: {'traded': True, 'direction': 'UNDERPRICED', 'edge': 0.18380399999999852}
+2025-09-20 00:36:37,980 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:38,015 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:38,052 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:38,053 - INFO - Overpricing arbitrage executed: edge=0.0828
+2025-09-20 00:36:38,087 - INFO - Tick 12: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.08280600000000149}
+2025-09-20 00:36:38,669 - INFO - Order placed: BUY 5000 RITC (MARKET)
+2025-09-20 00:36:38,703 - INFO - Order placed: SELL 5000 BULL (MARKET)
+2025-09-20 00:36:38,737 - INFO - Order placed: SELL 5000 BEAR (MARKET)
+2025-09-20 00:36:38,737 - INFO - Underpricing arbitrage executed: edge=0.1330
+2025-09-20 00:36:38,754 - INFO - Tick 13: {'traded': True, 'direction': 'UNDERPRICED', 'edge': 0.13295800000000213}
+2025-09-20 00:36:39,331 - INFO - Order placed: BUY 5000 RITC (MARKET)
+2025-09-20 00:36:39,376 - INFO - Order placed: SELL 5000 BULL (MARKET)
+2025-09-20 00:36:39,408 - INFO - Order placed: SELL 5000 BEAR (MARKET)
+2025-09-20 00:36:39,409 - INFO - Underpricing arbitrage executed: edge=0.2132
+2025-09-20 00:36:39,429 - INFO - Tick 13: {'traded': True, 'direction': 'UNDERPRICED', 'edge': 0.2132460000000016}
+2025-09-20 00:36:40,002 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:40,035 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:40,068 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:40,068 - INFO - Overpricing arbitrage executed: edge=0.0728
+2025-09-20 00:36:40,086 - INFO - Tick 14: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.07279199999999975}
+2025-09-20 00:36:40,655 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:40,689 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:40,729 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:40,729 - INFO - Overpricing arbitrage executed: edge=0.1925
+2025-09-20 00:36:40,749 - INFO - Tick 15: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.1925290000000004}
+2025-09-20 00:36:41,319 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:41,352 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:41,384 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:41,385 - INFO - Overpricing arbitrage executed: edge=0.1425
+2025-09-20 00:36:41,414 - INFO - Tick 15: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.142516999999998}
+2025-09-20 00:36:41,986 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:42,025 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:42,060 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:42,061 - INFO - Overpricing arbitrage executed: edge=0.1428
+2025-09-20 00:36:42,078 - INFO - Tick 16: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.14282499999999843}
+2025-09-20 00:36:42,674 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:42,723 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:42,754 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:42,754 - INFO - Overpricing arbitrage executed: edge=0.0926
+2025-09-20 00:36:42,780 - INFO - Tick 17: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.09258400000000222}
+2025-09-20 00:36:43,351 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:43,382 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:43,414 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:43,414 - INFO - Overpricing arbitrage executed: edge=0.0826
+2025-09-20 00:36:43,430 - INFO - Tick 17: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.08257500000000206}
+2025-09-20 00:36:44,120 - INFO - Order placed: SELL 5000 RITC (MARKET)
+2025-09-20 00:36:44,151 - INFO - Order placed: BUY 5000 BULL (MARKET)
+2025-09-20 00:36:44,188 - INFO - Order placed: BUY 5000 BEAR (MARKET)
+2025-09-20 00:36:44,188 - INFO - Overpricing arbitrage executed: edge=0.0726
+2025-09-20 00:36:44,196 - INFO - Tick 18: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.07264299999999935}
+2025-09-20 00:36:44,707 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:44,708 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:44,708 - INFO - Tick 19: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:45,219 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:45,219 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:45,220 - INFO - Tick 19: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:45,730 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:45,731 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:45,731 - INFO - Tick 20: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:46,251 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:46,251 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:46,252 - INFO - Tick 20: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:46,762 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:46,763 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:46,763 - INFO - Tick 21: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:47,274 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:47,274 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:47,275 - INFO - Tick 21: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:47,794 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:47,795 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:47,795 - INFO - Tick 22: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:48,309 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:48,310 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:48,310 - INFO - Tick 22: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:48,829 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:48,830 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:48,830 - INFO - Tick 23: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:49,339 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:49,340 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:49,340 - INFO - Tick 23: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:49,849 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:49,849 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:49,850 - INFO - Tick 24: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:50,366 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:50,367 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:50,367 - INFO - Tick 24: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:50,876 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:50,877 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:50,877 - INFO - Tick 25: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:51,386 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:51,387 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:51,387 - INFO - Tick 25: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:51,896 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:51,896 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:51,897 - INFO - Tick 26: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:52,412 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:52,412 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:52,413 - INFO - Tick 26: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:52,922 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:52,922 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:52,923 - INFO - Tick 27: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:53,430 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:53,430 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:53,431 - INFO - Tick 27: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:53,939 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:53,940 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:53,940 - INFO - Tick 28: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:54,450 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:54,451 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:54,451 - INFO - Tick 28: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:54,958 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:54,959 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:54,959 - INFO - Tick 29: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:55,471 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:55,471 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:55,472 - INFO - Tick 29: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:55,981 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:55,982 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:55,982 - INFO - Tick 30: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:56,497 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:56,498 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:56,499 - INFO - Tick 30: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:57,007 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:57,008 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:57,008 - INFO - Tick 31: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:57,519 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:57,520 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:57,520 - INFO - Tick 31: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:58,030 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:58,031 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:58,031 - INFO - Tick 32: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:58,547 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:58,548 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:58,548 - INFO - Tick 32: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:59,057 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:59,057 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:59,058 - INFO - Tick 33: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:36:59,566 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:36:59,566 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:36:59,567 - INFO - Tick 33: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:00,076 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:00,076 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:00,077 - INFO - Tick 34: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:00,589 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:00,590 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:00,590 - INFO - Tick 34: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:01,099 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:01,100 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:01,100 - INFO - Tick 35: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:01,609 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:01,610 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:01,610 - INFO - Tick 35: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:02,120 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:02,121 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:02,121 - INFO - Tick 36: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:02,642 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:02,643 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:02,643 - INFO - Tick 37: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:03,154 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:03,155 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:03,155 - INFO - Tick 37: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:03,664 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:03,664 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:03,665 - INFO - Tick 37: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:04,175 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:04,175 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:04,176 - INFO - Tick 38: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:04,686 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:04,687 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:04,688 - INFO - Tick 39: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:05,197 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:05,197 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:05,198 - INFO - Tick 39: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:05,707 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:05,708 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:05,709 - INFO - Tick 40: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:06,216 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:06,217 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:06,217 - INFO - Tick 40: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:06,726 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:06,727 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:06,727 - INFO - Tick 41: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:07,235 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:07,236 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:07,236 - INFO - Tick 41: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:07,750 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:07,751 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:07,751 - INFO - Tick 42: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:08,261 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:08,262 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:08,263 - INFO - Tick 42: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:08,779 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:08,779 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:08,782 - INFO - Tick 43: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:09,293 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:09,293 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:09,294 - INFO - Tick 43: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:09,803 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:09,804 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:09,805 - INFO - Tick 44: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:10,314 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:10,315 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:10,315 - INFO - Tick 44: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:10,840 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:10,841 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:10,841 - INFO - Tick 45: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:11,349 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:11,350 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:11,351 - INFO - Tick 45: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:11,859 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:11,860 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:11,861 - INFO - Tick 46: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:12,370 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:12,370 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:12,370 - INFO - Tick 46: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:12,879 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:12,880 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:12,880 - INFO - Tick 47: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:13,390 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:13,391 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:13,392 - INFO - Tick 47: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:13,905 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:13,905 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:13,906 - INFO - Tick 48: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:14,415 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:14,416 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:14,417 - INFO - Tick 48: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:14,951 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:14,951 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:14,952 - INFO - Tick 49: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:15,461 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:15,461 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:15,461 - INFO - Tick 49: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:15,971 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:15,971 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:15,972 - INFO - Tick 50: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:16,482 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:16,483 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:16,483 - INFO - Tick 50: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:16,991 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:16,992 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:16,993 - INFO - Tick 51: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:17,501 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:17,502 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:17,503 - INFO - Tick 51: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:18,015 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:18,015 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:18,016 - INFO - Tick 52: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:18,526 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:18,526 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:18,527 - INFO - Tick 52: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:19,038 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:19,039 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:19,039 - INFO - Tick 53: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:19,547 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:19,547 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:19,548 - INFO - Tick 53: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:20,062 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:20,062 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:20,064 - INFO - Tick 54: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:20,576 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:20,576 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:20,577 - INFO - Tick 54: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:21,086 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:21,086 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:21,087 - INFO - Tick 55: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:21,595 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:21,596 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:21,596 - INFO - Tick 55: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:22,105 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:22,106 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:22,106 - INFO - Tick 56: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:22,614 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:22,615 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:22,615 - INFO - Tick 56: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:23,125 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:23,126 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:23,126 - INFO - Tick 57: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:23,636 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:23,637 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:23,637 - INFO - Tick 57: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:24,145 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:24,146 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:24,146 - INFO - Tick 58: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:24,656 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:24,656 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:24,657 - INFO - Tick 58: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:25,167 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:25,168 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:25,169 - INFO - Tick 59: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:25,677 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:25,678 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:25,678 - INFO - Tick 59: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:26,188 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:26,188 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:26,189 - INFO - Tick 60: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:26,712 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:26,713 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:26,713 - INFO - Tick 60: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:27,231 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:27,232 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:27,232 - INFO - Tick 61: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:27,750 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:27,752 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:27,753 - INFO - Tick 61: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:28,261 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:28,261 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:28,262 - INFO - Tick 62: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:28,774 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:28,775 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:28,776 - INFO - Tick 63: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:29,286 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:29,287 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:29,287 - INFO - Tick 63: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:29,800 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:29,801 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:29,802 - INFO - Tick 63: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:30,312 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:30,313 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:30,313 - INFO - Tick 64: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:30,824 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:30,825 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:30,825 - INFO - Tick 64: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:31,335 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:31,336 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:31,336 - INFO - Tick 65: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:31,846 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:31,847 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:31,847 - INFO - Tick 66: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:32,356 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:32,356 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:32,357 - INFO - Tick 66: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:32,868 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:32,868 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:32,869 - INFO - Tick 66: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:33,378 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:33,379 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:33,379 - INFO - Tick 67: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:33,888 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:33,889 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:33,890 - INFO - Tick 68: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:34,399 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:34,400 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:34,401 - INFO - Tick 68: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:34,910 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:34,910 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:34,911 - INFO - Tick 69: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:35,419 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:35,420 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:35,420 - INFO - Tick 69: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:35,928 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:35,928 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:35,929 - INFO - Tick 70: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:36,444 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:36,445 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:36,447 - INFO - Tick 70: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:36,958 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:36,959 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:36,960 - INFO - Tick 71: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:37,469 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:37,469 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:37,470 - INFO - Tick 71: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:37,981 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:37,981 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:37,982 - INFO - Tick 72: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:38,492 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:38,493 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:38,494 - INFO - Tick 72: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:39,003 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:39,004 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:39,004 - INFO - Tick 73: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:39,515 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:39,515 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:39,516 - INFO - Tick 73: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:40,025 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:40,026 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:40,027 - INFO - Tick 74: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:40,536 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:40,536 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:40,537 - INFO - Tick 74: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:41,046 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:41,047 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:41,047 - INFO - Tick 75: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:41,558 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:41,559 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:41,559 - INFO - Tick 75: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:42,069 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:42,069 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:42,070 - INFO - Tick 76: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:42,579 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:42,579 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:42,580 - INFO - Tick 76: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:43,090 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:43,091 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:43,091 - INFO - Tick 77: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:43,600 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:43,601 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:43,601 - INFO - Tick 77: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:44,110 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:44,110 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:44,111 - INFO - Tick 78: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:44,621 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:44,622 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:44,622 - INFO - Tick 78: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:45,133 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:45,133 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:45,134 - INFO - Tick 79: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:45,643 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:45,644 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:45,645 - INFO - Tick 79: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:46,155 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:46,155 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:46,156 - INFO - Tick 80: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:46,667 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:46,667 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:46,668 - INFO - Tick 80: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:47,178 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:47,179 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:47,179 - INFO - Tick 81: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:47,692 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:47,692 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:47,693 - INFO - Tick 81: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:48,203 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:48,204 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:48,205 - INFO - Tick 82: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:48,713 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:48,714 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:48,714 - INFO - Tick 82: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:49,222 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:49,223 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:49,224 - INFO - Tick 83: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:49,733 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:49,734 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:49,735 - INFO - Tick 83: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:50,245 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:50,245 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:50,246 - INFO - Tick 84: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:50,757 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:50,758 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:50,758 - INFO - Tick 84: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:51,269 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:51,270 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:51,270 - INFO - Tick 85: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:51,778 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:51,781 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:51,782 - INFO - Tick 85: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:52,295 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:52,295 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:52,296 - INFO - Tick 86: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:52,805 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:52,806 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:52,806 - INFO - Tick 86: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:53,316 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:53,317 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:53,318 - INFO - Tick 87: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:53,826 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:53,827 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:53,827 - INFO - Tick 87: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:54,337 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:54,337 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:54,338 - INFO - Tick 88: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:54,847 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:54,848 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:54,849 - INFO - Tick 88: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:55,359 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:55,360 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:55,360 - INFO - Tick 89: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:55,873 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:55,874 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:55,875 - INFO - Tick 89: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:56,385 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:56,385 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:56,386 - INFO - Tick 90: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:56,898 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:56,899 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:56,900 - INFO - Tick 90: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:57,411 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:57,412 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:57,412 - INFO - Tick 91: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:57,941 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:57,942 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:57,943 - INFO - Tick 92: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:58,450 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:58,451 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:58,451 - INFO - Tick 92: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:58,961 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:58,961 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:58,962 - INFO - Tick 93: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:59,472 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:59,473 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:59,474 - INFO - Tick 93: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:37:59,984 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:37:59,984 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:37:59,985 - INFO - Tick 94: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:00,498 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:00,498 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:00,499 - INFO - Tick 94: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:01,011 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:01,012 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:01,013 - INFO - Tick 95: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:01,522 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:01,522 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:01,523 - INFO - Tick 95: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:02,034 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:02,034 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:02,035 - INFO - Tick 96: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:02,552 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:02,553 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:02,554 - INFO - Tick 96: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:03,063 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:03,063 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:03,064 - INFO - Tick 97: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:03,571 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:03,571 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:03,572 - INFO - Tick 97: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:04,079 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:04,080 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:04,080 - INFO - Tick 97: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:04,588 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:04,589 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:04,590 - INFO - Tick 98: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:05,101 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:05,101 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:05,102 - INFO - Tick 99: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:05,618 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:05,620 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:05,621 - INFO - Tick 99: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:06,135 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:06,136 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:06,137 - INFO - Tick 100: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:06,659 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:06,661 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:06,661 - INFO - Tick 100: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:07,176 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:07,177 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:07,178 - INFO - Tick 101: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:07,694 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:07,695 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:07,696 - INFO - Tick 101: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:08,210 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:08,211 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:08,211 - INFO - Tick 102: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:08,724 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:08,725 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:08,726 - INFO - Tick 102: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:09,241 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:09,242 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:09,243 - INFO - Tick 103: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:09,754 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:09,755 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:09,755 - INFO - Tick 103: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:10,264 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:10,265 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:10,266 - INFO - Tick 104: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:10,776 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:10,777 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:10,778 - INFO - Tick 104: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:11,289 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:11,290 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:11,291 - INFO - Tick 105: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:11,799 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:11,800 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:11,801 - INFO - Tick 105: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:12,309 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:12,310 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:12,310 - INFO - Tick 106: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:12,826 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:12,826 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:12,827 - INFO - Tick 106: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:13,338 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:13,338 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:13,339 - INFO - Tick 107: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:13,849 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:13,849 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:13,850 - INFO - Tick 107: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:14,359 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:14,359 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:14,360 - INFO - Tick 108: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:14,868 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:14,868 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:14,869 - INFO - Tick 108: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:15,377 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:15,377 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:15,378 - INFO - Tick 109: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:15,887 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:15,888 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:15,888 - INFO - Tick 109: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:16,398 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:16,399 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:16,400 - INFO - Tick 110: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:16,910 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:16,910 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:16,911 - INFO - Tick 110: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:17,421 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:17,422 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:17,423 - INFO - Tick 111: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:17,932 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:17,933 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:17,933 - INFO - Tick 111: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:18,444 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:18,445 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:18,445 - INFO - Tick 112: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:18,954 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:18,954 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:18,955 - INFO - Tick 112: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:19,463 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:19,463 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:19,464 - INFO - Tick 113: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:19,973 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:19,974 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:19,975 - INFO - Tick 113: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:20,486 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:20,487 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:20,488 - INFO - Tick 114: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:21,004 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:21,005 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:21,005 - INFO - Tick 114: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:21,513 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:21,514 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:21,514 - INFO - Tick 115: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:22,025 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:22,026 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:22,027 - INFO - Tick 115: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:22,536 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:22,536 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:22,537 - INFO - Tick 116: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:23,044 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:23,044 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:23,045 - INFO - Tick 116: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:23,553 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:23,554 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:23,554 - INFO - Tick 117: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:24,068 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:24,069 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:24,069 - INFO - Tick 117: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:24,575 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:24,575 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:24,576 - INFO - Tick 118: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:25,087 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:25,087 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:25,088 - INFO - Tick 118: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:25,597 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:25,598 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:25,598 - INFO - Tick 119: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:26,124 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:26,125 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:26,126 - INFO - Tick 120: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:26,635 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:26,636 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:26,636 - INFO - Tick 120: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:27,146 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:27,146 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:27,147 - INFO - Tick 121: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:27,678 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:27,681 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:27,682 - INFO - Tick 121: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:28,202 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:28,203 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:28,203 - INFO - Tick 122: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:28,712 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:28,712 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:28,713 - INFO - Tick 122: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:29,224 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:29,225 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:29,225 - INFO - Tick 123: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:29,737 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:29,737 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:29,738 - INFO - Tick 123: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:30,245 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:30,246 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:30,246 - INFO - Tick 124: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:30,768 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:30,769 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:30,769 - INFO - Tick 124: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:31,277 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:31,278 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:31,278 - INFO - Tick 125: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:31,786 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:31,786 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:31,787 - INFO - Tick 125: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:32,297 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:32,297 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:32,298 - INFO - Tick 126: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:32,806 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:32,807 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:32,807 - INFO - Tick 126: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:33,324 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:33,324 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:33,325 - INFO - Tick 127: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:33,835 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:33,836 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:33,837 - INFO - Tick 127: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:34,358 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:34,359 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:34,360 - INFO - Tick 128: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:34,870 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:34,871 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:34,871 - INFO - Tick 128: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:35,381 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:35,381 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:35,382 - INFO - Tick 129: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:35,891 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:35,892 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:35,892 - INFO - Tick 129: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:36,405 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:36,406 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:36,407 - INFO - Tick 130: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:36,914 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:36,914 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:36,915 - INFO - Tick 130: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:37,420 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:37,421 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:37,421 - INFO - Tick 131: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:37,932 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:37,932 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:37,933 - INFO - Tick 131: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:38,441 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:38,442 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:38,442 - INFO - Tick 132: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:38,955 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:38,955 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:38,956 - INFO - Tick 132: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:39,468 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:39,468 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:39,469 - INFO - Tick 133: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:39,979 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:39,980 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:39,981 - INFO - Tick 133: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:40,489 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:40,490 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:40,490 - INFO - Tick 134: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:41,006 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:41,007 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:41,007 - INFO - Tick 134: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:41,516 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:41,517 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:41,518 - INFO - Tick 135: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:42,027 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:42,028 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:42,028 - INFO - Tick 135: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:42,536 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:42,537 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:42,537 - INFO - Tick 136: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:43,050 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:43,051 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:43,051 - INFO - Tick 136: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:43,561 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:43,562 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:43,562 - INFO - Tick 137: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:44,076 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:44,076 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:44,077 - INFO - Tick 137: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:44,585 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:44,586 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:44,586 - INFO - Tick 138: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:45,096 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:45,096 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:45,097 - INFO - Tick 138: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:45,607 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:45,608 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:45,609 - INFO - Tick 139: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:46,122 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:46,123 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:46,124 - INFO - Tick 139: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:46,633 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:46,633 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:46,635 - INFO - Tick 140: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:47,152 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:47,154 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:47,157 - INFO - Tick 140: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:47,666 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:47,666 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:47,667 - INFO - Tick 141: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:48,175 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:48,176 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:48,176 - INFO - Tick 141: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:48,686 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:48,686 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:48,687 - INFO - Tick 142: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:49,197 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:49,197 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:49,198 - INFO - Tick 142: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:49,710 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:49,711 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:49,711 - INFO - Tick 143: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:50,219 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:50,220 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:50,221 - INFO - Tick 143: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:50,730 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:50,731 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:50,731 - INFO - Tick 144: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:51,248 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:51,248 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:51,249 - INFO - Tick 145: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:51,760 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:51,760 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:51,761 - INFO - Tick 145: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:52,270 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:52,271 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:52,271 - INFO - Tick 146: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:52,779 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:52,780 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:52,781 - INFO - Tick 146: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:53,438 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:53,438 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:53,438 - INFO - Tick 147: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:53,951 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:53,952 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:53,952 - INFO - Tick 147: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:54,461 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:54,462 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:54,463 - INFO - Tick 148: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:54,972 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:54,973 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:54,973 - INFO - Tick 148: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:55,483 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:55,483 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:55,484 - INFO - Tick 149: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:55,995 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:55,996 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:55,996 - INFO - Tick 149: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:56,507 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:56,508 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:56,508 - INFO - Tick 150: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:57,017 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:57,017 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:57,018 - INFO - Tick 150: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:57,528 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:57,528 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:57,528 - INFO - Tick 151: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:58,038 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:58,038 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:58,039 - INFO - Tick 151: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:58,548 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:58,548 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:58,549 - INFO - Tick 152: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:59,059 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:59,059 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:59,060 - INFO - Tick 152: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:38:59,570 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:38:59,571 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:38:59,571 - INFO - Tick 153: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:00,080 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:00,081 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:00,082 - INFO - Tick 153: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:00,593 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:00,594 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:00,595 - INFO - Tick 154: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:01,104 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:01,105 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:01,105 - INFO - Tick 154: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:01,615 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:01,615 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:01,616 - INFO - Tick 155: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:02,127 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:02,127 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:02,128 - INFO - Tick 155: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:02,636 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:02,637 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:02,638 - INFO - Tick 156: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:03,147 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:03,148 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:03,148 - INFO - Tick 156: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:03,659 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:03,660 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:03,660 - INFO - Tick 157: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:04,169 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:04,170 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:04,170 - INFO - Tick 157: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:04,678 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:04,679 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:04,679 - INFO - Tick 158: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:05,189 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:05,189 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:05,189 - INFO - Tick 158: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:05,699 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:05,700 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:05,700 - INFO - Tick 159: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:06,210 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:06,210 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:06,211 - INFO - Tick 159: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:06,732 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:06,733 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:06,734 - INFO - Tick 160: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:07,244 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:07,244 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:07,245 - INFO - Tick 160: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:07,755 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:07,756 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:07,756 - INFO - Tick 161: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:08,265 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:08,266 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:08,267 - INFO - Tick 161: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:08,776 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:08,776 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:08,777 - INFO - Tick 162: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:09,285 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:09,286 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:09,286 - INFO - Tick 162: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:09,795 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:09,796 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:09,796 - INFO - Tick 163: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:10,304 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:10,305 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:10,306 - INFO - Tick 163: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:10,823 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:10,824 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:10,825 - INFO - Tick 164: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:11,331 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:11,331 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:11,331 - INFO - Tick 164: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:11,840 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:11,841 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:11,841 - INFO - Tick 165: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:12,349 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:12,349 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:12,350 - INFO - Tick 165: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:12,859 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:12,860 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:12,860 - INFO - Tick 166: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:13,464 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:13,464 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:13,465 - INFO - Tick 166: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:13,973 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:13,974 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:13,974 - INFO - Tick 167: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:14,483 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:14,484 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:14,484 - INFO - Tick 168: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:14,994 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:14,994 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:14,995 - INFO - Tick 168: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:15,515 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:15,516 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:15,516 - INFO - Tick 169: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:16,025 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:16,026 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:16,026 - INFO - Tick 169: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:16,536 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:16,536 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:16,537 - INFO - Tick 170: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:17,045 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:17,045 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:17,046 - INFO - Tick 170: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:17,554 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:17,555 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:17,555 - INFO - Tick 171: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:18,065 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:18,065 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:18,066 - INFO - Tick 171: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:18,576 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:18,576 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:18,577 - INFO - Tick 172: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:19,086 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:19,086 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:19,087 - INFO - Tick 172: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:19,597 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:19,598 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:19,598 - INFO - Tick 173: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:20,108 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:20,109 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:20,109 - INFO - Tick 173: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:20,619 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:20,619 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:20,620 - INFO - Tick 174: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:21,128 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:21,129 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:21,129 - INFO - Tick 174: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:21,639 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:21,639 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:21,640 - INFO - Tick 175: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:22,150 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:22,151 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:22,151 - INFO - Tick 175: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:22,662 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:22,663 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:22,663 - INFO - Tick 176: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:23,172 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:23,173 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:23,174 - INFO - Tick 176: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:23,683 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:23,684 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:23,684 - INFO - Tick 177: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:24,196 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:24,196 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:24,197 - INFO - Tick 177: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:24,706 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:24,706 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:24,707 - INFO - Tick 178: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:25,216 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:25,217 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:25,217 - INFO - Tick 178: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:25,728 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:25,728 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:25,729 - INFO - Tick 179: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:26,238 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:26,239 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:26,239 - INFO - Tick 179: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:26,748 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:26,749 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:26,750 - INFO - Tick 180: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:27,261 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:27,262 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:27,262 - INFO - Tick 180: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:27,770 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:27,770 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:27,771 - INFO - Tick 181: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:28,280 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:28,280 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:28,281 - INFO - Tick 181: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:28,790 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:28,791 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:28,791 - INFO - Tick 182: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:29,301 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:29,302 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:29,302 - INFO - Tick 182: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:29,812 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:29,812 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:29,813 - INFO - Tick 183: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:30,321 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:30,322 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:30,323 - INFO - Tick 183: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:30,832 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:30,833 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:30,833 - INFO - Tick 184: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:31,344 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:31,344 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:31,345 - INFO - Tick 184: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:31,855 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:31,856 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:31,857 - INFO - Tick 185: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:32,367 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:32,367 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:32,368 - INFO - Tick 185: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:32,878 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:32,878 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:32,879 - INFO - Tick 186: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:33,389 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:33,389 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:33,390 - INFO - Tick 186: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:33,899 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:33,899 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:33,900 - INFO - Tick 187: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:34,407 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:34,408 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:34,409 - INFO - Tick 187: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:34,918 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:34,918 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:34,919 - INFO - Tick 188: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:35,427 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:35,428 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:35,429 - INFO - Tick 188: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:35,937 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:35,938 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:35,938 - INFO - Tick 189: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:36,446 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:36,447 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:36,447 - INFO - Tick 189: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:36,957 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:36,958 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:36,959 - INFO - Tick 190: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:37,480 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:37,480 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:37,481 - INFO - Tick 190: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:37,993 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:37,994 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:37,996 - INFO - Tick 191: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:38,507 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:38,508 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:38,508 - INFO - Tick 191: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:39,016 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:39,017 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:39,017 - INFO - Tick 192: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:39,523 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:39,523 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:39,524 - INFO - Tick 193: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:40,033 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:40,033 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:40,034 - INFO - Tick 193: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:40,546 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:40,546 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:40,547 - INFO - Tick 194: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:41,057 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:41,058 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:41,058 - INFO - Tick 194: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:41,567 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:41,568 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:41,568 - INFO - Tick 195: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:42,077 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:42,078 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:42,078 - INFO - Tick 195: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:42,590 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:42,591 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:42,591 - INFO - Tick 196: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:43,100 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:43,101 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:43,101 - INFO - Tick 196: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:43,612 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:43,613 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:43,613 - INFO - Tick 197: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:44,124 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:44,124 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:44,125 - INFO - Tick 197: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:44,633 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:44,634 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:44,634 - INFO - Tick 198: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:45,149 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:45,150 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:45,150 - INFO - Tick 198: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:45,676 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:45,677 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:45,678 - INFO - Tick 199: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:46,186 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:46,187 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:46,187 - INFO - Tick 199: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:46,702 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:46,703 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:46,703 - INFO - Tick 200: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:47,213 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:47,214 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:47,214 - INFO - Tick 200: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:47,740 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:47,740 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:47,740 - INFO - Tick 201: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:48,249 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:48,250 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:48,250 - INFO - Tick 201: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:48,766 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:48,767 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:48,767 - INFO - Tick 202: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:49,276 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:49,277 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:49,277 - INFO - Tick 202: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:49,786 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:49,787 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:49,788 - INFO - Tick 203: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:50,296 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:50,297 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:50,297 - INFO - Tick 203: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:50,808 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:50,809 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:50,810 - INFO - Tick 204: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:51,318 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:51,319 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:51,319 - INFO - Tick 204: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:51,832 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:51,832 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:51,833 - INFO - Tick 205: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:52,340 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:52,341 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:52,341 - INFO - Tick 205: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:52,856 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:52,856 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:52,857 - INFO - Tick 206: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:53,367 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:53,368 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:53,369 - INFO - Tick 206: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:53,879 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:53,879 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:53,879 - INFO - Tick 207: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:54,387 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:54,387 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:54,388 - INFO - Tick 207: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:54,898 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:54,899 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:54,899 - INFO - Tick 208: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:55,415 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:55,416 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:55,416 - INFO - Tick 208: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:55,928 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:55,928 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:55,928 - INFO - Tick 209: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:56,437 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:56,438 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:56,439 - INFO - Tick 209: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:56,954 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:56,954 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:56,957 - INFO - Tick 210: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:57,466 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:57,467 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:57,467 - INFO - Tick 210: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:57,987 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:57,988 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:57,988 - INFO - Tick 211: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:58,498 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:58,499 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:58,499 - INFO - Tick 211: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:59,039 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:59,042 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:59,043 - INFO - Tick 212: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:39:59,550 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:39:59,551 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:39:59,551 - INFO - Tick 212: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:00,062 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:00,062 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:00,063 - INFO - Tick 213: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:00,573 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:00,574 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:00,574 - INFO - Tick 213: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:01,091 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:01,091 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:01,092 - INFO - Tick 214: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:01,601 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:01,601 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:01,602 - INFO - Tick 214: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:02,115 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:02,116 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:02,116 - INFO - Tick 215: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:02,626 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:02,627 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:02,627 - INFO - Tick 215: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:03,136 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:03,137 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:03,138 - INFO - Tick 216: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:03,656 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:03,657 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:03,658 - INFO - Tick 217: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:04,167 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:04,168 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:04,168 - INFO - Tick 217: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:04,676 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:04,677 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:04,678 - INFO - Tick 218: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:05,187 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:05,187 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:05,188 - INFO - Tick 218: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:05,700 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:05,701 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:05,701 - INFO - Tick 219: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:06,210 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:06,211 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:06,212 - INFO - Tick 219: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:06,723 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:06,724 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:06,724 - INFO - Tick 220: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:07,237 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:07,238 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:07,238 - INFO - Tick 220: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:07,749 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:07,750 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:07,750 - INFO - Tick 221: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:08,259 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:08,260 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:08,260 - INFO - Tick 221: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:08,768 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:08,768 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:08,769 - INFO - Tick 222: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:09,286 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:09,286 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:09,287 - INFO - Tick 222: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:09,796 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:09,796 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:09,797 - INFO - Tick 223: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:10,306 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:10,307 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:10,307 - INFO - Tick 223: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:10,816 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:10,816 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:10,817 - INFO - Tick 224: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:11,326 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:11,327 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:11,327 - INFO - Tick 224: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:11,836 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:11,836 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:11,837 - INFO - Tick 225: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:12,353 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:12,354 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:12,354 - INFO - Tick 225: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:12,863 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:12,864 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:12,864 - INFO - Tick 226: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:13,376 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:13,377 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:13,377 - INFO - Tick 226: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:13,886 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:13,887 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:13,888 - INFO - Tick 227: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:14,398 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:14,399 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:14,399 - INFO - Tick 227: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:14,908 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:14,909 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:14,909 - INFO - Tick 228: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:15,417 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:15,418 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:15,418 - INFO - Tick 228: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:15,927 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:15,928 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:15,928 - INFO - Tick 229: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:16,435 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:16,436 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:16,436 - INFO - Tick 229: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:16,945 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:16,946 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:16,946 - INFO - Tick 230: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:17,455 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:17,456 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:17,457 - INFO - Tick 230: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:17,973 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:17,973 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:17,974 - INFO - Tick 231: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:18,483 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:18,483 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:18,484 - INFO - Tick 231: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:18,998 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:18,998 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:18,998 - INFO - Tick 232: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:19,508 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:19,508 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:19,509 - INFO - Tick 232: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:20,019 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:20,019 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:20,020 - INFO - Tick 233: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:20,528 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:20,529 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:20,529 - INFO - Tick 233: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:21,045 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:21,045 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:21,046 - INFO - Tick 234: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:21,559 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:21,560 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:21,561 - INFO - Tick 234: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:22,071 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:22,071 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:22,072 - INFO - Tick 235: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:22,596 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:22,597 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:22,599 - INFO - Tick 235: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:23,126 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:23,127 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:23,127 - INFO - Tick 236: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:23,637 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:23,638 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:23,638 - INFO - Tick 236: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:24,147 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:24,148 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:24,148 - INFO - Tick 237: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:24,657 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:24,658 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:24,659 - INFO - Tick 237: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:25,168 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:25,169 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:25,169 - INFO - Tick 238: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:25,680 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:25,681 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:25,681 - INFO - Tick 238: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:26,191 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:26,191 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:26,192 - INFO - Tick 239: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:26,702 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:26,703 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:26,704 - INFO - Tick 239: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:27,213 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:27,214 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:27,214 - INFO - Tick 240: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:27,724 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:27,725 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:27,725 - INFO - Tick 240: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:28,234 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:28,235 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:28,235 - INFO - Tick 241: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:28,746 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:28,747 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:28,748 - INFO - Tick 241: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:29,257 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:29,257 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:29,258 - INFO - Tick 242: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:29,766 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:29,766 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:29,767 - INFO - Tick 242: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:30,277 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:30,278 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:30,278 - INFO - Tick 243: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:30,788 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:30,789 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:30,789 - INFO - Tick 243: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:31,299 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:31,299 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:31,300 - INFO - Tick 244: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:31,808 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:31,808 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:31,809 - INFO - Tick 245: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:32,318 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:32,318 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:32,319 - INFO - Tick 245: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:32,831 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:32,831 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:32,832 - INFO - Tick 246: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:33,341 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:33,341 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:33,342 - INFO - Tick 246: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:33,851 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:33,852 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:33,852 - INFO - Tick 247: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:34,363 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:34,363 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:34,364 - INFO - Tick 247: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:34,873 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:34,874 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:34,875 - INFO - Tick 247: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:35,382 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:35,383 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:35,383 - INFO - Tick 248: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:35,904 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:35,905 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:35,906 - INFO - Tick 249: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:36,414 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:36,415 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:36,416 - INFO - Tick 249: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:36,937 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:36,938 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:36,939 - INFO - Tick 250: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:37,447 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:37,448 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:37,448 - INFO - Tick 250: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:37,958 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:37,958 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:37,959 - INFO - Tick 251: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:38,467 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:38,468 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:38,469 - INFO - Tick 251: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:38,976 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:38,976 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:38,977 - INFO - Tick 252: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:39,486 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:39,486 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:39,487 - INFO - Tick 252: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:40,002 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:40,002 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:40,003 - INFO - Tick 253: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:40,514 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:40,515 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:40,515 - INFO - Tick 253: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:41,025 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:41,026 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:41,026 - INFO - Tick 254: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:41,562 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:41,562 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:41,563 - INFO - Tick 254: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:42,073 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:42,073 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:42,074 - INFO - Tick 255: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:42,582 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:42,583 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:42,583 - INFO - Tick 255: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:43,092 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:43,093 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:43,093 - INFO - Tick 256: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:43,614 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:43,615 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:43,615 - INFO - Tick 256: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:44,127 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:44,128 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:44,128 - INFO - Tick 257: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:44,637 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:44,637 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:44,638 - INFO - Tick 257: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:45,147 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:45,148 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:45,148 - INFO - Tick 258: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:45,666 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:45,667 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:45,667 - INFO - Tick 258: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:46,177 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:46,177 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:46,178 - INFO - Tick 259: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:46,687 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:46,691 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:46,692 - INFO - Tick 259: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:47,202 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:47,203 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:47,204 - INFO - Tick 260: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:47,715 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:47,715 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:47,716 - INFO - Tick 260: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:48,226 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:48,227 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:48,227 - INFO - Tick 261: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:48,738 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:48,739 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:48,740 - INFO - Tick 261: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:49,249 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:49,249 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:49,250 - INFO - Tick 262: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:49,758 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:49,759 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:49,760 - INFO - Tick 262: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:50,269 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:50,269 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:50,270 - INFO - Tick 263: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:50,779 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:50,780 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:50,780 - INFO - Tick 263: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:51,290 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:51,290 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:51,291 - INFO - Tick 264: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:51,799 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:51,799 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:51,800 - INFO - Tick 264: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:52,309 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:52,309 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:52,310 - INFO - Tick 265: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:52,819 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:52,820 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:52,820 - INFO - Tick 265: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:53,331 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:53,332 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:53,332 - INFO - Tick 266: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:53,843 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:53,844 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:53,844 - INFO - Tick 266: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:54,351 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:54,352 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:54,352 - INFO - Tick 267: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:54,859 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:54,859 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:54,860 - INFO - Tick 267: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:55,368 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:55,368 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:55,369 - INFO - Tick 268: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:55,875 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:55,876 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:55,876 - INFO - Tick 268: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:56,386 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:56,386 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:56,387 - INFO - Tick 269: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:56,895 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:56,896 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:56,897 - INFO - Tick 269: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:57,407 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:57,408 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:57,408 - INFO - Tick 270: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:57,917 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:57,917 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:57,918 - INFO - Tick 270: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:58,427 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:58,427 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:58,428 - INFO - Tick 271: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:58,935 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:58,936 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:58,936 - INFO - Tick 271: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:59,451 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:59,452 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:59,452 - INFO - Tick 272: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:40:59,961 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:40:59,961 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:40:59,962 - INFO - Tick 272: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:00,475 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:00,475 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:00,476 - INFO - Tick 273: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:00,990 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:00,991 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:00,991 - INFO - Tick 274: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:01,501 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:01,502 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:01,502 - INFO - Tick 274: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:02,024 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:02,025 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:02,026 - INFO - Tick 275: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:02,534 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:02,535 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:02,535 - INFO - Tick 275: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:03,046 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:03,046 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:03,047 - INFO - Tick 276: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:03,557 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:03,557 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:03,558 - INFO - Tick 276: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:04,067 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:04,068 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:04,068 - INFO - Tick 277: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:04,578 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:04,578 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:04,579 - INFO - Tick 277: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:05,090 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:05,091 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:05,091 - INFO - Tick 278: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:05,600 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:05,601 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:05,601 - INFO - Tick 278: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:06,110 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:06,111 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:06,111 - INFO - Tick 279: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:06,620 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:06,621 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:06,621 - INFO - Tick 279: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:07,129 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:07,130 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:07,130 - INFO - Tick 280: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:07,639 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:07,640 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:07,640 - INFO - Tick 280: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:08,150 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:08,151 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:08,152 - INFO - Tick 281: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:08,662 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:08,663 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:08,664 - INFO - Tick 281: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:09,176 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:09,176 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:09,177 - INFO - Tick 282: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:09,685 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:09,685 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:09,686 - INFO - Tick 282: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:10,197 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:10,197 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:10,198 - INFO - Tick 283: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:10,708 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:10,709 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:10,709 - INFO - Tick 283: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:11,219 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:11,220 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:11,220 - INFO - Tick 284: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:11,730 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:11,731 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:11,732 - INFO - Tick 284: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:12,242 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:12,243 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:12,243 - INFO - Tick 285: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:12,753 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:12,753 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:12,754 - INFO - Tick 285: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:13,262 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:13,263 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:13,263 - INFO - Tick 286: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:13,784 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:13,785 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:13,785 - INFO - Tick 286: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:14,294 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:14,295 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:14,296 - INFO - Tick 287: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:14,807 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:14,807 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:14,808 - INFO - Tick 287: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:15,317 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:15,318 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:15,318 - INFO - Tick 288: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:15,830 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:15,831 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:15,831 - INFO - Tick 288: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:16,340 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:16,340 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:16,341 - INFO - Tick 289: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:16,855 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:16,856 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:16,857 - INFO - Tick 289: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:17,366 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:17,366 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:17,367 - INFO - Tick 290: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:17,877 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:17,878 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:17,879 - INFO - Tick 290: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:18,387 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:18,387 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:18,388 - INFO - Tick 291: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:18,896 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:18,897 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:18,897 - INFO - Tick 291: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:19,405 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:19,406 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:19,406 - INFO - Tick 292: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:19,915 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:19,916 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:19,916 - INFO - Tick 292: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:20,436 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:20,437 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:20,437 - INFO - Tick 293: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:20,947 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:20,947 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:20,948 - INFO - Tick 293: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:21,457 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:21,458 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:21,459 - INFO - Tick 294: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:21,967 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:21,967 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:21,968 - INFO - Tick 294: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:22,479 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:22,480 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:22,481 - INFO - Tick 295: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:22,990 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:22,991 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:22,991 - INFO - Tick 295: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:23,499 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:23,500 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:23,500 - INFO - Tick 296: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:24,010 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:24,011 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:24,012 - INFO - Tick 296: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:24,523 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:24,524 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:24,524 - INFO - Tick 297: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:25,033 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:25,034 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:25,034 - INFO - Tick 297: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:25,545 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:25,545 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:25,546 - INFO - Tick 298: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:26,059 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:26,059 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:26,059 - INFO - Tick 298: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:26,569 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:26,569 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:26,570 - INFO - Tick 299: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:41:27,080 - WARNING - Risk limits exceeded: gross=125000, net=25000
+2025-09-20 00:41:27,080 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:41:27,081 - INFO - Tick 299: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:45:31,322 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:46:16,173 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:46:16,245 - INFO - OVERPRICED opportunity detected: edge=$0.1025
+2025-09-20 00:46:16,248 - INFO - Executing OVERPRICED arbitrage: qty=8201, edge=$0.1025, expected_profit=$840.73
+2025-09-20 00:46:16,280 - INFO - Order placed: SELL 8201 RITC (MARKET)
+2025-09-20 00:46:16,311 - INFO - Order placed: BUY 8201 BULL (MARKET)
+2025-09-20 00:46:16,368 - INFO - Order placed: BUY 8201 BEAR (MARKET)
+2025-09-20 00:46:25,836 - INFO - ArbitrageStrategy initialized in live mode
+2025-09-20 00:46:25,836 - INFO - Starting arbitrage strategy...
+2025-09-20 00:46:25,848 - INFO - Profit Status: Total=$0.00, Target=$10000.00, Win Rate=0.00%
+2025-09-20 00:46:25,889 - INFO - UNDERPRICED opportunity detected: edge=$0.1633
+2025-09-20 00:46:25,895 - INFO - Executing UNDERPRICED arbitrage: qty=13063, edge=$0.1633, expected_profit=$2133.03
+2025-09-20 00:46:25,940 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:25,974 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:26,035 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:26,055 - INFO - Tick 210: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:26,562 - INFO - Profit Status: Total=$0.00, Target=$10000.00, Win Rate=0.00%
+2025-09-20 00:46:26,600 - INFO - OVERPRICED opportunity detected: edge=$0.0930
+2025-09-20 00:46:26,606 - INFO - Executing OVERPRICED arbitrage: qty=7440, edge=$0.0930, expected_profit=$691.96
+2025-09-20 00:46:26,655 - INFO - Order placed: SELL 7440 RITC (MARKET)
+2025-09-20 00:46:26,687 - INFO - Order placed: BUY 7440 BULL (MARKET)
+2025-09-20 00:46:26,728 - INFO - Order placed: BUY 7440 BEAR (MARKET)
+2025-09-20 00:46:26,729 - INFO - SUCCESS: OVERPRICED arbitrage executed: edge=$0.0930, profit=$691.96
+2025-09-20 00:46:26,751 - INFO - Tick 211: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.09300500000000156, 'profit': 744.0400000000125}
+2025-09-20 00:46:27,257 - INFO - Profit Status: Total=$691.96, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:27,332 - INFO - OVERPRICED opportunity detected: edge=$0.0931
+2025-09-20 00:46:27,338 - INFO - Executing OVERPRICED arbitrage: qty=7446, edge=$0.0931, expected_profit=$693.12
+2025-09-20 00:46:27,374 - INFO - Order placed: SELL 7446 RITC (MARKET)
+2025-09-20 00:46:27,410 - INFO - Order placed: BUY 7446 BULL (MARKET)
+2025-09-20 00:46:27,444 - INFO - Order placed: BUY 7446 BEAR (MARKET)
+2025-09-20 00:46:27,445 - INFO - SUCCESS: OVERPRICED arbitrage executed: edge=$0.0931, profit=$693.12
+2025-09-20 00:46:27,468 - INFO - Tick 212: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.09308600000000311, 'profit': 744.6880000000249}
+2025-09-20 00:46:27,973 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:28,013 - INFO - OVERPRICED opportunity detected: edge=$0.1935
+2025-09-20 00:46:28,029 - INFO - Executing OVERPRICED arbitrage: qty=15000, edge=$0.1935, expected_profit=$2903.13
+2025-09-20 00:46:28,062 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:28,099 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:28,136 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:28,159 - INFO - Tick 212: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:28,665 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:28,697 - INFO - UNDERPRICED opportunity detected: edge=$0.1835
+2025-09-20 00:46:28,702 - INFO - Executing UNDERPRICED arbitrage: qty=14679, edge=$0.1835, expected_profit=$2693.44
+2025-09-20 00:46:28,740 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:28,777 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:28,826 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:28,848 - INFO - Tick 213: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:29,353 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:29,383 - INFO - UNDERPRICED opportunity detected: edge=$0.1835
+2025-09-20 00:46:29,386 - INFO - Executing UNDERPRICED arbitrage: qty=14682, edge=$0.1835, expected_profit=$2694.51
+2025-09-20 00:46:29,418 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:29,451 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:29,484 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:29,496 - INFO - Tick 214: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:29,999 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:30,033 - INFO - UNDERPRICED opportunity detected: edge=$0.2489
+2025-09-20 00:46:30,036 - INFO - Executing UNDERPRICED arbitrage: qty=15000, edge=$0.2489, expected_profit=$3734.21
+2025-09-20 00:46:30,065 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:30,095 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:30,128 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:30,146 - INFO - Tick 214: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:30,652 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:30,684 - INFO - UNDERPRICED opportunity detected: edge=$0.2638
+2025-09-20 00:46:30,688 - INFO - Executing UNDERPRICED arbitrage: qty=15000, edge=$0.2638, expected_profit=$3957.50
+2025-09-20 00:46:30,785 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:30,833 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:30,869 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:30,897 - INFO - Tick 215: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:31,402 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:31,443 - INFO - UNDERPRICED opportunity detected: edge=$0.3038
+2025-09-20 00:46:31,448 - INFO - Executing UNDERPRICED arbitrage: qty=15000, edge=$0.3038, expected_profit=$4556.51
+2025-09-20 00:46:31,482 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:31,517 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:31,549 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:31,565 - INFO - Tick 216: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:32,070 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:32,105 - INFO - UNDERPRICED opportunity detected: edge=$0.2740
+2025-09-20 00:46:32,109 - INFO - Executing UNDERPRICED arbitrage: qty=15000, edge=$0.2740, expected_profit=$4110.64
+2025-09-20 00:46:32,145 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:32,181 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:32,217 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:32,233 - INFO - Tick 217: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:32,738 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:32,768 - INFO - UNDERPRICED opportunity detected: edge=$0.2942
+2025-09-20 00:46:32,772 - INFO - Executing UNDERPRICED arbitrage: qty=15000, edge=$0.2942, expected_profit=$4412.39
+2025-09-20 00:46:32,806 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:32,841 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:32,879 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:32,898 - INFO - Tick 217: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:33,404 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:33,442 - INFO - UNDERPRICED opportunity detected: edge=$0.2532
+2025-09-20 00:46:33,446 - INFO - Executing UNDERPRICED arbitrage: qty=15000, edge=$0.2532, expected_profit=$3798.00
+2025-09-20 00:46:33,484 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:33,534 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:33,568 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:33,590 - INFO - Tick 218: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:34,093 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:34,115 - INFO - UNDERPRICED opportunity detected: edge=$0.2833
+2025-09-20 00:46:34,117 - INFO - Executing UNDERPRICED arbitrage: qty=15000, edge=$0.2833, expected_profit=$4249.26
+2025-09-20 00:46:34,154 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:34,187 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:34,218 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:34,231 - INFO - Tick 219: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:34,737 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:34,772 - INFO - OVERPRICED opportunity detected: edge=$0.1429
+2025-09-20 00:46:34,777 - INFO - Executing OVERPRICED arbitrage: qty=11432, edge=$0.1429, expected_profit=$1633.74
+2025-09-20 00:46:34,813 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:34,859 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:34,894 - ERROR - Order failed: {"code":"INTERNAL_SERVER_ERROR","message":"Order could not be submitted because the order size is larger than the maximum order size of 10000 for the contract."}
+2025-09-20 00:46:34,916 - INFO - Tick 219: {'traded': False, 'reason': 'no_opportunity'}
+2025-09-20 00:46:35,421 - INFO - Profit Status: Total=$1385.08, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:35,455 - INFO - OVERPRICED opportunity detected: edge=$0.1127
+2025-09-20 00:46:35,459 - INFO - Executing OVERPRICED arbitrage: qty=9014, edge=$0.1127, expected_profit=$1015.72
+2025-09-20 00:46:35,494 - INFO - Order placed: SELL 9014 RITC (MARKET)
+2025-09-20 00:46:35,540 - INFO - Order placed: BUY 9014 BULL (MARKET)
+2025-09-20 00:46:35,577 - INFO - Order placed: BUY 9014 BEAR (MARKET)
+2025-09-20 00:46:35,577 - INFO - SUCCESS: OVERPRICED arbitrage executed: edge=$0.1127, profit=$1015.72
+2025-09-20 00:46:35,590 - INFO - Tick 220: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.11268300000000053, 'profit': 901.4640000000043}
+2025-09-20 00:46:36,097 - INFO - Profit Status: Total=$2400.80, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:36,136 - INFO - OVERPRICED opportunity detected: edge=$0.1125
+2025-09-20 00:46:36,141 - INFO - Executing OVERPRICED arbitrage: qty=8998, edge=$0.1125, expected_profit=$1012.14
+2025-09-20 00:46:36,183 - INFO - Order placed: SELL 8998 RITC (MARKET)
+2025-09-20 00:46:36,219 - INFO - Order placed: BUY 8998 BULL (MARKET)
+2025-09-20 00:46:36,253 - INFO - Order placed: BUY 8998 BEAR (MARKET)
+2025-09-20 00:46:36,254 - INFO - SUCCESS: OVERPRICED arbitrage executed: edge=$0.1125, profit=$1012.14
+2025-09-20 00:46:36,280 - INFO - Tick 221: {'traded': True, 'direction': 'OVERPRICED', 'edge': 0.1124849999999995, 'profit': 899.879999999996}
+2025-09-20 00:46:36,784 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:36,789 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:36,790 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:36,790 - INFO - Tick 221: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:37,298 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:37,307 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:37,317 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:37,318 - INFO - Tick 222: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:37,821 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:37,824 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:37,824 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:37,824 - INFO - Tick 222: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:38,329 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:38,334 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:38,335 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:38,336 - INFO - Tick 223: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:38,840 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:38,844 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:38,845 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:38,845 - INFO - Tick 223: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:39,350 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:39,355 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:39,356 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:39,356 - INFO - Tick 224: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:39,861 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:39,865 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:39,866 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:39,866 - INFO - Tick 224: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:40,372 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:40,377 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:40,377 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:40,378 - INFO - Tick 225: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:40,884 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:40,890 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:40,891 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:40,891 - INFO - Tick 225: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:41,397 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:41,403 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:41,403 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:41,404 - INFO - Tick 226: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:41,910 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:41,915 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:41,916 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:41,916 - INFO - Tick 226: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:42,423 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:42,430 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:42,431 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:42,431 - INFO - Tick 227: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:42,935 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:42,940 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:42,940 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:42,941 - INFO - Tick 227: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:43,447 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:43,452 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:43,452 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:43,453 - INFO - Tick 228: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:43,960 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:43,966 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:43,966 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:43,967 - INFO - Tick 228: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:44,471 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:44,476 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:44,476 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:44,477 - INFO - Tick 229: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:44,980 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:44,985 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:44,986 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:44,986 - INFO - Tick 229: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:45,496 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:45,500 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:45,500 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:45,501 - INFO - Tick 230: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:46,005 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:46,010 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:46,011 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:46,011 - INFO - Tick 230: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:46,515 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:46,519 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:46,520 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:46,520 - INFO - Tick 231: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:47,024 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:47,028 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:47,029 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:47,029 - INFO - Tick 231: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:47,534 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:47,539 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:47,540 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:47,540 - INFO - Tick 232: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:48,047 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:48,052 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:48,053 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:48,054 - INFO - Tick 232: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:48,557 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:48,561 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:48,561 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:48,562 - INFO - Tick 233: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:49,069 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:49,074 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:49,075 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:49,076 - INFO - Tick 233: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:49,583 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:49,589 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:49,589 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:49,590 - INFO - Tick 234: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:50,097 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:50,104 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:50,105 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:50,106 - INFO - Tick 234: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:50,612 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:50,617 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:50,618 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:50,618 - INFO - Tick 235: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:51,123 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:51,128 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:51,128 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:51,129 - INFO - Tick 235: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:51,634 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:51,638 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:51,639 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:51,639 - INFO - Tick 236: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:52,143 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:52,148 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:52,148 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:52,149 - INFO - Tick 236: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:52,655 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:52,660 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:52,661 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:52,662 - INFO - Tick 237: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:53,168 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:53,175 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:53,176 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:53,176 - INFO - Tick 237: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:53,682 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:53,687 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:53,688 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:53,688 - INFO - Tick 238: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:54,199 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:54,204 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:54,205 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:54,205 - INFO - Tick 239: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:54,711 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:54,716 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:54,716 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:54,717 - INFO - Tick 239: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:55,228 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:55,237 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:55,237 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:55,238 - INFO - Tick 240: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:55,742 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:55,747 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:55,747 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:55,748 - INFO - Tick 240: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:56,253 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:56,257 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:56,257 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:56,258 - INFO - Tick 241: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:56,764 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:56,769 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:56,770 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:56,770 - INFO - Tick 241: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:57,275 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:57,280 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:57,280 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:57,281 - INFO - Tick 242: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:57,787 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:57,792 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:57,793 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:57,793 - INFO - Tick 242: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:58,298 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:58,302 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:58,303 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:58,303 - INFO - Tick 243: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:58,810 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:58,815 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:58,815 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:58,816 - INFO - Tick 243: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:59,321 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:59,327 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:59,328 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:59,328 - INFO - Tick 244: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:46:59,833 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:46:59,837 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:46:59,838 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:46:59,839 - INFO - Tick 244: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:47:00,379 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:47:00,401 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:47:00,404 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:47:00,407 - INFO - Tick 245: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:47:00,914 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:47:00,919 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:47:00,920 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:47:00,921 - INFO - Tick 245: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:47:01,427 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:47:01,431 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:47:01,432 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:47:01,432 - INFO - Tick 246: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:47:01,937 - INFO - Profit Status: Total=$3412.94, Target=$10000.00, Win Rate=33.33%
+2025-09-20 00:47:01,942 - WARNING - Risk limits exceeded: gross=205495, net=41099
+2025-09-20 00:47:01,943 - WARNING - Risk limits exceeded, skipping trade
+2025-09-20 00:47:01,943 - INFO - Tick 246: {'traded': False, 'reason': 'risk_limits'}
+2025-09-20 00:47:02,448 - WARNING - Header auth failed, trying query parameter auth...
+2025-09-20 00:47:02,451 - ERROR - Authentication failed. Try these solutions:
+2025-09-20 00:47:02,452 - ERROR - 1. Ensure RIT Market Simulator case is ACTIVE
+2025-09-20 00:47:02,453 - ERROR - 2. Check if you need to log in to the RIT GUI first
+2025-09-20 00:47:02,453 - ERROR - 3. Verify the API key matches your RIT configuration
+2025-09-20 00:47:02,454 - ERROR - 4. Try restarting the RIT Market Simulator

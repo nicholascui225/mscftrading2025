@@ -1,0 +1,439 @@
+2025-09-19 00:25:58,239 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 28
+2025-09-19 00:25:58,240 - INFO - Executing option trade: SELL 1 RTM50C (trade #1)
+2025-09-19 00:25:58,279 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 31
+2025-09-19 00:25:58,280 - INFO - Executing option trade: SELL 1 RTM50P (trade #2)
+2025-09-19 00:25:58,832 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 51
+2025-09-19 00:25:58,833 - INFO - Executing option trade: SELL 1 RTM50C (trade #3)
+2025-09-19 00:25:58,867 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 54
+2025-09-19 00:25:58,870 - INFO - Executing option trade: SELL 1 RTM50P (trade #4)
+2025-09-19 00:25:59,448 - INFO - Order submitted: RTM51P SELL 1 - Order ID: 100
+2025-09-19 00:25:59,449 - INFO - Executing option trade: SELL 1 RTM51P (trade #5)
+2025-09-19 00:25:59,484 - INFO - Order submitted: RTM51C SELL 1 - Order ID: 102
+2025-09-19 00:25:59,484 - INFO - Executing option trade: SELL 1 RTM51C (trade #6)
+2025-09-19 00:26:00,058 - INFO - Order submitted: RTM51P SELL 1 - Order ID: 143
+2025-09-19 00:26:00,059 - INFO - Executing option trade: SELL 1 RTM51P (trade #7)
+2025-09-19 00:26:00,090 - INFO - Order submitted: RTM51C SELL 1 - Order ID: 145
+2025-09-19 00:26:00,090 - INFO - Executing option trade: SELL 1 RTM51C (trade #8)
+2025-09-19 00:26:00,660 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 166
+2025-09-19 00:26:00,661 - INFO - Executing option trade: SELL 1 RTM50P (trade #9)
+2025-09-19 00:26:00,697 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 169
+2025-09-19 00:26:00,698 - INFO - Executing option trade: SELL 1 RTM50C (trade #10)
+2025-09-19 00:26:01,268 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 209
+2025-09-19 00:26:01,268 - INFO - Executing option trade: SELL 1 RTM50P (trade #11)
+2025-09-19 00:26:01,301 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 212
+2025-09-19 00:26:01,301 - INFO - Executing option trade: SELL 1 RTM50C (trade #12)
+2025-09-19 00:26:01,886 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 233
+2025-09-19 00:26:01,887 - INFO - Executing option trade: SELL 1 RTM50P (trade #13)
+2025-09-19 00:26:01,923 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 234
+2025-09-19 00:26:01,923 - INFO - Executing option trade: SELL 1 RTM50C (trade #14)
+2025-09-19 00:26:02,523 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 271
+2025-09-19 00:26:02,523 - INFO - Executing option trade: SELL 1 RTM50P (trade #15)
+2025-09-19 00:26:02,557 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 275
+2025-09-19 00:26:02,558 - INFO - Executing option trade: SELL 1 RTM50C (trade #16)
+2025-09-19 00:26:03,180 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 317
+2025-09-19 00:26:03,181 - INFO - Executing option trade: SELL 1 RTM49C (trade #17)
+2025-09-19 00:26:03,216 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 320
+2025-09-19 00:26:03,217 - INFO - Executing option trade: SELL 1 RTM49P (trade #18)
+2025-09-19 00:26:03,836 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 342
+2025-09-19 00:26:03,837 - INFO - Executing option trade: SELL 1 RTM49C (trade #19)
+2025-09-19 00:26:03,871 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 343
+2025-09-19 00:26:03,872 - INFO - Executing option trade: SELL 1 RTM49P (trade #20)
+2025-09-19 00:26:04,462 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 383
+2025-09-19 00:26:04,462 - INFO - Executing option trade: SELL 1 RTM49P (trade #21)
+2025-09-19 00:26:04,497 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 386
+2025-09-19 00:26:04,497 - INFO - Executing option trade: SELL 1 RTM49C (trade #22)
+2025-09-19 00:26:05,072 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 429
+2025-09-19 00:26:05,073 - INFO - Executing option trade: SELL 1 RTM49P (trade #23)
+2025-09-19 00:26:05,122 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 430
+2025-09-19 00:26:05,122 - INFO - Executing option trade: SELL 1 RTM49C (trade #24)
+2025-09-19 00:26:05,751 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 447
+2025-09-19 00:26:05,752 - INFO - Executing option trade: SELL 1 RTM49P (trade #25)
+2025-09-19 00:26:05,788 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 449
+2025-09-19 00:26:05,788 - INFO - Executing option trade: SELL 1 RTM49C (trade #26)
+2025-09-19 00:26:06,356 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 487
+2025-09-19 00:26:06,357 - INFO - Executing option trade: SELL 1 RTM49P (trade #27)
+2025-09-19 00:26:06,400 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 489
+2025-09-19 00:26:06,400 - INFO - Executing option trade: SELL 1 RTM48P (trade #28)
+2025-09-19 00:26:06,977 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 510
+2025-09-19 00:26:06,977 - INFO - Executing option trade: SELL 1 RTM49P (trade #29)
+2025-09-19 00:26:07,008 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 511
+2025-09-19 00:26:07,009 - INFO - Executing option trade: SELL 1 RTM48P (trade #30)
+2025-09-19 00:26:07,594 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 553
+2025-09-19 00:26:07,595 - INFO - Executing option trade: SELL 1 RTM48C (trade #31)
+2025-09-19 00:26:07,632 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 555
+2025-09-19 00:26:07,633 - INFO - Executing option trade: SELL 1 RTM48P (trade #32)
+2025-09-19 00:26:08,232 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 591
+2025-09-19 00:26:08,233 - INFO - Executing option trade: SELL 1 RTM48C (trade #33)
+2025-09-19 00:26:08,269 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 592
+2025-09-19 00:26:08,270 - INFO - Executing option trade: SELL 1 RTM48P (trade #34)
+2025-09-19 00:26:08,879 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 610
+2025-09-19 00:26:08,880 - INFO - Executing option trade: SELL 1 RTM48C (trade #35)
+2025-09-19 00:26:08,918 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 612
+2025-09-19 00:26:08,918 - INFO - Executing option trade: SELL 1 RTM48P (trade #36)
+2025-09-19 00:26:09,552 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 661
+2025-09-19 00:26:09,552 - INFO - Executing option trade: SELL 1 RTM48P (trade #37)
+2025-09-19 00:26:09,586 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 663
+2025-09-19 00:26:09,587 - INFO - Executing option trade: SELL 1 RTM48C (trade #38)
+2025-09-19 00:26:10,194 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 701
+2025-09-19 00:26:10,194 - INFO - Executing option trade: SELL 1 RTM48C (trade #39)
+2025-09-19 00:26:10,232 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 703
+2025-09-19 00:26:10,233 - INFO - Executing option trade: SELL 1 RTM48P (trade #40)
+2025-09-19 00:26:10,844 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 722
+2025-09-19 00:26:10,845 - INFO - Executing option trade: SELL 1 RTM48P (trade #41)
+2025-09-19 00:26:10,878 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 723
+2025-09-19 00:26:10,878 - INFO - Executing option trade: SELL 1 RTM48C (trade #42)
+2025-09-19 00:26:11,456 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 767
+2025-09-19 00:26:11,456 - INFO - Executing option trade: SELL 1 RTM49P (trade #43)
+2025-09-19 00:26:11,492 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 769
+2025-09-19 00:26:11,494 - INFO - Executing option trade: SELL 1 RTM49C (trade #44)
+2025-09-19 00:26:12,094 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 806
+2025-09-19 00:26:12,095 - INFO - Executing option trade: SELL 1 RTM49P (trade #45)
+2025-09-19 00:26:12,132 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 807
+2025-09-19 00:26:12,132 - INFO - Executing option trade: SELL 1 RTM49C (trade #46)
+2025-09-19 00:26:12,743 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 831
+2025-09-19 00:26:12,744 - INFO - Executing option trade: SELL 1 RTM49P (trade #47)
+2025-09-19 00:26:12,779 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 833
+2025-09-19 00:26:12,780 - INFO - Executing option trade: SELL 1 RTM49C (trade #48)
+2025-09-19 00:26:13,357 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 871
+2025-09-19 00:26:13,380 - INFO - Executing option trade: SELL 1 RTM48C (trade #49)
+2025-09-19 00:26:13,418 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 876
+2025-09-19 00:26:13,419 - INFO - Executing option trade: SELL 1 RTM48P (trade #50)
+2025-09-19 00:26:13,984 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 895
+2025-09-19 00:26:13,986 - INFO - Executing option trade: SELL 1 RTM48C (trade #51)
+2025-09-19 00:26:14,017 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 897
+2025-09-19 00:26:14,018 - INFO - Executing option trade: SELL 1 RTM48P (trade #52)
+2025-09-19 00:26:14,602 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 941
+2025-09-19 00:26:14,603 - INFO - Executing option trade: SELL 1 RTM48C (trade #53)
+2025-09-19 00:26:14,634 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 944
+2025-09-19 00:26:14,635 - INFO - Executing option trade: SELL 1 RTM48P (trade #54)
+2025-09-19 00:26:15,196 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 988
+2025-09-19 00:26:15,198 - INFO - Executing option trade: SELL 1 RTM48C (trade #55)
+2025-09-19 00:26:15,230 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 990
+2025-09-19 00:26:15,231 - INFO - Executing option trade: SELL 1 RTM48P (trade #56)
+2025-09-19 00:26:15,803 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1011
+2025-09-19 00:26:15,804 - INFO - Executing option trade: SELL 1 RTM48C (trade #57)
+2025-09-19 00:26:15,838 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1013
+2025-09-19 00:26:15,839 - INFO - Executing option trade: SELL 1 RTM48P (trade #58)
+2025-09-19 00:26:16,418 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1053
+2025-09-19 00:26:16,419 - INFO - Executing option trade: SELL 1 RTM49P (trade #59)
+2025-09-19 00:26:16,451 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1055
+2025-09-19 00:26:16,452 - INFO - Executing option trade: SELL 1 RTM49C (trade #60)
+2025-09-19 00:26:17,010 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1079
+2025-09-19 00:26:17,011 - INFO - Executing option trade: SELL 1 RTM49P (trade #61)
+2025-09-19 00:26:17,040 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1081
+2025-09-19 00:26:17,041 - INFO - Executing option trade: SELL 1 RTM49C (trade #62)
+2025-09-19 00:26:17,611 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1128
+2025-09-19 00:26:17,611 - INFO - Executing option trade: SELL 1 RTM49P (trade #63)
+2025-09-19 00:26:17,644 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1131
+2025-09-19 00:26:17,645 - INFO - Executing option trade: SELL 1 RTM49C (trade #64)
+2025-09-19 00:26:18,212 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1171
+2025-09-19 00:26:18,213 - INFO - Executing option trade: SELL 1 RTM49P (trade #65)
+2025-09-19 00:26:18,246 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1174
+2025-09-19 00:26:18,246 - INFO - Executing option trade: SELL 1 RTM49C (trade #66)
+2025-09-19 00:26:18,822 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1197
+2025-09-19 00:26:18,823 - INFO - Executing option trade: SELL 1 RTM49P (trade #67)
+2025-09-19 00:26:18,862 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1200
+2025-09-19 00:26:18,863 - INFO - Executing option trade: SELL 1 RTM49C (trade #68)
+2025-09-19 00:26:19,437 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1240
+2025-09-19 00:26:19,437 - INFO - Executing option trade: SELL 1 RTM48C (trade #69)
+2025-09-19 00:26:19,484 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1241
+2025-09-19 00:26:19,484 - INFO - Executing option trade: SELL 1 RTM48P (trade #70)
+2025-09-19 00:26:20,046 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1266
+2025-09-19 00:26:20,047 - INFO - Executing option trade: SELL 1 RTM48C (trade #71)
+2025-09-19 00:26:20,081 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1268
+2025-09-19 00:26:20,083 - INFO - Executing option trade: SELL 1 RTM48P (trade #72)
+2025-09-19 00:26:20,704 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1315
+2025-09-19 00:26:20,705 - INFO - Executing option trade: SELL 1 RTM48C (trade #73)
+2025-09-19 00:26:20,743 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1317
+2025-09-19 00:26:20,743 - INFO - Executing option trade: SELL 1 RTM48P (trade #74)
+2025-09-19 00:26:21,310 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1356
+2025-09-19 00:26:21,311 - INFO - Executing option trade: SELL 1 RTM48P (trade #75)
+2025-09-19 00:26:21,345 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1358
+2025-09-19 00:26:21,345 - INFO - Executing option trade: SELL 1 RTM48C (trade #76)
+2025-09-19 00:26:21,920 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1382
+2025-09-19 00:26:21,920 - INFO - Executing option trade: SELL 1 RTM48P (trade #77)
+2025-09-19 00:26:21,954 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1384
+2025-09-19 00:26:21,954 - INFO - Executing option trade: SELL 1 RTM48C (trade #78)
+2025-09-19 00:26:22,510 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1429
+2025-09-19 00:26:22,510 - INFO - Executing option trade: SELL 1 RTM48P (trade #79)
+2025-09-19 00:26:22,547 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1431
+2025-09-19 00:26:22,548 - INFO - Executing option trade: SELL 1 RTM48C (trade #80)
+2025-09-19 00:26:23,165 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1443
+2025-09-19 00:26:23,165 - INFO - Executing option trade: SELL 1 RTM48P (trade #81)
+2025-09-19 00:26:23,197 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1467
+2025-09-19 00:26:23,197 - INFO - Executing option trade: SELL 1 RTM48C (trade #82)
+2025-09-19 00:26:23,754 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1488
+2025-09-19 00:26:23,754 - INFO - Executing option trade: SELL 1 RTM49P (trade #83)
+2025-09-19 00:26:23,785 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1490
+2025-09-19 00:26:23,786 - INFO - Executing option trade: SELL 1 RTM49C (trade #84)
+2025-09-19 00:26:24,355 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1529
+2025-09-19 00:26:24,357 - INFO - Executing option trade: SELL 1 RTM48P (trade #85)
+2025-09-19 00:26:24,390 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1532
+2025-09-19 00:26:24,392 - INFO - Executing option trade: SELL 1 RTM48C (trade #86)
+2025-09-19 00:26:24,961 - INFO - Order submitted: RTM48C SELL 1 - Order ID: 1548
+2025-09-19 00:26:24,961 - INFO - Executing option trade: SELL 1 RTM48C (trade #87)
+2025-09-19 00:26:24,992 - INFO - Order submitted: RTM48P SELL 1 - Order ID: 1550
+2025-09-19 00:26:24,992 - INFO - Executing option trade: SELL 1 RTM48P (trade #88)
+2025-09-19 00:26:25,549 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1585
+2025-09-19 00:26:25,549 - INFO - Executing option trade: SELL 1 RTM49P (trade #89)
+2025-09-19 00:26:25,580 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1588
+2025-09-19 00:26:25,581 - INFO - Executing option trade: SELL 1 RTM49C (trade #90)
+2025-09-19 00:26:26,154 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1607
+2025-09-19 00:26:26,156 - INFO - Executing option trade: SELL 1 RTM49P (trade #91)
+2025-09-19 00:26:26,199 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1630
+2025-09-19 00:26:26,203 - INFO - Executing option trade: SELL 1 RTM49C (trade #92)
+2025-09-19 00:26:26,766 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1651
+2025-09-19 00:26:26,767 - INFO - Executing option trade: SELL 1 RTM49C (trade #93)
+2025-09-19 00:26:26,799 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1653
+2025-09-19 00:26:26,801 - INFO - Executing option trade: SELL 1 RTM49P (trade #94)
+2025-09-19 00:26:27,381 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1690
+2025-09-19 00:26:27,381 - INFO - Executing option trade: SELL 1 RTM49P (trade #95)
+2025-09-19 00:26:27,413 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1692
+2025-09-19 00:26:27,414 - INFO - Executing option trade: SELL 1 RTM49C (trade #96)
+2025-09-19 00:26:27,983 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1710
+2025-09-19 00:26:27,984 - INFO - Executing option trade: SELL 1 RTM49P (trade #97)
+2025-09-19 00:26:28,014 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1712
+2025-09-19 00:26:28,015 - INFO - Executing option trade: SELL 1 RTM49C (trade #98)
+2025-09-19 00:26:28,586 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1749
+2025-09-19 00:26:28,588 - INFO - Executing option trade: SELL 1 RTM49C (trade #99)
+2025-09-19 00:26:28,622 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1751
+2025-09-19 00:26:28,622 - INFO - Executing option trade: SELL 1 RTM49P (trade #100)
+2025-09-19 00:26:29,207 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1794
+2025-09-19 00:26:29,208 - INFO - Executing option trade: SELL 1 RTM49C (trade #101)
+2025-09-19 00:26:29,242 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1795
+2025-09-19 00:26:29,243 - INFO - Executing option trade: SELL 1 RTM49P (trade #102)
+2025-09-19 00:26:29,810 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1815
+2025-09-19 00:26:29,811 - INFO - Executing option trade: SELL 1 RTM49C (trade #103)
+2025-09-19 00:26:29,842 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 1817
+2025-09-19 00:26:29,842 - INFO - Executing option trade: SELL 1 RTM50C (trade #104)
+2025-09-19 00:26:30,402 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 1853
+2025-09-19 00:26:30,402 - INFO - Executing option trade: SELL 1 RTM50P (trade #105)
+2025-09-19 00:26:30,434 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 1855
+2025-09-19 00:26:30,434 - INFO - Executing option trade: SELL 1 RTM50C (trade #106)
+2025-09-19 00:26:31,000 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 1872
+2025-09-19 00:26:31,001 - INFO - Executing option trade: SELL 1 RTM50P (trade #107)
+2025-09-19 00:26:31,033 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 1874
+2025-09-19 00:26:31,034 - INFO - Executing option trade: SELL 1 RTM50C (trade #108)
+2025-09-19 00:26:31,608 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 1914
+2025-09-19 00:26:31,609 - INFO - Executing option trade: SELL 1 RTM50C (trade #109)
+2025-09-19 00:26:31,646 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 1918
+2025-09-19 00:26:31,647 - INFO - Executing option trade: SELL 1 RTM50P (trade #110)
+2025-09-19 00:26:32,238 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 1956
+2025-09-19 00:26:32,238 - INFO - Executing option trade: SELL 1 RTM50C (trade #111)
+2025-09-19 00:26:32,287 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 1958
+2025-09-19 00:26:32,288 - INFO - Executing option trade: SELL 1 RTM50P (trade #112)
+2025-09-19 00:26:32,845 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 1978
+2025-09-19 00:26:32,846 - INFO - Executing option trade: SELL 1 RTM49P (trade #113)
+2025-09-19 00:26:32,879 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 1981
+2025-09-19 00:26:32,880 - INFO - Executing option trade: SELL 1 RTM49C (trade #114)
+2025-09-19 00:26:33,443 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2021
+2025-09-19 00:26:33,444 - INFO - Executing option trade: SELL 1 RTM49C (trade #115)
+2025-09-19 00:26:33,475 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2022
+2025-09-19 00:26:33,476 - INFO - Executing option trade: SELL 1 RTM49P (trade #116)
+2025-09-19 00:26:34,070 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2040
+2025-09-19 00:26:34,071 - INFO - Executing option trade: SELL 1 RTM49P (trade #117)
+2025-09-19 00:26:34,104 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2041
+2025-09-19 00:26:34,105 - INFO - Executing option trade: SELL 1 RTM49C (trade #118)
+2025-09-19 00:26:34,667 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2081
+2025-09-19 00:26:34,667 - INFO - Executing option trade: SELL 1 RTM49C (trade #119)
+2025-09-19 00:26:34,705 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2083
+2025-09-19 00:26:34,706 - INFO - Executing option trade: SELL 1 RTM49P (trade #120)
+2025-09-19 00:26:35,268 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2119
+2025-09-19 00:26:35,268 - INFO - Executing option trade: SELL 1 RTM49C (trade #121)
+2025-09-19 00:26:35,302 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2120
+2025-09-19 00:26:35,302 - INFO - Executing option trade: SELL 1 RTM49P (trade #122)
+2025-09-19 00:26:35,860 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2124
+2025-09-19 00:26:35,860 - INFO - Executing option trade: SELL 1 RTM49C (trade #123)
+2025-09-19 00:26:35,890 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2125
+2025-09-19 00:26:35,891 - INFO - Executing option trade: SELL 1 RTM49P (trade #124)
+2025-09-19 00:26:36,456 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2148
+2025-09-19 00:26:36,456 - INFO - Executing option trade: SELL 1 RTM49C (trade #125)
+2025-09-19 00:26:36,489 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2149
+2025-09-19 00:26:36,490 - INFO - Executing option trade: SELL 1 RTM49P (trade #126)
+2025-09-19 00:26:37,039 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2156
+2025-09-19 00:26:37,040 - INFO - Executing option trade: SELL 1 RTM49C (trade #127)
+2025-09-19 00:26:37,073 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2157
+2025-09-19 00:26:37,073 - INFO - Executing option trade: SELL 1 RTM49P (trade #128)
+2025-09-19 00:26:37,648 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2184
+2025-09-19 00:26:37,649 - INFO - Executing option trade: SELL 1 RTM49P (trade #129)
+2025-09-19 00:26:37,680 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2186
+2025-09-19 00:26:37,686 - INFO - Executing option trade: SELL 1 RTM49C (trade #130)
+2025-09-19 00:26:38,263 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2188
+2025-09-19 00:26:38,264 - INFO - Executing option trade: SELL 1 RTM49P (trade #131)
+2025-09-19 00:26:38,296 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2211
+2025-09-19 00:26:38,297 - INFO - Executing option trade: SELL 1 RTM49C (trade #132)
+2025-09-19 00:26:38,863 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2215
+2025-09-19 00:26:38,864 - INFO - Executing option trade: SELL 1 RTM49P (trade #133)
+2025-09-19 00:26:38,894 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2216
+2025-09-19 00:26:38,895 - INFO - Executing option trade: SELL 1 RTM49C (trade #134)
+2025-09-19 00:26:39,473 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2239
+2025-09-19 00:26:39,475 - INFO - Executing option trade: SELL 1 RTM50P (trade #135)
+2025-09-19 00:26:39,507 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2240
+2025-09-19 00:26:39,509 - INFO - Executing option trade: SELL 1 RTM50C (trade #136)
+2025-09-19 00:26:40,160 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2241
+2025-09-19 00:26:40,162 - INFO - Executing option trade: SELL 1 RTM50P (trade #137)
+2025-09-19 00:26:40,196 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2242
+2025-09-19 00:26:40,197 - INFO - Executing option trade: SELL 1 RTM50C (trade #138)
+2025-09-19 00:26:40,752 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2265
+2025-09-19 00:26:40,753 - INFO - Executing option trade: SELL 1 RTM50P (trade #139)
+2025-09-19 00:26:40,789 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2266
+2025-09-19 00:26:40,789 - INFO - Executing option trade: SELL 1 RTM50C (trade #140)
+2025-09-19 00:26:41,354 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2289
+2025-09-19 00:26:41,354 - INFO - Executing option trade: SELL 1 RTM50P (trade #141)
+2025-09-19 00:26:41,385 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2290
+2025-09-19 00:26:41,385 - INFO - Executing option trade: SELL 1 RTM50C (trade #142)
+2025-09-19 00:26:41,422 - INFO - Order submitted: RTM BUY 200 - Order ID: 2291
+2025-09-19 00:26:41,422 - INFO - Executing conservative hedge: BUY 200 RTM shares (exposure: 5276.688420585918) (trade #143)
+2025-09-19 00:26:42,000 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2292
+2025-09-19 00:26:42,000 - INFO - Executing option trade: SELL 1 RTM50P (trade #144)
+2025-09-19 00:26:42,031 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2293
+2025-09-19 00:26:42,031 - INFO - Executing option trade: SELL 1 RTM50C (trade #145)
+2025-09-19 00:26:42,599 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2316
+2025-09-19 00:26:42,600 - INFO - Executing option trade: SELL 1 RTM50C (trade #146)
+2025-09-19 00:26:42,631 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2317
+2025-09-19 00:26:42,632 - INFO - Executing option trade: SELL 1 RTM50P (trade #147)
+2025-09-19 00:26:43,187 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2318
+2025-09-19 00:26:43,188 - INFO - Executing option trade: SELL 1 RTM50C (trade #148)
+2025-09-19 00:26:43,219 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2319
+2025-09-19 00:26:43,219 - INFO - Executing option trade: SELL 1 RTM50P (trade #149)
+2025-09-19 00:26:43,783 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2342
+2025-09-19 00:26:43,783 - INFO - Executing option trade: SELL 1 RTM50C (trade #150)
+2025-09-19 00:26:43,816 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2343
+2025-09-19 00:26:43,817 - INFO - Executing option trade: SELL 1 RTM50P (trade #151)
+2025-09-19 00:26:44,383 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2366
+2025-09-19 00:26:44,384 - INFO - Executing option trade: SELL 1 RTM50P (trade #152)
+2025-09-19 00:26:44,416 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2367
+2025-09-19 00:26:44,416 - INFO - Executing option trade: SELL 1 RTM50C (trade #153)
+2025-09-19 00:26:44,987 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2368
+2025-09-19 00:26:44,988 - INFO - Executing option trade: SELL 1 RTM50P (trade #154)
+2025-09-19 00:26:45,021 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2369
+2025-09-19 00:26:45,022 - INFO - Executing option trade: SELL 1 RTM50C (trade #155)
+2025-09-19 00:26:45,613 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2392
+2025-09-19 00:26:45,614 - INFO - Executing option trade: SELL 1 RTM49C (trade #156)
+2025-09-19 00:26:45,649 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2393
+2025-09-19 00:26:45,650 - INFO - Executing option trade: SELL 1 RTM50C (trade #157)
+2025-09-19 00:26:46,244 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2394
+2025-09-19 00:26:46,244 - INFO - Executing option trade: SELL 1 RTM49C (trade #158)
+2025-09-19 00:26:46,276 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2395
+2025-09-19 00:26:46,278 - INFO - Executing option trade: SELL 1 RTM49P (trade #159)
+2025-09-19 00:26:46,866 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2418
+2025-09-19 00:26:46,867 - INFO - Executing option trade: SELL 1 RTM50P (trade #160)
+2025-09-19 00:26:46,899 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2419
+2025-09-19 00:26:46,899 - INFO - Executing option trade: SELL 1 RTM50C (trade #161)
+2025-09-19 00:26:47,464 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2442
+2025-09-19 00:26:47,465 - INFO - Executing option trade: SELL 1 RTM50C (trade #162)
+2025-09-19 00:26:47,499 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2443
+2025-09-19 00:26:47,499 - INFO - Executing option trade: SELL 1 RTM50P (trade #163)
+2025-09-19 00:26:48,082 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2444
+2025-09-19 00:26:48,082 - INFO - Executing option trade: SELL 1 RTM50C (trade #164)
+2025-09-19 00:26:48,113 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2445
+2025-09-19 00:26:48,114 - INFO - Executing option trade: SELL 1 RTM50P (trade #165)
+2025-09-19 00:26:48,687 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2468
+2025-09-19 00:26:48,688 - INFO - Executing option trade: SELL 1 RTM50P (trade #166)
+2025-09-19 00:26:48,719 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2469
+2025-09-19 00:26:48,719 - INFO - Executing option trade: SELL 1 RTM50C (trade #167)
+2025-09-19 00:26:49,286 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2470
+2025-09-19 00:26:49,287 - INFO - Executing option trade: SELL 1 RTM50P (trade #168)
+2025-09-19 00:26:49,322 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2493
+2025-09-19 00:26:49,323 - INFO - Executing option trade: SELL 1 RTM50C (trade #169)
+2025-09-19 00:26:49,905 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2494
+2025-09-19 00:26:49,906 - INFO - Executing option trade: SELL 1 RTM49C (trade #170)
+2025-09-19 00:26:49,940 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2495
+2025-09-19 00:26:49,941 - INFO - Executing option trade: SELL 1 RTM49P (trade #171)
+2025-09-19 00:26:50,515 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2518
+2025-09-19 00:26:50,515 - INFO - Executing option trade: SELL 1 RTM50P (trade #172)
+2025-09-19 00:26:50,547 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2519
+2025-09-19 00:26:50,548 - INFO - Executing option trade: SELL 1 RTM50C (trade #173)
+2025-09-19 00:26:51,162 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2520
+2025-09-19 00:26:51,165 - INFO - Executing option trade: SELL 1 RTM50P (trade #174)
+2025-09-19 00:26:51,201 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2521
+2025-09-19 00:26:51,203 - INFO - Executing option trade: SELL 1 RTM50C (trade #175)
+2025-09-19 00:26:51,792 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2544
+2025-09-19 00:26:51,794 - INFO - Executing option trade: SELL 1 RTM50C (trade #176)
+2025-09-19 00:26:51,828 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2545
+2025-09-19 00:26:51,828 - INFO - Executing option trade: SELL 1 RTM50P (trade #177)
+2025-09-19 00:26:52,401 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2568
+2025-09-19 00:26:52,404 - INFO - Executing option trade: SELL 1 RTM49C (trade #178)
+2025-09-19 00:26:52,439 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2569
+2025-09-19 00:26:52,441 - INFO - Executing option trade: SELL 1 RTM49P (trade #179)
+2025-09-19 00:26:53,010 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2570
+2025-09-19 00:26:53,011 - INFO - Executing option trade: SELL 1 RTM49C (trade #180)
+2025-09-19 00:26:53,045 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2571
+2025-09-19 00:26:53,045 - INFO - Executing option trade: SELL 1 RTM49P (trade #181)
+2025-09-19 00:26:53,621 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2594
+2025-09-19 00:26:53,622 - INFO - Executing option trade: SELL 1 RTM49P (trade #182)
+2025-09-19 00:26:53,659 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2595
+2025-09-19 00:26:53,660 - INFO - Executing option trade: SELL 1 RTM49C (trade #183)
+2025-09-19 00:26:54,276 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2596
+2025-09-19 00:26:54,277 - INFO - Executing option trade: SELL 1 RTM49P (trade #184)
+2025-09-19 00:26:54,313 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2597
+2025-09-19 00:26:54,315 - INFO - Executing option trade: SELL 1 RTM49C (trade #185)
+2025-09-19 00:26:54,918 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2620
+2025-09-19 00:26:54,919 - INFO - Executing option trade: SELL 1 RTM49C (trade #186)
+2025-09-19 00:26:54,953 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2621
+2025-09-19 00:26:54,954 - INFO - Executing option trade: SELL 1 RTM49P (trade #187)
+2025-09-19 00:26:55,537 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2644
+2025-09-19 00:26:55,540 - INFO - Executing option trade: SELL 1 RTM49P (trade #188)
+2025-09-19 00:26:55,576 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2645
+2025-09-19 00:26:55,577 - INFO - Executing option trade: SELL 1 RTM49C (trade #189)
+2025-09-19 00:26:56,170 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2646
+2025-09-19 00:26:56,172 - INFO - Executing option trade: SELL 1 RTM49P (trade #190)
+2025-09-19 00:26:56,209 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2647
+2025-09-19 00:26:56,212 - INFO - Executing option trade: SELL 1 RTM49C (trade #191)
+2025-09-19 00:26:56,791 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2670
+2025-09-19 00:26:56,791 - INFO - Executing option trade: SELL 1 RTM49C (trade #192)
+2025-09-19 00:26:56,824 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2671
+2025-09-19 00:26:56,824 - INFO - Executing option trade: SELL 1 RTM49P (trade #193)
+2025-09-19 00:26:57,396 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2694
+2025-09-19 00:26:57,398 - INFO - Executing option trade: SELL 1 RTM49C (trade #194)
+2025-09-19 00:26:57,449 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2695
+2025-09-19 00:26:57,450 - INFO - Executing option trade: SELL 1 RTM49P (trade #195)
+2025-09-19 00:26:58,039 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2696
+2025-09-19 00:26:58,040 - INFO - Executing option trade: SELL 1 RTM49P (trade #196)
+2025-09-19 00:26:58,075 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2697
+2025-09-19 00:26:58,076 - INFO - Executing option trade: SELL 1 RTM49C (trade #197)
+2025-09-19 00:26:58,652 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2720
+2025-09-19 00:26:58,653 - INFO - Executing option trade: SELL 1 RTM49P (trade #198)
+2025-09-19 00:26:58,686 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2721
+2025-09-19 00:26:58,687 - INFO - Executing option trade: SELL 1 RTM49C (trade #199)
+2025-09-19 00:26:59,256 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2722
+2025-09-19 00:26:59,258 - INFO - Executing option trade: SELL 1 RTM49P (trade #200)
+2025-09-19 00:26:59,292 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2723
+2025-09-19 00:26:59,294 - INFO - Executing option trade: SELL 1 RTM49C (trade #201)
+2025-09-19 00:26:59,903 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2746
+2025-09-19 00:26:59,903 - INFO - Executing option trade: SELL 1 RTM49P (trade #202)
+2025-09-19 00:26:59,936 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2747
+2025-09-19 00:26:59,937 - INFO - Executing option trade: SELL 1 RTM49C (trade #203)
+2025-09-19 00:27:00,517 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2770
+2025-09-19 00:27:00,518 - INFO - Executing option trade: SELL 1 RTM50P (trade #204)
+2025-09-19 00:27:00,554 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2771
+2025-09-19 00:27:00,555 - INFO - Executing option trade: SELL 1 RTM50C (trade #205)
+2025-09-19 00:27:01,130 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2772
+2025-09-19 00:27:01,131 - INFO - Executing option trade: SELL 1 RTM50P (trade #206)
+2025-09-19 00:27:01,162 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2773
+2025-09-19 00:27:01,164 - INFO - Executing option trade: SELL 1 RTM50C (trade #207)
+2025-09-19 00:27:01,734 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2796
+2025-09-19 00:27:01,737 - INFO - Executing option trade: SELL 1 RTM49C (trade #208)
+2025-09-19 00:27:01,772 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2797
+2025-09-19 00:27:01,777 - INFO - Executing option trade: SELL 1 RTM49P (trade #209)
+2025-09-19 00:27:02,395 - INFO - Order submitted: RTM49C SELL 1 - Order ID: 2820
+2025-09-19 00:27:02,395 - INFO - Executing option trade: SELL 1 RTM49C (trade #210)
+2025-09-19 00:27:02,429 - INFO - Order submitted: RTM49P SELL 1 - Order ID: 2821
+2025-09-19 00:27:02,430 - INFO - Executing option trade: SELL 1 RTM49P (trade #211)
+2025-09-19 00:27:03,000 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2822
+2025-09-19 00:27:03,001 - INFO - Executing option trade: SELL 1 RTM50P (trade #212)
+2025-09-19 00:27:03,034 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2823
+2025-09-19 00:27:03,035 - INFO - Executing option trade: SELL 1 RTM50C (trade #213)
+2025-09-19 00:27:03,626 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2846
+2025-09-19 00:27:03,627 - INFO - Executing option trade: SELL 1 RTM50C (trade #214)
+2025-09-19 00:27:03,661 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2847
+2025-09-19 00:27:03,661 - INFO - Executing option trade: SELL 1 RTM50P (trade #215)
+2025-09-19 00:27:04,228 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2848
+2025-09-19 00:27:04,229 - INFO - Executing option trade: SELL 1 RTM50C (trade #216)
+2025-09-19 00:27:04,262 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2849
+2025-09-19 00:27:04,263 - INFO - Executing option trade: SELL 1 RTM50P (trade #217)
+2025-09-19 00:27:04,650 - INFO - Shutdown signal received
+2025-09-19 00:27:04,843 - INFO - Order submitted: RTM50C SELL 1 - Order ID: 2872
+2025-09-19 00:27:04,844 - INFO - Executing option trade: SELL 1 RTM50C (trade #218)
+2025-09-19 00:27:04,878 - INFO - Order submitted: RTM50P SELL 1 - Order ID: 2873
+2025-09-19 00:27:04,879 - INFO - Executing option trade: SELL 1 RTM50P (trade #219)
