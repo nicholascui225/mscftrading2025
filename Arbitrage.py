@@ -184,6 +184,8 @@ class ArbitrageStrategy:
             logger.info(f"DRY RUN: Would place {order_type} {action} {quantity} {ticker} at {price}")
             return True
             
+        x = 0
+        
         try:
             params = {
                 "ticker": ticker,
