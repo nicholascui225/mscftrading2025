@@ -144,3 +144,48 @@ Key parameters can be adjusted in the `VolatilityTradingStrategy` class:
 
 This strategy is designed for educational purposes in the Volatility Trading Case. Past performance does not guarantee future results. Always understand the risks involved in options trading.
 
+
+
+## ETF Arbitrage Strategy (RITC vs BULL/BEAR)
+
+This repository also includes a dedicated ETF arbitrage system in `Arbitrage.py` for the RIT Market Simulator ETF Arbitrage Case. It trades the USD-quoted ETF `RITC` against its CAD-quoted constituents `BULL` and `BEAR`, using the FX instrument `USD` (USD/CAD) to convert between currencies.
+
+### Instruments
+- **RITC**: ETF quoted in USD
+- **BULL, BEAR**: Underlying CAD stocks in the ETF basket
+- **USD**: USD/CAD FX instrument
+
+### Fair Value and Detection
+- **Fair Value (CAD)**: `(BULL + BEAR) * FX_mid`, where `FX_mid = (USD_bid + USD_ask)/2`
+- **Convert RITC to CAD**:
+  - `RITC_bid_cad = RITC_bid_usd * USD_bid`
+  - `RITC_ask_cad = RITC_ask_usd * USD_ask`
+- **Mispricing threshold**: `ARB_THRESHOLD_CAD` (default 0.05 CAD per share)
+  - **Overpriced**: `RITC_ask_cad > fair_value_bid + threshold`
+  - **Underpriced**: `fair_value_ask > RITC_bid_cad + threshold`
+
+### Execution Logic
+- **Overpriced (ETF rich)**: Short `RITC` (USD), buy `BULL` and `BEAR` (CAD)
+- **Underpriced (ETF cheap)**: Buy `RITC` (USD), short `BULL` and `BEAR` (CAD)
+- **Dynamic sizing**: Quantity scales with edge via `min(edge/0.1, 3.0)` multiplier, capped by `MAX_SIZE_EQUITY`, starting from `ORDER_QTY` (default 8000)
+- **Costs**: Market fee (`FEE_MKT` = 0.02), limit rebate (`REBATE_LMT` = 0.01)
+
+### Converters and Tenders
+- **Converters**: Optional creation/redemption path when converter cost (`CONVERTER_FEE`, default 1500 per 10k shares) is cheaper than estimated market slippage (`SLIPPAGE_THRESHOLD`, default 0.15/share)
+- **Tenders**: Evaluates `/tenders` and accepts only positive expected PnL offers, then unwinds via converters or market depending on cost
+
+### Risk Management (Enforced per `Arbitrage.py`)
+- **Gross exposure cap**: `MAX_GROSS` (default 750,000), with ETF positions weighted double
+- **Net exposure bounds**: `MAX_SHORT_NET` to `MAX_LONG_NET` (defaults −35,000 to +35,000 shares)
+- Tracks realized/unrealized PnL, win rate, best edge, and adapts aggressiveness via `optimize_for_profits()`
+
+### Running the ETF Arbitrage
+Ensure the ETF Arbitrage case is ACTIVE on the RIT Market Simulator (`http://localhost:9999`) and the API key in `Arbitrage.py` matches your simulator.
+
+```bash
+python Arbitrage.py            # live (default)
+python Arbitrage.py backtest   # backtest mode
+python Arbitrage.py dry_run    # no orders; logs intended actions
+```
+
+Logs stream to console and `arbitrage.log`. A summary report prints on exit with trade counts, PnL, exposures, and win-rate metrics.
